@@ -1,0 +1,4 @@
+﻿  main.cpp
+f:\works\winapi\changecolor\changecolor\main.cpp(59): warning C4101: hDC: неиспользованная локальная переменная
+  ChangeColor.vcxproj -> F:\Works\WinAPI\ChangeColor\Debug\ChangeColor.exe
+  ChangeColor.vcxproj -> F:\Works\WinAPI\ChangeColor\Debug\ChangeColor.pdb (Full PDB)

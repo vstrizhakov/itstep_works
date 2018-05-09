@@ -1,0 +1,235 @@
+-- ДЗ по СД-дискам
+
+-- Показать всю информацию о продажах
+SELECT Sellers.name AS 'Продавец', CDs.name AS 'CD', CDs.cd_date AS 'Дата выпуска', Bands.name AS 'Группа', Formats.name AS 'Формат'
+FROM Sellers, CDs, Bands, Formats, Sellings
+WHERE Sellers.id = Sellings.id_seller
+	AND CDs.id = Sellings.id_cd
+	AND Bands.id = CDs.id_band
+	AND Formats.id = CDs.id_format;
+
+GO
+
+-- Кол-во проданных дисков по каждой из групп
+SELECT Bands.name AS Band, COUNT(*) AS CountSoldCds
+FROM Bands, CDs, Sellings
+WHERE Sellings.id_cd = CDs.id
+	AND CDs.id_band = Bands.Id
+GROUP BY Bands.name
+
+GO
+
+-- Самая популярная группа
+CREATE VIEW CountSoldCDsForEachBand
+AS
+SELECT Bands.name AS Band, COUNT(*) AS CountSoldCds
+FROM Bands, CDs, Sellings
+WHERE Sellings.id_cd = CDs.id
+	AND CDs.id_band = Bands.Id
+GROUP BY Bands.name
+
+GO
+
+SELECT CountSoldCDsForEachBand.Band, CountSoldCDsForEachBand.CountSoldCds
+FROM CountSoldCDsForEachBand
+WHERE CountSoldCDsForEachBand.CountSoldCds IN
+	(
+		SELECT MAX(CountSoldCDsForEachBand.CountSoldCds)
+		FROM CountSoldCDsForEachBand
+	);
+
+GO 
+
+-- Самый успешный продавец
+CREATE VIEW CountOfSellings
+AS
+SELECT Sellers.Name AS Seller, COUNT(*) AS CSellings
+FROM Sellers, Sellings
+WHERE Sellers.id = Sellings.id_seller
+GROUP BY Sellers.name
+
+GO
+
+SELECT CountOfSellings.Seller, CountOfSellings.CSellings
+FROM CountOfSellings
+WHERE CountOfSellings.CSellings IN
+	(
+		SELECT MAX(CountOfSellings.CSellings)
+		FROM CountOfSellings
+	);
+
+GO
+
+-- Самый популярный год
+CREATE VIEW CDsYears
+AS
+SELECT CDs.cd_date AS Year, COUNT(*) AS YCount
+FROM Sellings, CDs
+WHERE CDs.id = Sellings.id_cd
+GROUP BY CDs.cd_date
+
+GO
+
+SELECT CDsYears.Year, CDsYears.YCount
+FROM CDsYears
+WHERE CDsYears.YCount IN
+	(
+		SELECT MAX(CDsYears.YCount)
+		FROM CDsYears
+	);
+
+GO
+
+-- Запросы по Library
+-- Вывести издетельство, которое издало наибольшее кол-во книг по программированию
+CREATE VIEW PressRating
+AS
+SELECT Press.Name AS Izd, COUNT(*) AS Count
+FROM Press, Books, Themes
+WHERE Books.id_press = Press.id
+	AND Books.id_themes = Themes.id
+	AND Themes.Id = (
+		SELECT id
+		FROM Themes
+		WHERE Themes.name = 'Программирование'
+	)
+GROUP BY Press.Name
+
+GO
+
+SELECT PressRating.Izd, PressRating.Count
+FROM PressRating
+WHERE PressRating.Count IN (
+		SELECT MAX(PressRating.Count)
+		FROM PressRating
+	);
+
+GO
+
+-- Показать тематику, по которой издано наименьшее кол-во страниц
+CREATE VIEW ThemesRating
+AS
+SELECT Themes.Name AS Theme, COUNT(*) AS Count
+FROM Themes, Books
+WHERE Books.id_themes = themes.id
+GROUP BY Themes.Name
+
+GO
+
+SELECT ThemesRating.Theme, ThemesRating.Count
+FROM ThemesRating
+WHERE ThemesRating.Count = (
+	SELECT MIN(ThemesRating.Count)
+	FROM ThemesRating
+)
+
+GO
+
+-- Самая дорогая книга издательства BHV
+CREATE VIEW BHVRating
+AS
+SELECT Books.Name AS Book, Books.Price AS Price
+FROM Books
+WHERE Books.id_press = (
+		SELECT id
+		FROM Press
+		WHERE Press.Name = 'BHV'
+	)
+
+GO
+
+SELECT BHVRating.Book, BHVRating.Price
+FROM BHVRating
+WHERE BHVRating.Price = (
+		SELECT MAX(BHVRating.Price)
+		FROM BHVRating
+	)
+
+-- Книги, у которых кол-во страниц большее, чем среднее
+CREATE VIEW AVGBooksPrice
+AS
+SELECT AVG(Books.Price) AS Price
+FROM Books
+
+GO
+
+SELECT Books.Name, Books.Price
+FROM Books, AVGBooksPrice
+WHERE Books.Price > AVGBooksPrice.Price
+
+SELECT * FROM BOoks
+
+-- Хранимые процедуры
+GO
+-- Факториал
+CREATE PROCEDURE Factorial
+	@number INT
+AS
+IF @number < 0
+	RETURN -1;
+DECLARE @result int;
+DECLARE @i int;
+SET @result = 1;
+SET @i = 1;
+WHILE (@i <= @number)
+BEGIN
+	SET @result *= @i;
+	SET @i += 1;
+END
+RETURN @result
+
+GO
+
+DECLARE @res INT;
+execute @res = Factorial -1
+IF @res = -1
+	PRINT('Невозможно найти факториал числа меньше 0')
+ELSE
+	PRINT(STR(@res))
+
+GO
+
+-- Имя библиотекаря, выдавшего наибольшее кол-во книг
+CREATE VIEW lib
+AS
+SELECT libs.firstname + ' '+ libs.lastname as name, count(*) as cnt
+FROM libs, S_cards, T_Cards
+WHERE S_Cards.Id_Lib = libs.id
+AND T_Cards.Id_Lib = libs.id
+GROUP BY libs.firstname + ' '+ libs.lastname;
+
+GO
+
+CREATE PROCEDURE popularLib
+AS
+SELECT lib.name 
+FROM lib
+WHERE lib.cnt = (SELECT MAX(lib.cnt) FROM lib);
+
+exec popularLib;
+
+GO 
+--
+CREATE VIEW ThemesRate
+AS
+SELECT Faculties.Name AS Faculty, Themes.NAME AS Theme, COUNT(*) AS cnt
+FROM Themes, S_Cards, Books, Students, Faculties, groups
+WHERE Themes.ID = Books.Id_Themes
+	AND S_Cards.Id_Book = Books.ID
+	AND S_Cards.Id_Student = Students.Id
+	AND Students.Id_Group = Groups.id
+	AND Groups.id_faculty = Faculties.Id
+GROUP BY Faculties.Name, Themes.NAME
+
+GO
+
+CREATE PROCEDURE MostPopularThemeFromFaculty
+	@faculty varchar(64)
+AS
+	SELECT ThemesRate.Faculty, ThemesRate.Theme, ThemesRate.cnt
+	FROM ThemesRate
+	WHERE ThemesRate.Cnt = (SELECT MAX(ThemesRate.cnt) FROM ThemesRate WHERE ThemesRate.Faculty = @faculty) AND ThemesRate.Faculty = @faculty
+
+GO
+
+execute MostPopularThemeFromFaculty 'Программирования';

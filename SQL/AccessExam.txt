@@ -1,0 +1,6 @@
+SELECT Themes.name, Books.Name, Students.Lastname, Students.FirstName
+FROM Students INNER JOIN
+(S_Cards INNER JOIN
+(Books INNER JOIN Themes ON Books.Id_Themes = Themes.Id)
+ON S_Cards.Id_Book = Books.Id)
+ON Students.Id = S_Cards.Id_Student

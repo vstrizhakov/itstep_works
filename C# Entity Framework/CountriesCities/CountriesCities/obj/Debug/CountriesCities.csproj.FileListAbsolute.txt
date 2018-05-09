@@ -1,0 +1,10 @@
+H:\Works\Entity Framework\CountriesCities\CountriesCities\bin\Debug\CountriesCities.exe.config
+H:\Works\Entity Framework\CountriesCities\CountriesCities\bin\Debug\CountriesCities.exe
+H:\Works\Entity Framework\CountriesCities\CountriesCities\bin\Debug\CountriesCities.pdb
+H:\Works\Entity Framework\CountriesCities\CountriesCities\bin\Debug\EntityFramework.dll
+H:\Works\Entity Framework\CountriesCities\CountriesCities\bin\Debug\EntityFramework.xml
+H:\Works\Entity Framework\CountriesCities\CountriesCities\bin\Debug\ru\EntityFramework.resources.dll
+H:\Works\Entity Framework\CountriesCities\CountriesCities\obj\Debug\CountriesCities.csprojResolveAssemblyReference.cache
+H:\Works\Entity Framework\CountriesCities\CountriesCities\obj\Debug\CountriesCities.csproj.CoreCompileInputs.cache
+H:\Works\Entity Framework\CountriesCities\CountriesCities\obj\Debug\CountriesCities.exe
+H:\Works\Entity Framework\CountriesCities\CountriesCities\obj\Debug\CountriesCities.pdb

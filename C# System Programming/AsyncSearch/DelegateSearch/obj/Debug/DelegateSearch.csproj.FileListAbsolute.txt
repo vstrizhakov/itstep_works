@@ -1,0 +1,17 @@
+C:\Users\vPC\source\repos\DelegateSearch\DelegateSearch\bin\Debug\DelegateSearch.exe.config
+C:\Users\vPC\source\repos\DelegateSearch\DelegateSearch\bin\Debug\DelegateSearch.exe
+C:\Users\vPC\source\repos\DelegateSearch\DelegateSearch\bin\Debug\DelegateSearch.pdb
+C:\Users\vPC\source\repos\DelegateSearch\DelegateSearch\obj\Debug\DelegateSearch.csprojResolveAssemblyReference.cache
+C:\Users\vPC\source\repos\DelegateSearch\DelegateSearch\obj\Debug\DelegateSearch.csproj.CoreCompileInputs.cache
+C:\Users\vPC\source\repos\DelegateSearch\DelegateSearch\obj\Debug\DelegateSearch.exe
+C:\Users\vPC\source\repos\DelegateSearch\DelegateSearch\obj\Debug\DelegateSearch.pdb
+G:\Works\C#\HOME!!!\СДАТЬ\DelegateSearch\DelegateSearch\bin\Debug\DelegateSearch.exe.config
+G:\Works\C#\HOME!!!\СДАТЬ\DelegateSearch\DelegateSearch\obj\Debug\DelegateSearch.exe
+G:\Works\C#\HOME!!!\СДАТЬ\DelegateSearch\DelegateSearch\obj\Debug\DelegateSearch.pdb
+D:\flesh\Works\C# System Programming\AsyncSearch\DelegateSearch\bin\Debug\DelegateSearch.exe.config
+D:\flesh\Works\C# System Programming\AsyncSearch\DelegateSearch\bin\Debug\DelegateSearch.exe
+D:\flesh\Works\C# System Programming\AsyncSearch\DelegateSearch\bin\Debug\DelegateSearch.pdb
+D:\flesh\Works\C# System Programming\AsyncSearch\DelegateSearch\obj\Debug\DelegateSearch.csprojResolveAssemblyReference.cache
+D:\flesh\Works\C# System Programming\AsyncSearch\DelegateSearch\obj\Debug\DelegateSearch.csproj.CoreCompileInputs.cache
+D:\flesh\Works\C# System Programming\AsyncSearch\DelegateSearch\obj\Debug\DelegateSearch.exe
+D:\flesh\Works\C# System Programming\AsyncSearch\DelegateSearch\obj\Debug\DelegateSearch.pdb

@@ -1,0 +1,6 @@
+D:\flesh\Works\C# Net Programming\Http_\Http_\bin\Debug\Http_.exe.config
+D:\flesh\Works\C# Net Programming\Http_\Http_\bin\Debug\Http_.exe
+D:\flesh\Works\C# Net Programming\Http_\Http_\bin\Debug\Http_.pdb
+D:\flesh\Works\C# Net Programming\Http_\Http_\obj\Debug\Http_.csproj.CoreCompileInputs.cache
+D:\flesh\Works\C# Net Programming\Http_\Http_\obj\Debug\Http_.exe
+D:\flesh\Works\C# Net Programming\Http_\Http_\obj\Debug\Http_.pdb

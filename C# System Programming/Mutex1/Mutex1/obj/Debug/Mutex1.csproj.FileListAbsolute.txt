@@ -1,0 +1,6 @@
+D:\flesh\Works\C# System Programming\Mutex1\Mutex1\bin\Debug\Mutex1.exe.config
+D:\flesh\Works\C# System Programming\Mutex1\Mutex1\bin\Debug\Mutex1.exe
+D:\flesh\Works\C# System Programming\Mutex1\Mutex1\bin\Debug\Mutex1.pdb
+D:\flesh\Works\C# System Programming\Mutex1\Mutex1\obj\Debug\Mutex1.csproj.CoreCompileInputs.cache
+D:\flesh\Works\C# System Programming\Mutex1\Mutex1\obj\Debug\Mutex1.exe
+D:\flesh\Works\C# System Programming\Mutex1\Mutex1\obj\Debug\Mutex1.pdb

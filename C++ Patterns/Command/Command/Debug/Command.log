@@ -1,0 +1,5 @@
+﻿  main.cpp
+c:\users\vpc\documents\visual studio 2015\projects\command\command\header.h(172): warning C4018: <=: несоответствие типов со знаком и без знака
+c:\users\vpc\documents\visual studio 2015\projects\command\command\main.cpp(16): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  Command.vcxproj -> c:\users\vpc\documents\visual studio 2015\Projects\Command\Debug\Command.exe
+  Command.vcxproj -> c:\users\vpc\documents\visual studio 2015\Projects\Command\Debug\Command.pdb (Full PDB)

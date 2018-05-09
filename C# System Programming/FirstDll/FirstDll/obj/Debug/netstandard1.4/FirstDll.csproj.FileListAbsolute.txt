@@ -1,0 +1,8 @@
+D:\flesh\Works\C# System Programming\FirstDll\FirstDll\bin\Debug\netstandard1.4\FirstDll.deps.json
+D:\flesh\Works\C# System Programming\FirstDll\FirstDll\bin\Debug\netstandard1.4\FirstDll.dll
+D:\flesh\Works\C# System Programming\FirstDll\FirstDll\bin\Debug\netstandard1.4\FirstDll.pdb
+D:\flesh\Works\C# System Programming\FirstDll\FirstDll\obj\Debug\netstandard1.4\FirstDll.csprojResolveAssemblyReference.cache
+D:\flesh\Works\C# System Programming\FirstDll\FirstDll\obj\Debug\netstandard1.4\FirstDll.csproj.CoreCompileInputs.cache
+D:\flesh\Works\C# System Programming\FirstDll\FirstDll\obj\Debug\netstandard1.4\FirstDll.AssemblyInfo.cs
+D:\flesh\Works\C# System Programming\FirstDll\FirstDll\obj\Debug\netstandard1.4\FirstDll.dll
+D:\flesh\Works\C# System Programming\FirstDll\FirstDll\obj\Debug\netstandard1.4\FirstDll.pdb

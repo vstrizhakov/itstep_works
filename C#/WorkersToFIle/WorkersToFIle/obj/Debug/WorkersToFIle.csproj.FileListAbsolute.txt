@@ -1,0 +1,9 @@
+D:\WorkersToFIle\WorkersToFIle\bin\Debug\WorkersToFIle.exe.config
+D:\WorkersToFIle\WorkersToFIle\bin\Debug\WorkersToFIle.exe
+D:\WorkersToFIle\WorkersToFIle\bin\Debug\WorkersToFIle.pdb
+D:\WorkersToFIle\WorkersToFIle\obj\Debug\WorkersToFIle.csprojResolveAssemblyReference.cache
+D:\WorkersToFIle\WorkersToFIle\obj\Debug\WorkersToFIle.exe
+D:\WorkersToFIle\WorkersToFIle\obj\Debug\WorkersToFIle.pdb
+G:\Works\C#\HOME!!!\СДАТЬ\WorkersToFIle\WorkersToFIle\bin\Debug\WorkersToFIle.exe.config
+G:\Works\C#\HOME!!!\СДАТЬ\WorkersToFIle\WorkersToFIle\obj\Debug\WorkersToFIle.exe
+G:\Works\C#\HOME!!!\СДАТЬ\WorkersToFIle\WorkersToFIle\obj\Debug\WorkersToFIle.pdb

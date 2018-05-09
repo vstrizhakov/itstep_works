@@ -1,0 +1,75 @@
+﻿<Window x:Class="Calculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Calculator"
+        mc:Ignorable="d"
+        Title="Калькулятор" Height="400" Width="300">
+	<DockPanel Background="#DDD">
+		<TextBox KeyDown="Expression_KeyDown" Name="Expression" DockPanel.Dock="Top" BorderThickness="1" Height="60" VerticalAlignment="Top" FontSize="20" TextAlignment="Right" VerticalContentAlignment="Center" Margin="5"></TextBox>
+		<Grid DockPanel.Dock="Top">
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition/>
+				<ColumnDefinition/>
+				<ColumnDefinition/>
+				<ColumnDefinition/>
+			</Grid.ColumnDefinitions>
+			<Button Margin="5" Click="BtnClick" FontSize="16" Grid.Column="0" Padding="10">*</Button>
+			<Button Margin="5" Click="BtnClick" FontSize="16" Grid.Column="1" Padding="10">/</Button>
+			<Button Margin="5" Click="BtnClick" FontSize="16" Grid.Column="2" Padding="10">-</Button>
+			<Button Margin="5" Click="BtnClick" FontSize="16" Grid.Column="3" Padding="10">+</Button>
+		</Grid>
+		<Grid>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="3*"/>
+				<ColumnDefinition/>
+			</Grid.ColumnDefinitions>
+			<Grid>
+				<Grid.RowDefinitions>
+					<RowDefinition Height="3*"/>
+					<RowDefinition/>
+				</Grid.RowDefinitions>
+				<Grid Grid.Row="0">
+					<Grid.RowDefinitions>
+						<RowDefinition/>
+						<RowDefinition/>
+						<RowDefinition/>
+					</Grid.RowDefinitions>
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition/>
+						<ColumnDefinition/>
+						<ColumnDefinition/>
+					</Grid.ColumnDefinitions>
+					<Button Margin="5" Click="BtnClick" FontSize="16" Grid.Row="0" Grid.Column="0" Padding="10">1</Button>
+					<Button Margin="5" Click="BtnClick" FontSize="16" Grid.Row="0" Grid.Column="1" Padding="10">2</Button>
+					<Button Margin="5" Click="BtnClick" FontSize="16" Grid.Row="0" Grid.Column="2" Padding="10">3</Button>
+					<Button Margin="5" Click="BtnClick" FontSize="16" Grid.Row="1" Grid.Column="0" Padding="10">4</Button>
+					<Button Margin="5" Click="BtnClick" FontSize="16" Grid.Row="1" Grid.Column="1" Padding="10">5</Button>
+					<Button Margin="5" Click="BtnClick" FontSize="16" Grid.Row="1" Grid.Column="2" Padding="10">6</Button>
+					<Button Margin="5" Click="BtnClick" FontSize="16" Grid.Row="2" Grid.Column="0" Padding="10">7</Button>
+					<Button Margin="5" Click="BtnClick" FontSize="16" Grid.Row="2" Grid.Column="1" Padding="10">8</Button>
+					<Button Margin="5" Click="BtnClick" FontSize="16" Grid.Row="2" Grid.Column="2" Padding="10">9</Button>
+				</Grid>
+				<Grid Grid.Row="1">
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition Width="2*"/>
+						<ColumnDefinition/>
+					</Grid.ColumnDefinitions>
+					<Button Margin="5" Click="BtnClick" FontSize="16" Grid.Row="2" Grid.Column="0">0</Button>
+					<Button Margin="5" Click="BtnClick" FontSize="16" Grid.Row="2" Grid.Column="1">,</Button>
+				</Grid>
+			</Grid>
+			<Grid Grid.Column="1">
+				<Grid.RowDefinitions>
+					<RowDefinition/>
+					<RowDefinition/>
+					<RowDefinition Height="2*"/>
+				</Grid.RowDefinitions>
+				<Button Margin="5" Click="BtnClick" FontSize="16" Grid.Row="0">%</Button>
+				<Button Margin="5" Click="Delete" FontSize="16" Grid.Row="1">←</Button>
+				<Button Margin="5" FontSize="16" Grid.Row="3">=</Button>
+			</Grid>
+		</Grid>
+	</DockPanel>
+</Window>

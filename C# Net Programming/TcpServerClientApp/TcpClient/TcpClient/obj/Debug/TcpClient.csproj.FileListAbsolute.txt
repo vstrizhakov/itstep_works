@@ -1,0 +1,7 @@
+D:\flesh\Works\C# Net Programming\TcpClient\TcpClient\bin\Debug\TcpClient.exe.config
+D:\flesh\Works\C# Net Programming\TcpClient\TcpClient\bin\Debug\TcpClient.exe
+D:\flesh\Works\C# Net Programming\TcpClient\TcpClient\bin\Debug\TcpClient.pdb
+D:\flesh\Works\C# Net Programming\TcpClient\TcpClient\obj\Debug\TcpClient.csprojResolveAssemblyReference.cache
+D:\flesh\Works\C# Net Programming\TcpClient\TcpClient\obj\Debug\TcpClient.csproj.CoreCompileInputs.cache
+D:\flesh\Works\C# Net Programming\TcpClient\TcpClient\obj\Debug\TcpClient.exe
+D:\flesh\Works\C# Net Programming\TcpClient\TcpClient\obj\Debug\TcpClient.pdb

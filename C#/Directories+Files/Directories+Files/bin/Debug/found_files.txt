@@ -1,0 +1,4 @@
+D:/загрузки\WinSetupFromUSB-1-8\files\grub4dos\docs\ChangeLog_GRUB4DOS.txt
+D:/загрузки\WinSetupFromUSB-1-8\files\grub4dos\docs\README_GRUB4DOS_CN.txt
+D:/загрузки\WinSetupFromUSB-1-8\files\tools\RMPrepUSB\HashMyFiles\readme.txt
+D:/загрузки\WinSetupFromUSB-1-8\files\tools\RMPrepUSB\QEMU\usage.txt

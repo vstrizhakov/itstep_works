@@ -1,0 +1,7 @@
+D:\flesh\Works\C# System Programming\Semaphore_Sync_Threads\Semaphore_Sync_Threads\bin\Debug\Semaphore_Sync_Threads.exe.config
+D:\flesh\Works\C# System Programming\Semaphore_Sync_Threads\Semaphore_Sync_Threads\bin\Debug\Semaphore_Sync_Threads.exe
+D:\flesh\Works\C# System Programming\Semaphore_Sync_Threads\Semaphore_Sync_Threads\bin\Debug\Semaphore_Sync_Threads.pdb
+D:\flesh\Works\C# System Programming\Semaphore_Sync_Threads\Semaphore_Sync_Threads\obj\Debug\Semaphore_Sync_Threads.csprojResolveAssemblyReference.cache
+D:\flesh\Works\C# System Programming\Semaphore_Sync_Threads\Semaphore_Sync_Threads\obj\Debug\Semaphore_Sync_Threads.csproj.CoreCompileInputs.cache
+D:\flesh\Works\C# System Programming\Semaphore_Sync_Threads\Semaphore_Sync_Threads\obj\Debug\Semaphore_Sync_Threads.exe
+D:\flesh\Works\C# System Programming\Semaphore_Sync_Threads\Semaphore_Sync_Threads\obj\Debug\Semaphore_Sync_Threads.pdb

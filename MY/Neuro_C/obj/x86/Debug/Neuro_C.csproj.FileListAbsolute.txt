@@ -1,0 +1,9 @@
+c:\documents and settings\оксана\мои документы\visual studio 2010\Projects\Neuro_C\Neuro_C\bin\Debug\Neuro_C.exe
+c:\documents and settings\оксана\мои документы\visual studio 2010\Projects\Neuro_C\Neuro_C\bin\Debug\Neuro_C.pdb
+c:\documents and settings\оксана\мои документы\visual studio 2010\Projects\Neuro_C\Neuro_C\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\documents and settings\оксана\мои документы\visual studio 2010\Projects\Neuro_C\Neuro_C\obj\x86\Debug\WindowsFormsApplication1.Form1.resources
+c:\documents and settings\оксана\мои документы\visual studio 2010\Projects\Neuro_C\Neuro_C\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
+c:\documents and settings\оксана\мои документы\visual studio 2010\Projects\Neuro_C\Neuro_C\obj\x86\Debug\GenerateResource.read.1.tlog
+c:\documents and settings\оксана\мои документы\visual studio 2010\Projects\Neuro_C\Neuro_C\obj\x86\Debug\GenerateResource.write.1.tlog
+c:\documents and settings\оксана\мои документы\visual studio 2010\Projects\Neuro_C\Neuro_C\obj\x86\Debug\Neuro_C.exe
+c:\documents and settings\оксана\мои документы\visual studio 2010\Projects\Neuro_C\Neuro_C\obj\x86\Debug\Neuro_C.pdb

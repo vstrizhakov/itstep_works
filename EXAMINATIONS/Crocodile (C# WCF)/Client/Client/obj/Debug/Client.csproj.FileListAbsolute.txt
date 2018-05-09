@@ -1,0 +1,13 @@
+D:\Works\C# WCF\Crocodile\Client\Client\obj\Debug\Client.Connecting.resources
+D:\Works\C# WCF\Crocodile\Client\Client\obj\Debug\Client.Welcome.resources
+D:\Works\C# WCF\Crocodile\Client\Client\obj\Debug\Client.Properties.Resources.resources
+D:\Works\C# WCF\Crocodile\Client\Client\obj\Debug\Client.csproj.GenerateResource.Cache
+D:\Works\C# WCF\Crocodile\Client\Client\obj\Debug\Client.csproj.CoreCompileInputs.cache
+D:\Works\C# WCF\Crocodile\Client\Client\bin\Debug\Client.exe.config
+D:\Works\C# WCF\Crocodile\Client\Client\bin\Debug\Client.exe
+D:\Works\C# WCF\Crocodile\Client\Client\bin\Debug\Client.pdb
+D:\Works\C# WCF\Crocodile\Client\Client\obj\Debug\Client.csprojResolveAssemblyReference.cache
+D:\Works\C# WCF\Crocodile\Client\Client\obj\Debug\Client.exe
+D:\Works\C# WCF\Crocodile\Client\Client\obj\Debug\Client.pdb
+D:\Works\C# WCF\Crocodile\Client\Client\obj\Debug\Client.Game.resources
+D:\Works\C# WCF\Crocodile\Client\Client\obj\Debug\Client.FinishGame.resources

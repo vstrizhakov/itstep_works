@@ -1,0 +1,4 @@
+﻿  main.cpp
+e:\students\поток 28\ит-2835\стрижаков\inheritances\inheritances\main.cpp(8): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  InheritanceS.vcxproj -> E:\Students\Поток 28\ИТ-2835\Стрижаков\InheritanceS\Debug\InheritanceS.exe
+  InheritanceS.vcxproj -> E:\Students\Поток 28\ИТ-2835\Стрижаков\InheritanceS\Debug\InheritanceS.pdb (Full PDB)

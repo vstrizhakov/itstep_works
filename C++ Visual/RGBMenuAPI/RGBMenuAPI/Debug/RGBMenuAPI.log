@@ -1,0 +1,4 @@
+﻿  main.cpp
+d:\files\работы\2 семестр\projects\rgbmenuapi\rgbmenuapi\main.cpp(193): warning C4101: hDC: неиспользованная локальная переменная
+  RGBMenuAPI.vcxproj -> D:\Files\Работы\2 семестр\Projects\RGBMenuAPI\Debug\RGBMenuAPI.exe
+  RGBMenuAPI.vcxproj -> D:\Files\Работы\2 семестр\Projects\RGBMenuAPI\Debug\RGBMenuAPI.pdb (Full PDB)

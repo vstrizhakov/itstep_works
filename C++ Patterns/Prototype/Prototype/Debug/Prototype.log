@@ -1,0 +1,4 @@
+﻿  main.cpp
+c:\users\09358\documents\visual studio 2015\projects\prototype\prototype\main.cpp(16): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  Prototype.vcxproj -> c:\users\09358\documents\visual studio 2015\Projects\Prototype\Debug\Prototype.exe
+  Prototype.vcxproj -> c:\users\09358\documents\visual studio 2015\Projects\Prototype\Debug\Prototype.pdb (Full PDB)

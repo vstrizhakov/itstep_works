@@ -1,0 +1,17 @@
+﻿  main.cpp
+c:\users\vpc\documents\visual studio 2015\projects\examination\examination\circle.h(39): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+c:\users\vpc\documents\visual studio 2015\projects\examination\examination\main.cpp(84): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+c:\users\vpc\documents\visual studio 2015\projects\examination\examination\main.cpp(128): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\conio.h(452): note:  см. объявление "getch"
+c:\users\vpc\documents\visual studio 2015\projects\examination\examination\main.cpp(138): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\conio.h(452): note:  см. объявление "getch"
+c:\users\vpc\documents\visual studio 2015\projects\examination\examination\main.cpp(146): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\conio.h(452): note:  см. объявление "getch"
+c:\users\vpc\documents\visual studio 2015\projects\examination\examination\main.cpp(157): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\conio.h(452): note:  см. объявление "getch"
+c:\users\vpc\documents\visual studio 2015\projects\examination\examination\main.cpp(167): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\conio.h(452): note:  см. объявление "getch"
+c:\users\vpc\documents\visual studio 2015\projects\examination\examination\main.cpp(198): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\conio.h(452): note:  см. объявление "getch"
+  examination.vcxproj -> C:\Users\vPC\Documents\Visual Studio 2015\Projects\examination\Debug\examination.exe
+  examination.vcxproj -> C:\Users\vPC\Documents\Visual Studio 2015\Projects\examination\Debug\examination.pdb (Full PDB)

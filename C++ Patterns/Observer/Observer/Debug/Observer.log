@@ -1,0 +1,4 @@
+﻿  main.cpp
+c:\users\vpc\documents\visual studio 2015\projects\observer\observer\main.cpp(16): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  Observer.vcxproj -> c:\users\vpc\documents\visual studio 2015\Projects\Observer\Debug\Observer.exe
+  Observer.vcxproj -> c:\users\vpc\documents\visual studio 2015\Projects\Observer\Debug\Observer.pdb (Full PDB)

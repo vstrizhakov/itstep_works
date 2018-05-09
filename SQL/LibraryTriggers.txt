@@ -1,0 +1,201 @@
+CREATE TABLE DeletedBooks
+(
+	id INT NOT NULL PRIMARY KEY,
+	Name varchar(70),
+	pages int,
+	yearpress int,
+	id_theme int,
+	id_category int,
+	id_author int,
+	id_press int,
+	comment varchar(32),
+	quantity int,
+	price decimal(10,4)
+);
+DROP TRIGGER onGetBook
+
+CREATE TRIGGER onGetBook
+ON S_Cards
+INSTEAD OF INSERT
+AS
+BEGIN
+	DECLARE @bookId int;
+	SELECT @bookId = Id_Book
+	FROM INSERTED;
+
+	DECLARE @bookCount int;
+	SELECT @bookCount = Books.Quantity FROM Books WHERE Books.ID = @bookId;
+	
+	IF @bookCount IS NULL
+	BEGIN
+		PRINT 'Данной книги нет в библиотеке';
+		RETURN;
+	END
+
+	DECLARE @id_student int;
+	SELECT @id_student = id_student
+	FROM INSERTED;
+
+	DECLARE @studentsHave int;
+	SELECT @studentsHave = COUNT(*)
+	FROM S_Cards
+	WHERE S_Cards.Id_Student = @id_student;
+
+	IF @studentsHave > 2
+	BEGIN
+		PRINT 'Невозможно выдать одному студенту более трех книг';
+		RETURN;
+	END
+
+	IF @bookCount > 0	
+	BEGIN
+		UPDATE Books SET Books.Quantity = @bookCount - 1 WHERE Books.ID = @bookId;
+
+		DECLARE @id int;
+		DECLARE @id_book int;
+		DECLARE @dateout varchar(32);
+		DECLARE @datein varchar(32);
+		DECLARE @id_lib int;
+		SELECT @id = id,
+			@id_student = id_student,
+			@id_book = id_book,
+			@dateout = dateout,
+			@datein = datein,
+			@id_lib = id_lib
+		FROM INSERTED;
+		
+		INSERT INTO S_Cards (id, id_student, id_book, dateout, datein, id_lib)
+			VALUES (@id, @id_student, @id_book, @dateout, @datein, @id_lib);
+	END
+	ELSE
+	BEGIN
+		PRINT 'Данной книги нет в наличии';
+		
+		DECLARE @name varchar(70);
+		DECLARE @pages int;
+		DECLARE @yearpress int;
+		DECLARE @id_theme int;
+		DECLARE @id_category int;
+		DECLARE @id_author int;
+		DECLARE @id_press int;
+		DECLARE @comment varchar(32);
+		DECLARE @quantity int;
+		DECLARE @price decimal(10,4);
+		SELECT @name = Books.Name,
+			@pages = Books.NPages,
+			@yearpress = Books.YearPress,
+			@id_theme = Books.Id_themes,
+			@id_category = Books.Id_Category,
+			@id_author = Books.Id_Author,
+			@id_press = Books.Id_Press,
+			@comment = Books.Comment,
+			@quantity = Books.Quantity,
+			@price = Books.Price
+		FROM Books
+		WHERE Books.ID = @bookId;
+		DELETE FROM Books WHERE Books.ID = @bookId;
+		INSERT INTO DeletedBooks (id, name, pages, yearpress, id_theme, id_category, id_author, id_press, comment, quantity, price)
+		VALUES (@bookId, @name, @pages, @yearpress, @id_theme, @id_category, @id_author, @id_press, @comment, @quantity, @price);
+	END
+END
+
+DROP TRIGGER onGiveBook
+
+CREATE TRIGGER onGiveBook
+ON S_Cards
+INSTEAD OF UPDATE
+AS
+BEGIN
+	DECLARE @id int;
+	DECLARE @id_student int;
+	DECLARE @id_book int;
+	DECLARE @dateout varchar(32);
+	DECLARE @datein varchar(32);
+	DECLARE @id_lib int;
+	SELECT @id = id,
+		@id_student = id_student,
+		@id_book = id_book,
+		@dateout = dateout,
+		@datein = datein,
+		@id_lib = id_lib
+	FROM INSERTED;
+
+	DECLARE @bookId int;
+	SELECT @bookId = Id_Book
+	FROM DELETED;
+	
+	DECLARE @bookCount int;
+	SELECT @bookCount = Books.Quantity FROM Books WHERE Books.ID = @bookId;
+	IF @bookCount IS NULL
+	BEGIN
+		DECLARE @name varchar(70);
+		DECLARE @pages int;
+		DECLARE @yearpress int;
+		DECLARE @id_theme int;
+		DECLARE @id_category int;
+		DECLARE @id_author int;
+		DECLARE @id_press int;
+		DECLARE @comment varchar(36);
+		DECLARE @quantity int;
+		DECLARE @price DECIMAL(10, 4);
+
+		SELECT @name = name,
+			@pages = pages,
+			@yearpress = yearpress,
+			@id_theme = id_theme,
+			@id_category = id_category,
+			@id_author = id_author,
+			@comment = comment,
+			@id_press = id_press,
+			@quantity = quantity,
+			@price = price
+		FROM DeletedBooks
+		WHERE DeletedBooks.id = @bookId;
+
+		INSERT INTO Books (id, name, npages, YearPress, Id_Themes, Id_Category, Id_Author, Id_Press, Comment, Quantity, Price)
+		VALUES (@bookId, @name, @pages, @yearpress, @id_theme, @id_category, @id_author, @id_press, @comment, @quantity, @price);
+		
+		SET @bookCount = 0;
+
+		DELETE FROM DeletedBooks WHERE id = @bookId;
+	END
+	UPDATE Books SET Books.Quantity = @bookCount + 1 WHERE Books.ID = @bookId;
+
+	UPDATE S_Cards
+	SET id_student = @id_student,
+		id_book = @id_book,
+		dateout = @dateout,
+		datein = @datein,
+		id_lib = @id_lib
+	WHERE Id = @id;
+END
+
+CREATE TRIGGER onAddBook
+ON Books
+AFTER INSERT
+AS
+BEGIN
+	DECLARE @name varchar(70);
+	DECLARE @id_author int;
+
+	SELECT @name = name,
+		@id_author = id_author
+	FROM INSERTED;
+
+	DECLARE @id int;
+	SELECT @Id = id
+	FROM DeletedBooks
+	WHERE @name = name AND
+		@id_author = id_author;
+
+	IF (@id IS NOT NULL)
+		DELETE FROM DeletedBooks WHERE id = @id;
+END
+
+DELETE FROM Books WHERE id = 5
+INSERT INTO S_cards (id, id_student, id_book, dateout, datein, id_lib) VALUES (19, 10, 12, '123', '', 1)
+UPDATE S_Cards SET DateIn = '125' WHERE id = 15
+INSERT INTO Books (id, name, Id_Author) VALUES (999, 'Novell GroupWise 5.5 система электронной почты и коллективной работы', 9)
+SELECT * FROM S_Cards
+SELECT * FROM Books
+SELECT * FROM DeletedBooks

@@ -1,0 +1,16 @@
+﻿  main.cpp
+e:\students\поток 28\ит-2835\стрижаков\patterns\patterns\header.h(21): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note:  см. объявление "strcpy"
+e:\students\поток 28\ит-2835\стрижаков\patterns\patterns\header.h(28): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note:  см. объявление "strcpy"
+e:\students\поток 28\ит-2835\стрижаков\patterns\patterns\header.h(36): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note:  см. объявление "strcpy"
+e:\students\поток 28\ит-2835\стрижаков\patterns\patterns\header.h(42): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note:  см. объявление "strcpy"
+e:\students\поток 28\ит-2835\стрижаков\patterns\patterns\header.h(50): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note:  см. объявление "strcpy"
+e:\students\поток 28\ит-2835\стрижаков\patterns\patterns\header.h(62): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note:  см. объявление "strcpy"
+e:\students\поток 28\ит-2835\стрижаков\patterns\patterns\main.cpp(7): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  Patterns.vcxproj -> E:\Students\Поток 28\ИТ-2835\Стрижаков\Patterns\Debug\Patterns.exe
+  Patterns.vcxproj -> E:\Students\Поток 28\ИТ-2835\Стрижаков\Patterns\Debug\Patterns.pdb (Full PDB)

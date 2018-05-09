@@ -1,0 +1,10 @@
+D:\flesh\Works\EXAMINATIONS\CartWithBalls\CartWithBalls\bin\Debug\CartWithBalls.exe.config
+D:\flesh\Works\EXAMINATIONS\CartWithBalls\CartWithBalls\bin\Debug\CartWithBalls.exe
+D:\flesh\Works\EXAMINATIONS\CartWithBalls\CartWithBalls\bin\Debug\CartWithBalls.pdb
+D:\flesh\Works\EXAMINATIONS\CartWithBalls\CartWithBalls\obj\Debug\CartWithBalls.csprojResolveAssemblyReference.cache
+D:\flesh\Works\EXAMINATIONS\CartWithBalls\CartWithBalls\obj\Debug\CartWithBalls.Form1.resources
+D:\flesh\Works\EXAMINATIONS\CartWithBalls\CartWithBalls\obj\Debug\CartWithBalls.Properties.Resources.resources
+D:\flesh\Works\EXAMINATIONS\CartWithBalls\CartWithBalls\obj\Debug\CartWithBalls.csproj.GenerateResource.Cache
+D:\flesh\Works\EXAMINATIONS\CartWithBalls\CartWithBalls\obj\Debug\CartWithBalls.csproj.CoreCompileInputs.cache
+D:\flesh\Works\EXAMINATIONS\CartWithBalls\CartWithBalls\obj\Debug\CartWithBalls.exe
+D:\flesh\Works\EXAMINATIONS\CartWithBalls\CartWithBalls\obj\Debug\CartWithBalls.pdb

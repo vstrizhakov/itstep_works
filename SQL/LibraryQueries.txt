@@ -1,0 +1,122 @@
+
+--Library
+-- Издательства и сумма страниц по каждому из них
+SELECT Press.Name, SUM(Books.NPages)
+FROM Books, Press
+WHERE Books.Id_Press = Press.ID
+GROUP BY Press.Name;
+
+-- Общее кол-во книг, взятых студентами факультета программирования
+SELECT COUNT(*)
+FROM S_Cards
+WHERE S_Cards.Id_Student IN (
+	SELECT Students.Id
+	FROM Students
+	WHERE Students.Id_Group IN (
+		SELECT Groups.Id
+		FROM groups
+		WHERE Groups.id_faculty IN (
+			SELECT Faculties.ID
+			FROM Faculties
+			WHERE Faculties.Name = 'Программирования'
+		)
+	)
+);
+
+-- Кол-во взятых книг и сумма их страниц по каждому из издательств Питер, Наука, Кудиц-Образ
+SELECT Press.Name, COUNT(*), SUM(Books.NPages)
+FROM Books, Press
+WHERE Books.Id_Press IN (
+	SELECT Press.Id
+	FROM Press
+	WHERE Press.Name = 'Питер' OR Press.Name = 'Наука' OR Press.Name = 'Кудиц-Образ'
+) AND Press.ID = Books.Id_Press
+GROUP BY Press.Name;
+
+-- Информация о книге по программированию с наибольшим кол-вом страниц
+SELECT *
+FROM Books, Themes
+WHERE Books.Id_Themes = Themes.Id
+	AND Themes.Name = 'Программирование'
+	AND Books.NPages = (
+		SELECT MAX(Books.NPages)
+		FROM Books, Themes
+		WHERE Books.Id_Themes = Themes.Id AND Themes.Name = 'Программирование'
+	)
+
+-- Кол-во взятых книг по каждой из кафедр
+SELECT Departments.Name, COUNT(*)
+FROM T_Cards, Teachers, Departments
+WHERE T_Cards.Id_Teacher = Teachers.Id
+	AND Teachers.ID_dep = Departments.Id
+GROUP BY Departments.Name
+
+
+-- Показать издательства и самую старую книгу для каждого из них
+SELECT Press.Name, MIN(Books.YearPress)
+FROM Press, Books
+WHERE Press.Id = Books.Id_Press
+GROUP BY Press.Name
+
+-- Книги, которые брали и преподаватели и студенты
+SELECT DISTINCT Books.Name
+FROM Books, S_Cards, T_Cards
+WHERE S_Cards.Id_Book = Books.Id AND T_Cards.Id_Books = Books.Id
+
+-- Название книги с максимальным кол-вом страниц по каждому из издательств
+CREATE VIEW MaxCntOfPagesByPresses
+AS
+SELECT Press.id as pressid, MAX(Books.NPages) as max
+FROM Books, Press
+WHERE Books.Id_Press = Press.ID
+GROUP BY Press.id;
+
+SELECT Press.Name, Books.Name, Books.NPages
+FROM Books, Press, MaxCntOfPagesByPresses
+WHERE MaxCntOfPagesByPresses.pressid = Press.id
+	AND MaxCntOfPagesByPresses.max = Books.NPages
+	AND Books.Id_Press = Press.Id
+
+--3hws
+-- Сколько книг (в процентном соотношении) брал каждый факультет
+CREATE VIEW test
+AS
+SELECT Faculties.Name as A, COUNT(*) as cnt
+FROM S_CARDS, Students, Faculties, groups
+WHERE S_Cards.Id_Student = Students.ID
+AND Students.Id_Group = groups.id
+AND groups.id_faculty = Faculties.ID
+GROUP BY Faculties.Name
+
+GO
+
+SELECT Faculties.Name, (test.cnt * 100) /(SELECT COUNT(*) FROM Books)
+FROM test, Faculties
+WHERE Faculties.Name = test.A
+
+-- Самый популярный автор среди студентов
+CREATE VIEW PopularAuthors
+AS
+SELECT Authors.FirstName + ' ' + Authors.LastName AS Author, COUNT(*) AS cnt
+FROM Books, Authors, S_Cards
+WHERE Books.Id = S_Cards.Id_Book
+	AND Authors.ID = Books.Id_Author
+GROUP BY Authors.FirstName + ' ' + Authors.LastName
+
+SELECT PopularAuthors.Author
+FROM PopularAuthors
+WHERE PopularAuthors.cnt = (SELECT MAX(PopularAuthors.cnt) FROM PopularAuthors)
+
+-- Самый популярный автор среди студентов и преподавателей и количество этих книг, взятых в библиотеке
+CREATE VIEW PopularGeneralAuthors
+AS
+SELECT Authors.FirstName + ' ' + Authors.LastName AS Author, COUNT(*) AS cnt
+FROM Books, Authors, S_Cards, T_Cards
+WHERE Books.Id = S_Cards.Id_Book
+	AND Authors.ID = Books.Id_Author
+	AND T_cards.Id_books = Books.Id
+GROUP BY Authors.FirstName + ' ' + Authors.LastName
+
+SELECT PopularGeneralAuthors.Author
+FROM PopularGeneralAuthors
+WHERE PopularGeneralAuthors.cnt = (SELECT MAX(PopularGeneralAuthors.cnt) FROM PopularGeneralAuthors)

@@ -1,0 +1,19 @@
+﻿<Window x:Class="ImageViewer.SlideShow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ImageViewer"
+        mc:Ignorable="d"
+        Title="SlideShow" Height="300" Width="300"
+		WindowStyle="None"
+        AllowsTransparency="True"
+		KeyDown="Window_KeyDown">
+	<Window.Resources>
+	</Window.Resources>
+	<Grid Background="#2D2D30">
+		<Border BorderThickness="0" Name="WrapViewer">
+			<Image Name="SlideShowImage"/>
+		</Border>
+	</Grid>
+</Window>

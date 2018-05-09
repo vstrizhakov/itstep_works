@@ -1,0 +1,70 @@
+﻿<UserControl x:Class="MaterialDesignColors.WpfExample.Domain.SampleDialog"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:wpf="clr-namespace:MaterialDesignThemes.Wpf;assembly=MaterialDesignThemes.Wpf"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:system="clr-namespace:System;assembly=mscorlib"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+  
+        <Grid Margin="16">
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <materialDesign:TransitioningContent OpeningEffect="{materialDesign:TransitionEffect SlideInFromTop, Duration=0:0:0.7}">
+            <TextBlock>New contact:</TextBlock>
+        </materialDesign:TransitioningContent>
+
+
+        <materialDesign:TransitioningContent  Grid.Row="1" OpeningEffect="{materialDesign:TransitionEffect SlideInFromRight, Duration=0:0:0.7}">
+            <TextBox wpf:HintAssist.Hint="Name" Style="{DynamicResource MaterialDesignFloatingHintTextBox}" Name="TextBox_Name" Margin="0 6 0 0" FontSize="18" >
+            <TextBox.Text>
+                <Binding Path="Name" UpdateSourceTrigger="PropertyChanged">
+                </Binding>
+            </TextBox.Text>
+        </TextBox>
+        </materialDesign:TransitioningContent>
+      
+            
+            <!--Одна анимация сдвига-->
+        <materialDesign:TransitioningContent  Grid.Row="2" OpeningEffect="{materialDesign:TransitionEffect SlideInFromRight, Duration=0:0:0.7}">
+            <TextBox wpf:HintAssist.Hint="Last Name" Style="{DynamicResource MaterialDesignFloatingHintTextBox}"
+                 Margin="0 8 0 0" FontSize="16" Name="TextBox_LastName"/>
+        </materialDesign:TransitioningContent >
+            <!---->
+            
+             <!--Пример трех анимаций-->
+        <materialDesign:TransitioningContent Grid.Row="3">
+            <materialDesign:TransitioningContent.OpeningEffects>
+                <!--Анимация появления-->
+                <materialDesign:TransitionEffect Kind="FadeIn"  Duration="0:0:2"/>
+                <!--Анимация сдвига-->
+                <materialDesign:TransitionEffect Kind="SlideInFromRight" Duration="0:0:0.7"/>
+                <!--Анимация сдвига-->
+                <materialDesign:TransitionEffect Kind="SlideInFromBottom" Duration="0:0:0.6"/>
+            </materialDesign:TransitioningContent.OpeningEffects>
+        <StackPanel Orientation="Horizontal"
+                    Margin="0 16 0 0">
+            <Button Content="OK" IsDefault="True" Style="{DynamicResource MaterialDesignFlatButton}"
+                    Command="{x:Static wpf:DialogHost.CloseDialogCommand}">
+                <Button.CommandParameter>
+                    <system:Boolean>True</system:Boolean>
+                </Button.CommandParameter>
+            </Button>
+            <Button Content="CANCEL" IsCancel="True" Margin="8 0 0 0" Style="{DynamicResource MaterialDesignFlatButton}"
+                    Command="{x:Static wpf:DialogHost.CloseDialogCommand}">
+                <Button.CommandParameter>
+                    <system:Boolean>False</system:Boolean>
+                </Button.CommandParameter>
+            </Button>
+        </StackPanel>
+        </materialDesign:TransitioningContent>
+        <!---->
+    </Grid>
+   
+</UserControl>

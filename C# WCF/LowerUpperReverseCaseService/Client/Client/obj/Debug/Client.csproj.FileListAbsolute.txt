@@ -1,0 +1,6 @@
+D:\flesh\Works\C# WCF\Client\Client\bin\Debug\Client.exe.config
+D:\flesh\Works\C# WCF\Client\Client\bin\Debug\Client.exe
+D:\flesh\Works\C# WCF\Client\Client\bin\Debug\Client.pdb
+D:\flesh\Works\C# WCF\Client\Client\obj\Debug\Client.csproj.CoreCompileInputs.cache
+D:\flesh\Works\C# WCF\Client\Client\obj\Debug\Client.exe
+D:\flesh\Works\C# WCF\Client\Client\obj\Debug\Client.pdb

@@ -1,0 +1,9 @@
+E:\Students\Поток 28\ИТ-2822\Projects\EventsPanels\EventsPanels\bin\Debug\EventsPanels.exe.config
+E:\Students\Поток 28\ИТ-2822\Projects\EventsPanels\EventsPanels\bin\Debug\EventsPanels.exe
+E:\Students\Поток 28\ИТ-2822\Projects\EventsPanels\EventsPanels\bin\Debug\EventsPanels.pdb
+E:\Students\Поток 28\ИТ-2822\Projects\EventsPanels\EventsPanels\obj\Debug\EventsPanels.csprojResolveAssemblyReference.cache
+E:\Students\Поток 28\ИТ-2822\Projects\EventsPanels\EventsPanels\obj\Debug\EventsPanels.Form1.resources
+E:\Students\Поток 28\ИТ-2822\Projects\EventsPanels\EventsPanels\obj\Debug\EventsPanels.Properties.Resources.resources
+E:\Students\Поток 28\ИТ-2822\Projects\EventsPanels\EventsPanels\obj\Debug\EventsPanels.csproj.GenerateResource.Cache
+E:\Students\Поток 28\ИТ-2822\Projects\EventsPanels\EventsPanels\obj\Debug\EventsPanels.exe
+E:\Students\Поток 28\ИТ-2822\Projects\EventsPanels\EventsPanels\obj\Debug\EventsPanels.pdb

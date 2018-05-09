@@ -1,0 +1,4 @@
+﻿  main.cpp
+d:\files\работы\2 семестр\projects\childwindows\childwindows\main.cpp(8): warning C4101: hDC: неиспользованная локальная переменная
+  ChildWindows.vcxproj -> D:\Files\Работы\2 семестр\Projects\ChildWindows\Debug\ChildWindows.exe
+  ChildWindows.vcxproj -> D:\Files\Работы\2 семестр\Projects\ChildWindows\Debug\ChildWindows.pdb (Full PDB)

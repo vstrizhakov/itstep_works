@@ -1,0 +1,425 @@
+CREATE TABLE Authors
+(
+     ID           INTEGER NOT NULL PRIMARY KEY,
+     FirstName    VARCHAR(15),
+     LastName     VARCHAR(15)
+);
+
+INSERT INTO Authors
+VALUES (1,'Джеймс Р.','Грофф');
+INSERT INTO Authors
+VALUES (2,'Сергей','Никольский');
+INSERT INTO Authors
+VALUES (3,'Михаил','Маров');
+INSERT INTO Authors
+VALUES (4,'Борис','Карпов');
+INSERT INTO Authors
+VALUES (5,'Алексей','Архангельский');
+INSERT INTO Authors
+VALUES (6,'Владимир','Король');
+INSERT INTO Authors
+VALUES (7,'Евангелос','Петрусос');
+INSERT INTO Authors
+VALUES (8,'Маркус','Херхагер');
+INSERT INTO Authors
+VALUES (9,'Павел','Гарбар');
+INSERT INTO Authors
+VALUES (10,'Александр','Матросов');
+INSERT INTO Authors
+VALUES (11,'Людмила','Омельченко');
+INSERT INTO Authors
+VALUES (12,'Кевин','Рейчард');
+INSERT INTO Authors
+VALUES (13,'Ольга','Кокорева');
+INSERT INTO Authors
+VALUES (14,'Марк','Браун');
+
+CREATE TABLE Books
+(
+    ID		INTEGER NOT NULL,
+    Name	VARCHAR(70),
+    NPages	INTEGER,
+    YearPress	INTEGER,
+    Id_Themes	INTEGER,
+    Id_Category	INTEGER,
+    Id_Author	INTEGER,
+    Id_Press	INTEGER,
+    Comment	VARCHAR(32),
+    Quantity	INTEGER,
+    Price	DECIMAL(10,4),
+    PRIMARY KEY (ID)
+);
+
+INSERT INTO Books
+VALUES (1,'SQL',816,2001,1,1,1,2,'2-е издание',2,100.00);
+INSERT INTO Books
+VALUES (2,'3D Studio Max 3',640,2000,3,6,3,3,'Учебный курс',3,300.00);
+INSERT INTO Books
+VALUES (3,'100 компонентов общего назначения библиотеки Delphi 5',272,1999,2,4,5,4,'Компоненты',1,25.00);
+INSERT INTO Books
+VALUES (4,'Visual Basic 6',416,2000,2,5,4,3,'Специальный справочник',1,600.00);
+INSERT INTO Books
+VALUES (5,'Курс математического анализа',328,1990,4,2,2,5,'1-й том',1,77.00);
+INSERT INTO Books
+VALUES (6,'Библиотека C++ Builder 5: 70 компонентов ввода/вывода информации',288,2000,2,3,5,4,'Компоненты',1,567.00);
+INSERT INTO Books
+VALUES (7,'Интегрированная среда разработки',272,2000,2,3,5,4,'Среда разработки',2,444.00);
+INSERT INTO Books
+VALUES (8,'Русская справка (Help) по Delphi 5 и  Object Pascal',32,2000,2,4,5,4,'Справочник',1,222.00);
+INSERT INTO Books
+VALUES (9,'Visual Basic 6.0 for Application',488,2000,2,5,6,6,'Справочник с примерами',3,111.00);
+INSERT INTO Books
+VALUES (10,'Visual Basic 6',576,2000,2,5,7,2,'Руководство разработчика 1-й том',1,233.00);
+INSERT INTO Books
+VALUES (11,'Mathcad 2000',416,2000,5,7,8,2,'Полное руководство',1,461.00);
+INSERT INTO Books
+VALUES (12,'Novell GroupWise 5.5 система электронной почты и коллективной работы',480,2000,6,8,9,2,'Сетевые пакеты',2,1890.00);
+INSERT INTO Books
+VALUES (13,'Реестр Windows 2000',352,2000,9,12,13,2,'Руководство для профессионалов',4,789.00);
+INSERT INTO Books
+VALUES (14,'Unix справочник',384,1999,9,13,12,3,'Справочное руководство',1,652.00);
+INSERT INTO Books
+VALUES (15,'Самоучитель Visual FoxPro 6.0',512,1999,1,11,11,2,'Самоучитель',1,345.00);
+INSERT INTO Books
+VALUES (16,'Самоучитель FrontPage 2000',512,1999,7,10,11,2,'Самоучитель',1,1333.00);
+INSERT INTO Books
+VALUES (17,'Самоучитель Perl',432,2000,2,9,10,2,'Самоучитель',2,444.00);
+INSERT INTO Books
+VALUES (18,'HTML 3.2',1040,2000,7,14,14,2,'Руководство',5,555.00);
+
+CREATE TABLE Categories
+(
+     Id      INTEGER NOT NULL PRIMARY KEY,
+     Name    VARCHAR(25)
+);
+INSERT INTO Categories
+VALUES (1,'Язык SQL');
+INSERT INTO Categories
+VALUES (2,'Математический анализ');
+INSERT INTO Categories
+VALUES (3,'C++ Builder');
+INSERT INTO Categories
+VALUES (4,'Delphi');
+INSERT INTO Categories
+VALUES (5,'Visual Basic');
+INSERT INTO Categories
+VALUES (6,'3D Studio Max');
+INSERT INTO Categories
+VALUES (7,'Mathcad');
+INSERT INTO Categories
+VALUES (8,'Novell');
+INSERT INTO Categories
+VALUES (9,'Perl');
+INSERT INTO Categories
+VALUES (10,'FrontPage');
+INSERT INTO Categories
+VALUES (11,'Visual FoxPro');
+INSERT INTO Categories
+VALUES (12,'Windows 2000');
+INSERT INTO Categories
+VALUES (13,'Unix');
+INSERT INTO Categories
+VALUES (14,'HTML');
+
+
+CREATE TABLE Departments
+(
+	ID INTEGER NOT NULL PRIMARY KEY,
+	Name  VARCHAR(30)
+);
+
+INSERT INTO Departments
+VALUES (1, 'Программерства');
+INSERT INTO Departments
+VALUES (2, 'Графика и Дизайн');
+INSERT INTO Departments
+VALUES (3, 'Железа и Администрирования');
+
+CREATE TABLE Faculties
+(
+	ID INTEGER NOT NULL PRIMARY KEY,
+	Name  VARCHAR(20)
+);
+
+INSERT INTO Faculties
+VALUES (1, 'Программирования');
+INSERT INTO Faculties
+VALUES (2, 'Веб-дизайна');
+INSERT INTO Faculties
+VALUES (3, 'Администрирования');
+
+
+Create table groups
+(
+	id		integer not null primary key,
+	name		varchar(5),
+	id_faculty	integer
+);
+
+insert into groups
+values (2,'9П1', 1);
+
+insert into groups
+values (3,'9П2', 1);
+
+insert into groups
+values (4,'9А', 3);
+
+insert into groups
+values (5,'9Д', 2);
+
+insert into groups
+values (6,'14А', 3);
+
+insert into groups
+values (7,'19П1', 1);
+
+insert into groups
+values (8,'18П2', 1);
+
+insert into groups
+values (9,'18А', 3);
+
+insert into groups
+values (10,'19Д', 2);
+
+Create table libs
+(
+	id		integer not null primary key,
+	firstname	varchar(10),
+	lastname	varchar(15)
+);
+
+insert into libs
+values (1,'Сергей', 'Максименко');
+
+insert into libs
+values (2,'Дмитрий', 'Чеботарев');
+
+
+CREATE TABLE Press
+(
+ID		INTEGER NOT NULL PRIMARY KEY,
+Name		VARCHAR(15)
+);
+
+INSERT INTO Press
+VALUES (1,'DiaSoft');
+INSERT INTO Press
+VALUES (2,'BHV');
+INSERT INTO Press
+VALUES (3,'Питер');
+INSERT INTO Press
+VALUES (4,'Бином');
+INSERT INTO Press
+VALUES (5,'Наука');
+INSERT INTO Press
+VALUES (6,'Кудиц-Образ');
+INSERT INTO Press
+VALUES (7,'Диалектика');
+
+CREATE TABLE S_Cards
+(
+ID		INTEGER NOT NULL PRIMARY KEY,
+Id_Student	INTEGER,
+Id_Book		INTEGER,
+DateOut		varchar(32),
+DateIn		varchar(32),
+Id_Lib		INTEGER
+);
+
+INSERT INTO S_Cards
+VALUES (1,2,1,'17.05.2001','12.06.2001',1);
+INSERT INTO S_Cards
+VALUES (2,17,18,'18.05.2000',NULL,1);
+INSERT INTO S_Cards
+VALUES (3,6,3,'21.04.2001',NULL,2);
+INSERT INTO S_Cards
+VALUES (4,21,4,'26.03.2001',NULL,2);
+INSERT INTO S_Cards
+VALUES (5,3,1,'07.05.2000','12.04.2001',1);
+INSERT INTO S_Cards
+VALUES (6,7,11,'02.06.2001',NULL,2);
+INSERT INTO S_Cards
+VALUES (7,16,14,'05.04.2001',NULL,1);
+INSERT INTO S_Cards
+VALUES (8,11,6,'05.05.2001',NULL,2);
+INSERT INTO S_Cards
+VALUES (9,17,2,'01.10.2001',NULL,2);
+INSERT INTO S_Cards
+VALUES (10,10,13,'05.05.2001',NULL,1);
+
+CREATE TABLE Students
+(
+	ID INTEGER NOT NULL PRIMARY KEY,
+	FirstName 	VARCHAR (12),
+	LastName 	VARCHAR (15),
+	Id_Group	INTEGER,
+	Term		SMALLINT
+);
+INSERT INTO Students
+VALUES (2, 'Вячеслав', 'Зезик', 8, 2);
+
+INSERT INTO Students
+VALUES (3, 'Ольга', 'Мантуляк', 8, 2);
+
+INSERT INTO Students
+VALUES (4, 'Ольга', 'Хреновак', 8, 2);
+
+INSERT INTO Students
+VALUES (5, 'Ольга', 'Медведева', 8, 2);
+
+INSERT INTO Students
+VALUES (6, 'Галина', 'Инащенко', 8, 2);
+
+INSERT INTO Students
+VALUES (7, 'Юрий', 'Минаев', 8, 2);
+
+INSERT INTO Students
+VALUES (8, 'Юрий', 'Домовесов', 8, 2);
+
+INSERT INTO Students
+VALUES (9, 'Руслан', 'Ярмолович', 8, 2);
+
+INSERT INTO Students
+VALUES (10, 'Игорь', 'Удовик', 8, 2);
+
+INSERT INTO Students
+VALUES (11, 'Петр', 'Кацевич', 8, 2);
+
+INSERT INTO Students
+VALUES (12, 'Евгений', 'Бурцев', 3, 2);
+
+INSERT INTO Students
+VALUES (13, 'Флора', 'Побирская', 3, 2);
+
+INSERT INTO Students
+VALUES (14, 'Наталья', 'Гридина', 3, 2);
+
+INSERT INTO Students
+VALUES (15, 'Елена', 'Акусова', 3, 2);
+
+INSERT INTO Students
+VALUES (16, 'Светлана', 'Горшкова', 9, 2);
+
+INSERT INTO Students
+VALUES (17, 'Александр', 'Любенко', 10, 2);
+
+INSERT INTO Students
+VALUES (18, 'Евгения', 'Цимбалюк', 10, 2);
+
+INSERT INTO Students
+VALUES (19, 'Ольга', 'Болячевская', 5, 2);
+
+INSERT INTO Students
+VALUES (20, 'Станислав', 'Плешаков', 7, 2);
+
+INSERT INTO Students
+VALUES (21, 'Елена', 'Таран', 4, 2);
+
+INSERT INTO Students
+VALUES (22, 'Денис', 'Рогачевский', 6, 2);
+
+INSERT INTO Students
+VALUES (23, 'Оксана', 'Тихонова', 6, 2);
+
+INSERT INTO Students
+VALUES (24, 'Петр', 'Максимов', 3, 2);
+
+INSERT INTO Students
+VALUES (25, 'Ирина', 'Стогнева', 5, 2);
+
+
+CREATE TABLE T_Cards
+(
+ID INTEGER NOT NULL PRIMARY KEY,
+Id_Teacher INTEGER,
+Id_Books INTEGER,
+DateOut varchar(32),
+DateIn varchar(32),
+Id_Lib INTEGER 
+);
+INSERT INTO T_Cards
+VALUES (1, 2, 13, '01.01.2000', '04.07.2001', 1);
+
+INSERT INTO T_Cards
+VALUES (2, 10, 2, '03.03.2000', null, 1);
+
+INSERT INTO T_Cards
+VALUES (3, 6, 12, '04.06.2000', null, 2);
+
+INSERT INTO T_Cards
+VALUES (4, 3, 1, '05.09.2000', null, 1);
+
+INSERT INTO T_Cards
+VALUES (5, 8, 8, '05.05.2000', null, 2);
+
+INSERT INTO T_Cards
+VALUES (6, 5, 18, '02.02.2001', null, 2);
+
+INSERT INTO T_Cards
+VALUES (7, 12, 17, '04.03.2001', null, 1);
+
+INSERT INTO T_Cards
+VALUES (8, 4, 18, '02.07.2000', null, 1);
+
+
+CREATE TABLE teachers
+(
+  ID	INTEGER NOT NULL,
+  FIRSTNAME	VARCHAR(12),
+  LASTNAME	VARCHAR(15),
+  ID_dep int,
+ PRIMARY KEY (ID)
+);
+
+INSERT INTO teachers
+VALUES (1, 'Григорий', 'Ящук', 1);
+INSERT INTO teachers
+VALUES (2, 'Алекс', 'Туманов', 1);
+INSERT INTO teachers
+VALUES (3, 'Сергей', 'Максименко', 2);
+INSERT INTO teachers
+VALUES (4, 'Дмитрий', 'Боровский', 2);
+INSERT INTO teachers
+VALUES (5, 'Виктор', 'Бровар', 2);
+INSERT INTO teachers
+VALUES (6, 'Вадим', 'Ткаченко', 3);
+INSERT INTO teachers
+VALUES (7, 'Вячеслав', 'Калашников', 3);
+INSERT INTO teachers
+VALUES (8, 'Руслан', 'Кучеренко', 1);
+INSERT INTO teachers
+VALUES (9, 'Андрей', 'Тендюк', 1);
+INSERT INTO teachers
+VALUES (10, 'Анатолий', 'Выклюк', 2);
+INSERT INTO teachers
+VALUES (11, 'Олег', 'Резниченко', 3);
+INSERT INTO teachers
+VALUES (12, 'Александр', 'Артемов', 1);
+
+CREATE TABLE themes
+(
+  ID	INTEGER NOT NULL,
+  NAME	VARCHAR(24),
+ PRIMARY KEY (ID)
+);
+
+INSERT INTO themes
+VALUES (1, 'Базы данных');
+INSERT INTO themes
+VALUES (2, 'Программирование');
+INSERT INTO themes
+VALUES (3, 'Графические пакеты');
+INSERT INTO themes
+VALUES (4, 'Высшая математика');
+INSERT INTO themes
+VALUES (5, 'Математические пакеты');
+INSERT INTO themes
+VALUES (6, 'Сети');
+INSERT INTO themes
+VALUES (7, 'Web-дизайн');
+INSERT INTO themes
+VALUES (8, 'Windows 2000');
+INSERT INTO themes
+VALUES (9, 'Операционные системы');

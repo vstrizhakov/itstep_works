@@ -1,0 +1,14 @@
+D:\Works\C# WCF\Sessions_\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
+D:\Works\C# WCF\Sessions_\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+D:\Works\C# WCF\Sessions_\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
+D:\Works\C# WCF\Sessions_\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.csprojResolveAssemblyReference.cache
+D:\Works\C# WCF\Sessions_\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.CoreCompileInputs.cache
+D:\Works\C# WCF\Sessions_\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+D:\Works\C# WCF\Sessions_\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.pdb
+D:\Works\C# WCF\Sessions_\Server\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
+D:\Works\C# WCF\Sessions_\Server\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+D:\Works\C# WCF\Sessions_\Server\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
+D:\Works\C# WCF\Sessions_\Server\ConsoleApp1\obj\Debug\ConsoleApp1.csprojResolveAssemblyReference.cache
+D:\Works\C# WCF\Sessions_\Server\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.CoreCompileInputs.cache
+D:\Works\C# WCF\Sessions_\Server\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+D:\Works\C# WCF\Sessions_\Server\ConsoleApp1\obj\Debug\ConsoleApp1.pdb

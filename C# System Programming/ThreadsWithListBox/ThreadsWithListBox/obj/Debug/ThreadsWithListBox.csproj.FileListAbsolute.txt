@@ -1,0 +1,10 @@
+D:\flesh\Works\C# System Programming\ThreadsWithListBox\ThreadsWithListBox\obj\Debug\ThreadsWithListBox.csprojResolveAssemblyReference.cache
+D:\flesh\Works\C# System Programming\ThreadsWithListBox\ThreadsWithListBox\obj\Debug\ThreadsWithListBox.Form1.resources
+D:\flesh\Works\C# System Programming\ThreadsWithListBox\ThreadsWithListBox\obj\Debug\ThreadsWithListBox.Properties.Resources.resources
+D:\flesh\Works\C# System Programming\ThreadsWithListBox\ThreadsWithListBox\obj\Debug\ThreadsWithListBox.csproj.GenerateResource.Cache
+D:\flesh\Works\C# System Programming\ThreadsWithListBox\ThreadsWithListBox\obj\Debug\ThreadsWithListBox.csproj.CoreCompileInputs.cache
+D:\flesh\Works\C# System Programming\ThreadsWithListBox\ThreadsWithListBox\bin\Debug\ThreadsWithListBox.exe.config
+D:\flesh\Works\C# System Programming\ThreadsWithListBox\ThreadsWithListBox\bin\Debug\ThreadsWithListBox.exe
+D:\flesh\Works\C# System Programming\ThreadsWithListBox\ThreadsWithListBox\bin\Debug\ThreadsWithListBox.pdb
+D:\flesh\Works\C# System Programming\ThreadsWithListBox\ThreadsWithListBox\obj\Debug\ThreadsWithListBox.exe
+D:\flesh\Works\C# System Programming\ThreadsWithListBox\ThreadsWithListBox\obj\Debug\ThreadsWithListBox.pdb

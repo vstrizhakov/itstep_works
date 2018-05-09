@@ -1,0 +1,5 @@
+﻿  main.cpp
+d:\files\работы\2 семестр\projects\threads_\threads_\main.cpp(60): warning C4060: оператор switch не содержит метку "case" или "default"
+d:\files\работы\2 семестр\projects\threads_\threads_\main.cpp(92): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  Threads_.vcxproj -> D:\Files\Работы\2 семестр\Projects\Threads_\Debug\Threads_.exe
+  Threads_.vcxproj -> D:\Files\Работы\2 семестр\Projects\Threads_\Debug\Threads_.pdb (Full PDB)

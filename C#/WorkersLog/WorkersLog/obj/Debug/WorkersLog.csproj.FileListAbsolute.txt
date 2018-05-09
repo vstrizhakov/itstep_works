@@ -1,0 +1,12 @@
+H:\Works\C#\HOME!!!\СДАТЬ\WorkersLog\WorkersLog\bin\Debug\WorkersLog.exe.config
+H:\Works\C#\HOME!!!\СДАТЬ\WorkersLog\WorkersLog\bin\Debug\WorkersLog.exe
+H:\Works\C#\HOME!!!\СДАТЬ\WorkersLog\WorkersLog\bin\Debug\WorkersLog.pdb
+H:\Works\C#\HOME!!!\СДАТЬ\WorkersLog\WorkersLog\obj\Debug\WorkersLog.csprojResolveAssemblyReference.cache
+H:\Works\C#\HOME!!!\СДАТЬ\WorkersLog\WorkersLog\obj\Debug\WorkersLog.exe
+H:\Works\C#\HOME!!!\СДАТЬ\WorkersLog\WorkersLog\obj\Debug\WorkersLog.pdb
+G:\Works\C#\HOME!!!\СДАТЬ\WorkersLog\WorkersLog\bin\Debug\WorkersLog.exe.config
+G:\Works\C#\HOME!!!\СДАТЬ\WorkersLog\WorkersLog\obj\Debug\WorkersLog.exe
+G:\Works\C#\HOME!!!\СДАТЬ\WorkersLog\WorkersLog\obj\Debug\WorkersLog.pdb
+G:\Works\C#\HOME!!!\СДАТЬ\WorkersLog\WorkersLog\bin\Debug\WorkersLog.exe
+G:\Works\C#\HOME!!!\СДАТЬ\WorkersLog\WorkersLog\bin\Debug\WorkersLog.pdb
+G:\Works\C#\HOME!!!\СДАТЬ\WorkersLog\WorkersLog\obj\Debug\WorkersLog.csprojResolveAssemblyReference.cache

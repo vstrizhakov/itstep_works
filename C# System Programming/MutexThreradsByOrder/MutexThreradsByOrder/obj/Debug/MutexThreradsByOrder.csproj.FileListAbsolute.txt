@@ -1,0 +1,7 @@
+D:\flesh\Works\C# System Programming\MutexThreradsByOrder\MutexThreradsByOrder\bin\Debug\MutexThreradsByOrder.exe.config
+D:\flesh\Works\C# System Programming\MutexThreradsByOrder\MutexThreradsByOrder\bin\Debug\MutexThreradsByOrder.exe
+D:\flesh\Works\C# System Programming\MutexThreradsByOrder\MutexThreradsByOrder\bin\Debug\MutexThreradsByOrder.pdb
+D:\flesh\Works\C# System Programming\MutexThreradsByOrder\MutexThreradsByOrder\obj\Debug\MutexThreradsByOrder.csprojResolveAssemblyReference.cache
+D:\flesh\Works\C# System Programming\MutexThreradsByOrder\MutexThreradsByOrder\obj\Debug\MutexThreradsByOrder.csproj.CoreCompileInputs.cache
+D:\flesh\Works\C# System Programming\MutexThreradsByOrder\MutexThreradsByOrder\obj\Debug\MutexThreradsByOrder.exe
+D:\flesh\Works\C# System Programming\MutexThreradsByOrder\MutexThreradsByOrder\obj\Debug\MutexThreradsByOrder.pdb

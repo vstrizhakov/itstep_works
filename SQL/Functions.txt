@@ -1,0 +1,263 @@
+
+--17.01---------------------------------------
+-- Вывести студентов, которые не брали книги в библиотеке
+CREATE FUNCTION StudentsWithoutBooks()
+RETURNS table
+AS
+RETURN
+(
+	SELECT COUNT(*) AS Cnt
+	FROM Students
+	WHERE Students.Id NOT IN (SELECT S_Cards.Id_Student FROM S_Cards)
+);
+SELECT * FROM dbo.StudentsWithoutBooks();
+
+GO
+-- Минимальное число из трех
+SELECT Cnt FROM dbo.StudentsWithoutBooks()
+
+GO
+
+CREATE FUNCTION FindMin
+(
+	@a int,
+	@b int,
+	@c int
+)
+RETURNS int
+AS
+BEGIN
+	DECLARE @min int;
+	SET @min = @a;
+	IF (@min > @b)
+		SET @min = @b;
+	ELSE IF (@min > @c)
+		SET @min = @c;
+	RETURN @min;
+END
+
+GO
+
+DECLARE @i int;
+EXECUTE @i = dbo.FindMin 6, 6, 52;
+PRINT (str(@i));
+
+GO
+-- Определяет, какой разряд из двухзначного числа больше
+CREATE FUNCTION MaxDigit
+(
+	@number int
+)
+RETURNS int
+AS
+BEGIN
+DECLARE @x int;
+DECLARE @y int;
+DECLARE @result int;
+	SET @x = @number / 10;
+	SET @y = @number % 10;
+	IF (@x > @y)
+		SET @result = @x;
+	ELSE
+		SET @result = @y;
+	RETURN @result;
+END
+
+GO
+
+PRINT(STR(dbo.MaxDigit(77)));
+GO
+-- Кол-во взятых книг по каждой группе и кафедре
+CREATE FUNCTION CountBooks()
+RETURNS @res table
+	(
+		name VARCHAR(64),
+		cnt int
+	)
+AS
+BEGIN
+	INSERT @res
+	SELECT Groups.Name, COUNT(*)
+	FROM Groups, Students, S_Cards
+	WHERE Students.Id = S_Cards.Id_Student AND Students.Id_Group =  Groups.id
+	GROUP BY Groups.Name
+
+	INSERT @res
+	SELECT Departments.Name, COUNT(*)
+	FROM Departments, Teachers, T_Cards
+	WHERE Departments.Id = Teachers.id_dep AND Teachers.id = T_cards.id_teacher
+	GROUP BY Departments.Name
+	RETURN
+END
+
+SELECT * FROM dbo.CountBooks();
+
+GO
+
+--Список книг, отвечающих набору критериев
+CREATE FUNCTION GetBooksBy (
+	@authorFirstName varchar(64),
+	@authorLastName varchar(64),
+	@theme varchar(64),
+	@category varchar(64),
+	@orderby int,
+	@orderOption varchar(16)
+)
+RETURNS @res table(
+	name varchar(64),
+	pages int,
+	yearpress int,
+	theme varchar(64),
+	category varchar(64),
+	author varchar(128),
+	press varchar(64),
+	quantity int,
+	price decimal
+)
+AS
+BEGIN
+	IF @orderby = 1 AND @orderOption = 'ASC'
+	BEGIN
+		INSERT @res
+		SELECT Books.Name AS Name, Books.NPages AS Pages, Books.YearPress AS YearPress, Themes.Name AS Theme,
+			Categories.Name AS Category, Authors.FirstName + ' ' + Authors.LastName AS Author, Press.Name AS Press,
+			Books.Quantity AS Quantity, Books.Price AS Price
+		FROM Books, Categories, Authors, Press, Themes
+		WHERE Books.Id_Author = Authors.Id AND Books.Id_category = Categories.Id AND Books.Id_Themes = Themes.ID AND Books.Id_Press = Press.Id
+			AND Authors.FirstName LIKE @authorFirstName
+			AND Authors.LastName LIKE @authorLastName
+			AND Categories.Name LIKE @category
+			AND Themes.Name LIKE @theme
+		ORDER BY Authors.FirstName ASC
+	END
+	ELSE IF @orderby = 2 AND @orderOption = 'ASC'
+	BEGIN
+		INSERT @res
+		SELECT Books.Name AS Name, Books.NPages AS Pages, Books.YearPress AS YearPress, Themes.Name AS Theme,
+			Categories.Name AS Category, Authors.FirstName + ' ' + Authors.LastName AS Author, Press.Name AS Press,
+			Books.Quantity AS Quantity, Books.Price AS Price
+		FROM Books, Categories, Authors, Press, Themes
+		WHERE Books.Id_Author = Authors.Id AND Books.Id_category = Categories.Id AND Books.Id_Themes = Themes.ID AND Books.Id_Press = Press.Id
+			AND Authors.FirstName LIKE @authorFirstName
+			AND Authors.LastName LIKE @authorLastName
+			AND Categories.Name LIKE @category
+			AND Themes.Name LIKE @theme
+		ORDER BY Authors.LastName ASC
+	END
+	ELSE IF @orderby = 3 AND @orderOption = 'ASC'
+	BEGIN
+		INSERT @res
+		SELECT Books.Name AS Name, Books.NPages AS Pages, Books.YearPress AS YearPress, Themes.Name AS Theme,
+			Categories.Name AS Category, Authors.FirstName + ' ' + Authors.LastName AS Author, Press.Name AS Press,
+			Books.Quantity AS Quantity, Books.Price AS Price
+		FROM Books, Categories, Authors, Press, Themes
+		WHERE Books.Id_Author = Authors.Id AND Books.Id_category = Categories.Id AND Books.Id_Themes = Themes.ID AND Books.Id_Press = Press.Id
+			AND Authors.FirstName LIKE @authorFirstName
+			AND Authors.LastName LIKE @authorLastName
+			AND Categories.Name LIKE @category
+			AND Themes.Name LIKE @theme
+		ORDER BY Categories.Name ASC
+	END
+	ELSE IF @orderby = 4 AND @orderOption = 'ASC'
+	BEGIN
+		INSERT @res
+		SELECT Books.Name AS Name, Books.NPages AS Pages, Books.YearPress AS YearPress, Themes.Name AS Theme,
+			Categories.Name AS Category, Authors.FirstName + ' ' + Authors.LastName AS Author, Press.Name AS Press,
+			Books.Quantity AS Quantity, Books.Price AS Price
+		FROM Books, Categories, Authors, Press, Themes
+		WHERE Books.Id_Author = Authors.Id AND Books.Id_category = Categories.Id AND Books.Id_Themes = Themes.ID AND Books.Id_Press = Press.Id
+			AND Authors.FirstName LIKE @authorFirstName
+			AND Authors.LastName LIKE @authorLastName
+			AND Categories.Name LIKE @category
+			AND Themes.Name LIKE @theme
+		ORDER BY Themes.Name ASC
+	END
+	ELSE IF @orderby = 1 AND @orderOption = 'DESC'
+	BEGIN
+		INSERT @res
+		SELECT Books.Name AS Name, Books.NPages AS Pages, Books.YearPress AS YearPress, Themes.Name AS Theme,
+			Categories.Name AS Category, Authors.FirstName + ' ' + Authors.LastName AS Author, Press.Name AS Press,
+			Books.Quantity AS Quantity, Books.Price AS Price
+		FROM Books, Categories, Authors, Press, Themes
+		WHERE Books.Id_Author = Authors.Id AND Books.Id_category = Categories.Id AND Books.Id_Themes = Themes.ID AND Books.Id_Press = Press.Id
+			AND Authors.FirstName LIKE @authorFirstName
+			AND Authors.LastName LIKE @authorLastName
+			AND Categories.Name LIKE @category
+			AND Themes.Name LIKE @theme
+		ORDER BY Authors.FirstName DESC
+	END
+	ELSE IF @orderby = 2 AND @orderOption = 'DESC'
+	BEGIN
+		INSERT @res
+		SELECT Books.Name AS Name, Books.NPages AS Pages, Books.YearPress AS YearPress, Themes.Name AS Theme,
+			Categories.Name AS Category, Authors.FirstName + ' ' + Authors.LastName AS Author, Press.Name AS Press,
+			Books.Quantity AS Quantity, Books.Price AS Price
+		FROM Books, Categories, Authors, Press, Themes
+		WHERE Books.Id_Author = Authors.Id AND Books.Id_category = Categories.Id AND Books.Id_Themes = Themes.ID AND Books.Id_Press = Press.Id
+			AND Authors.FirstName LIKE @authorFirstName
+			AND Authors.LastName LIKE @authorLastName
+			AND Categories.Name LIKE @category
+			AND Themes.Name LIKE @theme
+		ORDER BY Authors.LastName DESC
+	END
+	ELSE IF @orderby = 3 AND @orderOption = 'DESC'
+	BEGIN
+		INSERT @res
+		SELECT Books.Name AS Name, Books.NPages AS Pages, Books.YearPress AS YearPress, Themes.Name AS Theme,
+			Categories.Name AS Category, Authors.FirstName + ' ' + Authors.LastName AS Author, Press.Name AS Press,
+			Books.Quantity AS Quantity, Books.Price AS Price
+		FROM Books, Categories, Authors, Press, Themes
+		WHERE Books.Id_Author = Authors.Id AND Books.Id_category = Categories.Id AND Books.Id_Themes = Themes.ID AND Books.Id_Press = Press.Id
+			AND Authors.FirstName LIKE @authorFirstName
+			AND Authors.LastName LIKE @authorLastName
+			AND Categories.Name LIKE @category
+			AND Themes.Name LIKE @theme
+		ORDER BY Categories.Name DESC
+	END
+	ELSE IF @orderby = 4 AND @orderOption = 'DESC'
+	BEGIN
+		INSERT @res
+		SELECT Books.Name AS Name, Books.NPages AS Pages, Books.YearPress AS YearPress, Themes.Name AS Theme,
+			Categories.Name AS Category, Authors.FirstName + ' ' + Authors.LastName AS Author, Press.Name AS Press,
+			Books.Quantity AS Quantity, Books.Price AS Price
+		FROM Books, Categories, Authors, Press, Themes
+		WHERE Books.Id_Author = Authors.Id AND Books.Id_category = Categories.Id AND Books.Id_Themes = Themes.ID AND Books.Id_Press = Press.Id
+			AND Authors.FirstName LIKE @authorFirstName
+			AND Authors.LastName LIKE @authorLastName
+			AND Categories.Name LIKE @category
+			AND Themes.Name LIKE @theme
+		ORDER BY Themes.name DESC
+	END
+	RETURN;
+END
+
+GO
+
+SELECT * FROM dbo.GetBooksBy('Михаил', 'Маров', 'Графические пакеты', '3D Studio Max', 4,'DESC');
+
+-- Список библиотекарей и кол-во выданных каждым из них кни
+CREATE FUNCTION LibsBooks()
+RETURNS @res table
+(
+	lib varchar(64),
+	cnt int
+)
+AS
+BEGIN
+	INSERT @res
+	SELECT libs.firstname + ' '+ libs.lastname as name, count(*) as cnt
+	FROM libs, S_cards
+	WHERE S_Cards.Id_Lib = libs.id
+	GROUP BY libs.firstname + ' '+ libs.lastname;
+	
+	INSERT @res
+	SELECT libs.firstname + ' '+ libs.lastname as name, count(*) as cnt
+	FROM libs, T_cards
+	WHERE T_Cards.Id_Lib = libs.id
+	GROUP BY libs.firstname + ' '+ libs.lastname;
+	RETURN;
+END
+
+GO
+
+SELECT Lib.lib, SUM(lib.cnt) FROM LibsBooks() as Lib GROUP BY Lib.lib;

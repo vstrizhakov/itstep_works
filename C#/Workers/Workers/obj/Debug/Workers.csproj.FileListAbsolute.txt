@@ -1,0 +1,2 @@
+D:\Workers\Workers\bin\Debug\Workers.exe.config
+G:\Works\C#\HOME!!!\СДАТЬ\Workers\Workers\bin\Debug\Workers.exe.config

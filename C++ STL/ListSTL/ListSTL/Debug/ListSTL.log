@@ -1,0 +1,4 @@
+﻿  main.cpp
+c:\users\vpc\documents\visual studio 2015\projects\liststl\liststl\main.cpp(113): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  ListSTL.vcxproj -> C:\Users\vPC\documents\visual studio 2015\Projects\ListSTL\Debug\ListSTL.exe
+  ListSTL.vcxproj -> C:\Users\vPC\documents\visual studio 2015\Projects\ListSTL\Debug\ListSTL.pdb (Full PDB)

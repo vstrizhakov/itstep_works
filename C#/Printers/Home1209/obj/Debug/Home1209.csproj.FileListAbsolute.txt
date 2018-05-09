@@ -1,0 +1,6 @@
+c:\users\09358\documents\visual studio 2015\Projects\Home1209\Home1209\bin\Debug\Home1209.exe.config
+c:\users\09358\documents\visual studio 2015\Projects\Home1209\Home1209\bin\Debug\Home1209.exe
+c:\users\09358\documents\visual studio 2015\Projects\Home1209\Home1209\bin\Debug\Home1209.pdb
+c:\users\09358\documents\visual studio 2015\Projects\Home1209\Home1209\obj\Debug\Home1209.csprojResolveAssemblyReference.cache
+c:\users\09358\documents\visual studio 2015\Projects\Home1209\Home1209\obj\Debug\Home1209.exe
+c:\users\09358\documents\visual studio 2015\Projects\Home1209\Home1209\obj\Debug\Home1209.pdb

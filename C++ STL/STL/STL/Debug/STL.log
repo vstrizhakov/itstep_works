@@ -1,0 +1,5 @@
+﻿  main.cpp
+c:\users\vpc\documents\visual studio 2015\projects\stl\stl\main.cpp(14): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+c:\users\vpc\documents\visual studio 2015\projects\stl\stl\main.cpp(28): warning C4018: <: несоответствие типов со знаком и без знака
+  STL.vcxproj -> C:\Users\vPC\documents\visual studio 2015\Projects\STL\Debug\STL.exe
+  STL.vcxproj -> C:\Users\vPC\documents\visual studio 2015\Projects\STL\Debug\STL.pdb (Full PDB)

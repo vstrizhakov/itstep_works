@@ -1,0 +1,4 @@
+﻿  main.cpp
+c:\users\vpc\documents\visual studio 2015\projects\mediator\mediator\main.cpp(16): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  Mediator.vcxproj -> c:\users\vpc\documents\visual studio 2015\Projects\Mediator\Debug\Mediator.exe
+  Mediator.vcxproj -> c:\users\vpc\documents\visual studio 2015\Projects\Mediator\Debug\Mediator.pdb (Full PDB)

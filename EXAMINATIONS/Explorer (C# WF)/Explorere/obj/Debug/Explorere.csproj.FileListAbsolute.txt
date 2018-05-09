@@ -1,0 +1,34 @@
+G:\Works\C# Windows Forms\Explorere\Explorere\bin\Debug\Explorere.exe.config
+G:\Works\C# Windows Forms\Explorere\Explorere\bin\Debug\Explorere.exe
+G:\Works\C# Windows Forms\Explorere\Explorere\bin\Debug\Explorere.pdb
+G:\Works\C# Windows Forms\Explorere\Explorere\obj\Debug\Explorere.csprojResolveAssemblyReference.cache
+G:\Works\C# Windows Forms\Explorere\Explorere\obj\Debug\Explorere.Form1.resources
+G:\Works\C# Windows Forms\Explorere\Explorere\obj\Debug\Explorere.Properties.Resources.resources
+G:\Works\C# Windows Forms\Explorere\Explorere\obj\Debug\Explorere.csproj.GenerateResource.Cache
+G:\Works\C# Windows Forms\Explorere\Explorere\obj\Debug\Explorere.exe
+G:\Works\C# Windows Forms\Explorere\Explorere\obj\Debug\Explorere.pdb
+G:\Works\EXAMINATIONS\Explorer\Explorere\bin\Debug\Explorere.exe.config
+G:\Works\EXAMINATIONS\Explorer\Explorere\obj\Debug\Explorere.exe
+G:\Works\EXAMINATIONS\Explorer\Explorere\obj\Debug\Explorere.pdb
+G:\Works\EXAMINATIONS\Explorer\Explorere\bin\Debug\Explorere.exe
+G:\Works\EXAMINATIONS\Explorer\Explorere\bin\Debug\Explorere.pdb
+G:\Works\EXAMINATIONS\Explorer\Explorere\obj\Debug\Explorere.csprojResolveAssemblyReference.cache
+G:\Works\EXAMINATIONS\Explorer\Explorere\obj\Debug\Explorere.Properties.Resources.resources
+G:\Works\EXAMINATIONS\Explorer\Explorere\obj\Debug\Explorere.csproj.GenerateResource.Cache
+H:\Works\EXAMINATIONS\Explorer\Explorere\bin\Debug\Explorere.exe.config
+H:\Works\EXAMINATIONS\Explorer\Explorere\bin\Debug\Explorere.exe
+H:\Works\EXAMINATIONS\Explorer\Explorere\bin\Debug\Explorere.pdb
+H:\Works\EXAMINATIONS\Explorer\Explorere\obj\Debug\Explorere.csprojResolveAssemblyReference.cache
+H:\Works\EXAMINATIONS\Explorer\Explorere\obj\Debug\Explorere.Properties.Resources.resources
+H:\Works\EXAMINATIONS\Explorer\Explorere\obj\Debug\Explorere.csproj.GenerateResource.Cache
+H:\Works\EXAMINATIONS\Explorer\Explorere\obj\Debug\Explorere.csproj.CoreCompileInputs.cache
+H:\Works\EXAMINATIONS\Explorer\Explorere\obj\Debug\Explorere.exe
+H:\Works\EXAMINATIONS\Explorer\Explorere\obj\Debug\Explorere.pdb
+H:\Works\EXAMINATIONS\Explorer\Explorere\obj\Debug\Explorere.AskNameForm.resources
+G:\Works\EXAMINATIONS\Explorer\Explorere\obj\Debug\Explorere.AskNameForm.resources
+G:\Works\EXAMINATIONS\Explorer\Explorere\obj\Debug\Explorere.Resource1.resources
+H:\Works\EXAMINATIONS\Explorer\Explorere\obj\Debug\Explorere.Resource1.resources
+H:\Works\EXAMINATIONS\Explorer\Explorere\obj\Debug\Explorere.Main.resources
+H:\Works\EXAMINATIONS\Explorer\Explorere\obj\Debug\Explorere.Proccessing.resources
+G:\Works\EXAMINATIONS\Explorer\Explorere\obj\Debug\Explorere.Main.resources
+G:\Works\EXAMINATIONS\Explorer\Explorere\obj\Debug\Explorere.Proccessing.resources

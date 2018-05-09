@@ -1,0 +1,4 @@
+﻿  main.cpp
+c:\users\vpc\documents\visual studio 2015\projects\decorator\decorator\main.cpp(15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  Decorator.vcxproj -> c:\users\vpc\documents\visual studio 2015\Projects\Decorator\x64\Debug\Decorator.exe
+  Decorator.vcxproj -> c:\users\vpc\documents\visual studio 2015\Projects\Decorator\x64\Debug\Decorator.pdb (Full PDB)

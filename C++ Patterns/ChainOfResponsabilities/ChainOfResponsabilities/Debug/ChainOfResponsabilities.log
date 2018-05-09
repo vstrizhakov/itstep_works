@@ -1,0 +1,4 @@
+﻿  main.cpp
+g:\chainofresponsabilities\chainofresponsabilities\main.cpp(15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  ChainOfResponsabilities.vcxproj -> G:\ChainOfResponsabilities\Debug\ChainOfResponsabilities.exe
+  ChainOfResponsabilities.vcxproj -> G:\ChainOfResponsabilities\Debug\ChainOfResponsabilities.pdb (Full PDB)

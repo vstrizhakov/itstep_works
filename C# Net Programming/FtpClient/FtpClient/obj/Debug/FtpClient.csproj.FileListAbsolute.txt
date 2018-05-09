@@ -1,0 +1,11 @@
+D:\flesh\Works\C# Net Programming\FtpClient\FtpClient\bin\Debug\FtpClient.exe.config
+D:\flesh\Works\C# Net Programming\FtpClient\FtpClient\bin\Debug\FtpClient.exe
+D:\flesh\Works\C# Net Programming\FtpClient\FtpClient\bin\Debug\FtpClient.pdb
+D:\flesh\Works\C# Net Programming\FtpClient\FtpClient\obj\Debug\FtpClient.csprojResolveAssemblyReference.cache
+D:\flesh\Works\C# Net Programming\FtpClient\FtpClient\obj\Debug\FtpClient.Form1.resources
+D:\flesh\Works\C# Net Programming\FtpClient\FtpClient\obj\Debug\FtpClient.Properties.Resources.resources
+D:\flesh\Works\C# Net Programming\FtpClient\FtpClient\obj\Debug\FtpClient.csproj.GenerateResource.Cache
+D:\flesh\Works\C# Net Programming\FtpClient\FtpClient\obj\Debug\FtpClient.csproj.CoreCompileInputs.cache
+D:\flesh\Works\C# Net Programming\FtpClient\FtpClient\obj\Debug\FtpClient.exe
+D:\flesh\Works\C# Net Programming\FtpClient\FtpClient\obj\Debug\FtpClient.pdb
+D:\flesh\Works\C# Net Programming\FtpClient\FtpClient\obj\Debug\FtpClient.RenameForm.resources

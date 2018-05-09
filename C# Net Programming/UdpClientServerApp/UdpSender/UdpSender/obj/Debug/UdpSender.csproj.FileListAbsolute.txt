@@ -1,0 +1,7 @@
+D:\flesh\Works\C# Net Programming\UdpSender\UdpSender\bin\Debug\UdpSender.exe.config
+D:\flesh\Works\C# Net Programming\UdpSender\UdpSender\bin\Debug\UdpSender.exe
+D:\flesh\Works\C# Net Programming\UdpSender\UdpSender\bin\Debug\UdpSender.pdb
+D:\flesh\Works\C# Net Programming\UdpSender\UdpSender\obj\Debug\UdpSender.csprojResolveAssemblyReference.cache
+D:\flesh\Works\C# Net Programming\UdpSender\UdpSender\obj\Debug\UdpSender.csproj.CoreCompileInputs.cache
+D:\flesh\Works\C# Net Programming\UdpSender\UdpSender\obj\Debug\UdpSender.exe
+D:\flesh\Works\C# Net Programming\UdpSender\UdpSender\obj\Debug\UdpSender.pdb

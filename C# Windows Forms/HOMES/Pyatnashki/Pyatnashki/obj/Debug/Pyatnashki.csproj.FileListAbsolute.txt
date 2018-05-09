@@ -1,0 +1,13 @@
+H:\Works\C# Windows Forms\HOMES\Pyatnashki\Pyatnashki\bin\Debug\Pyatnashki.exe
+H:\Works\C# Windows Forms\HOMES\Pyatnashki\Pyatnashki\bin\Debug\Pyatnashki.exe.config
+H:\Works\C# Windows Forms\HOMES\Pyatnashki\Pyatnashki\obj\Debug\Pyatnashki.Form1.resources
+H:\Works\C# Windows Forms\HOMES\Pyatnashki\Pyatnashki\obj\Debug\Pyatnashki.Properties.Resources.resources
+H:\Works\C# Windows Forms\HOMES\Pyatnashki\Pyatnashki\obj\Debug\Pyatnashki.csproj.GenerateResource.Cache
+H:\Works\C# Windows Forms\HOMES\Pyatnashki\Pyatnashki\obj\Debug\Pyatnashki.csproj.CoreCompileInputs.cache
+H:\Works\C# Windows Forms\HOMES\Pyatnashki\Pyatnashki\obj\Debug\Pyatnashki.exe
+H:\Works\C# Windows Forms\HOMES\Pyatnashki\Pyatnashki\obj\Debug\Pyatnashki.pdb
+H:\Works\C# Windows Forms\HOMES\Pyatnashki\Pyatnashki\obj\Debug\Pyatnashki.csprojResolveAssemblyReference.cache
+H:\Works\C# Windows Forms\HOMES\Pyatnashki\Pyatnashki\bin\Debug\Pyatnashki.pdb
+G:\Works\C# Windows Forms\HOMES\Pyatnashki\Pyatnashki\bin\Debug\Pyatnashki.exe.config
+G:\Works\C# Windows Forms\HOMES\Pyatnashki\Pyatnashki\obj\Debug\Pyatnashki.exe
+G:\Works\C# Windows Forms\HOMES\Pyatnashki\Pyatnashki\obj\Debug\Pyatnashki.pdb

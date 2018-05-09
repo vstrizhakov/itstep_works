@@ -1,0 +1,4 @@
+﻿  main.cpp
+g:\proxy\proxy\main.cpp(14): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  Proxy.vcxproj -> G:\Proxy\Debug\Proxy.exe
+  Proxy.vcxproj -> G:\Proxy\Debug\Proxy.pdb (Full PDB)

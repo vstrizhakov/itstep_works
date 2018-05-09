@@ -1,0 +1,5 @@
+G:\Works\C#\Game\Game\bin\Debug\Game.exe.config
+G:\Works\C#\Game\Game\bin\Debug\Game.exe
+G:\Works\C#\Game\Game\bin\Debug\Game.pdb
+G:\Works\C#\Game\Game\obj\Debug\Game.exe
+G:\Works\C#\Game\Game\obj\Debug\Game.pdb

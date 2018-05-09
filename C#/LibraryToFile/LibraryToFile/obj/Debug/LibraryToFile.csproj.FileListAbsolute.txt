@@ -1,0 +1,12 @@
+D:\LibraryToFile\LibraryToFile\bin\Debug\LibraryToFile.exe.config
+D:\LibraryToFile\LibraryToFile\bin\Debug\LibraryToFile.exe
+D:\LibraryToFile\LibraryToFile\bin\Debug\LibraryToFile.pdb
+D:\LibraryToFile\LibraryToFile\obj\Debug\LibraryToFile.csprojResolveAssemblyReference.cache
+D:\LibraryToFile\LibraryToFile\obj\Debug\LibraryToFile.exe
+D:\LibraryToFile\LibraryToFile\obj\Debug\LibraryToFile.pdb
+G:\Works\C#\HOME!!!\СДАТЬ\LibraryToFile\LibraryToFile\bin\Debug\LibraryToFile.exe.config
+G:\Works\C#\HOME!!!\СДАТЬ\LibraryToFile\LibraryToFile\obj\Debug\LibraryToFile.exe
+G:\Works\C#\HOME!!!\СДАТЬ\LibraryToFile\LibraryToFile\obj\Debug\LibraryToFile.pdb
+G:\Works\C#\HOME!!!\LibraryToFile\LibraryToFile\bin\Debug\LibraryToFile.exe.config
+G:\Works\C#\HOME!!!\LibraryToFile\LibraryToFile\obj\Debug\LibraryToFile.exe
+G:\Works\C#\HOME!!!\LibraryToFile\LibraryToFile\obj\Debug\LibraryToFile.pdb

@@ -1,0 +1,9 @@
+﻿Построение начато 30.06.2017 16:50:45.
+Проект "F:\Prototype\Prototype\Prototype.vcxproj" в узле 2 (целевые объекты Build).
+Файл проекта содержит ToolsVersion="14.0". Данный набор инструментов является неизвестным или отсутствует. Для устранения этой ошибки можно установить для данного набора инструментов соответствующую версию .NET Framework. Считается, что проект содержит ToolsVersion="4.0".
+C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.Cpp.Platform.targets(44,5): error MSB8020: The builds tools for v140 (Platform Toolset = 'v140') cannot be found. To build using the v140 build tools, either click the Project menu or right-click the solution, and then select "Update VC++ Projects...". Install v140 to build using the v140 build tools.
+Построение проекта "F:\Prototype\Prototype\Prototype.vcxproj" завершено (целевые объекты Build) с ошибкой.
+
+Сбой построения.
+
+Затраченное время: 00:00:00.56

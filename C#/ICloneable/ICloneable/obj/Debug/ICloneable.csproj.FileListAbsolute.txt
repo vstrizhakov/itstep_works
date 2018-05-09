@@ -1,0 +1,9 @@
+G:\Works\C#\HOME!!!\СДАТЬ\ICloneable\ICloneable\bin\Debug\ICloneable.exe.config
+G:\Works\C#\HOME!!!\СДАТЬ\ICloneable\ICloneable\bin\Debug\ICloneable.exe
+G:\Works\C#\HOME!!!\СДАТЬ\ICloneable\ICloneable\bin\Debug\ICloneable.pdb
+G:\Works\C#\HOME!!!\СДАТЬ\ICloneable\ICloneable\obj\Debug\ICloneable.csprojResolveAssemblyReference.cache
+G:\Works\C#\HOME!!!\СДАТЬ\ICloneable\ICloneable\obj\Debug\ICloneable.exe
+G:\Works\C#\HOME!!!\СДАТЬ\ICloneable\ICloneable\obj\Debug\ICloneable.pdb
+G:\Works\C#\HOME!!!\ICloneable\ICloneable\bin\Debug\ICloneable.exe.config
+G:\Works\C#\HOME!!!\ICloneable\ICloneable\obj\Debug\ICloneable.exe
+G:\Works\C#\HOME!!!\ICloneable\ICloneable\obj\Debug\ICloneable.pdb

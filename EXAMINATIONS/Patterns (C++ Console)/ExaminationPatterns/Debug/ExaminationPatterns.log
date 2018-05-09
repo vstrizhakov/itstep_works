@@ -1,0 +1,5 @@
+﻿  main.cpp
+c:\users\vpc\documents\visual studio 2015\projects\examinationpatterns\examinationpatterns\club.h(123): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\vpc\documents\visual studio 2015\projects\examinationpatterns\examinationpatterns\main.cpp(181): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  ExaminationPatterns.vcxproj -> C:\Users\vPC\Documents\Visual Studio 2015\Projects\ExaminationPatterns\Debug\ExaminationPatterns.exe
+  ExaminationPatterns.vcxproj -> C:\Users\vPC\Documents\Visual Studio 2015\Projects\ExaminationPatterns\Debug\ExaminationPatterns.pdb (Full PDB)

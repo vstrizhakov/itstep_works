@@ -1,0 +1,4 @@
+﻿  main.cpp
+c:\users\vpc\documents\visual studio 2015\projects\state\state\main.cpp(14): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  State.vcxproj -> C:\Users\vPC\documents\visual studio 2015\Projects\State\Debug\State.exe
+  State.vcxproj -> C:\Users\vPC\documents\visual studio 2015\Projects\State\Debug\State.pdb (Full PDB)

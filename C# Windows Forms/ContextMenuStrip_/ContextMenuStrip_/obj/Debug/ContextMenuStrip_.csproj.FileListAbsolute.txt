@@ -1,0 +1,8 @@
+G:\Works\C# Windows Forms\ContextMenuStrip_\ContextMenuStrip_\bin\Debug\ContextMenuStrip_.exe.config
+G:\Works\C# Windows Forms\ContextMenuStrip_\ContextMenuStrip_\bin\Debug\ContextMenuStrip_.exe
+G:\Works\C# Windows Forms\ContextMenuStrip_\ContextMenuStrip_\bin\Debug\ContextMenuStrip_.pdb
+G:\Works\C# Windows Forms\ContextMenuStrip_\ContextMenuStrip_\obj\Debug\ContextMenuStrip_.Form1.resources
+G:\Works\C# Windows Forms\ContextMenuStrip_\ContextMenuStrip_\obj\Debug\ContextMenuStrip_.Properties.Resources.resources
+G:\Works\C# Windows Forms\ContextMenuStrip_\ContextMenuStrip_\obj\Debug\ContextMenuStrip_.csproj.GenerateResource.Cache
+G:\Works\C# Windows Forms\ContextMenuStrip_\ContextMenuStrip_\obj\Debug\ContextMenuStrip_.exe
+G:\Works\C# Windows Forms\ContextMenuStrip_\ContextMenuStrip_\obj\Debug\ContextMenuStrip_.pdb

@@ -1,0 +1,4 @@
+﻿  main.cpp
+c:\users\vpc\documents\visual studio 2015\projects\fassad\fassad\main.cpp(21): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  Fassad.vcxproj -> C:\Users\vPC\documents\visual studio 2015\Projects\Fassad\Debug\Fassad.exe
+  Fassad.vcxproj -> C:\Users\vPC\documents\visual studio 2015\Projects\Fassad\Debug\Fassad.pdb (Full PDB)

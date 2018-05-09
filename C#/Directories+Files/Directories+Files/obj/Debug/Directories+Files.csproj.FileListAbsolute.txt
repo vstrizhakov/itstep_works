@@ -1,0 +1,6 @@
+G:\Works\C#\HOME!!!\СДАТЬ\Directories+Files\Directories+Files\bin\Debug\Directories+Files.exe.config
+G:\Works\C#\HOME!!!\СДАТЬ\Directories+Files\Directories+Files\bin\Debug\Directories+Files.exe
+G:\Works\C#\HOME!!!\СДАТЬ\Directories+Files\Directories+Files\bin\Debug\Directories+Files.pdb
+G:\Works\C#\HOME!!!\СДАТЬ\Directories+Files\Directories+Files\obj\Debug\Directories+Files.csprojResolveAssemblyReference.cache
+G:\Works\C#\HOME!!!\СДАТЬ\Directories+Files\Directories+Files\obj\Debug\Directories+Files.exe
+G:\Works\C#\HOME!!!\СДАТЬ\Directories+Files\Directories+Files\obj\Debug\Directories+Files.pdb

@@ -1,0 +1,12 @@
+D:\Files\Работы\2 семестр\Projects\CalculatorC.NET\CalculatorC.NET\bin\Debug\CalculatorC.NET.exe.config
+D:\Files\Работы\2 семестр\Projects\CalculatorC.NET\CalculatorC.NET\bin\Debug\CalculatorC.NET.exe
+D:\Files\Работы\2 семестр\Projects\CalculatorC.NET\CalculatorC.NET\bin\Debug\CalculatorC.NET.pdb
+D:\Files\Работы\2 семестр\Projects\CalculatorC.NET\CalculatorC.NET\obj\Debug\CalculatorC.NET.csprojResolveAssemblyReference.cache
+D:\Files\Работы\2 семестр\Projects\CalculatorC.NET\CalculatorC.NET\obj\Debug\CalculatorC.NET.exe
+D:\Files\Работы\2 семестр\Projects\CalculatorC.NET\CalculatorC.NET\obj\Debug\CalculatorC.NET.pdb
+G:\CalculatorC.NET\CalculatorC.NET\bin\Debug\CalculatorC.NET.exe.config
+G:\CalculatorC.NET\CalculatorC.NET\obj\Debug\CalculatorC.NET.exe
+G:\CalculatorC.NET\CalculatorC.NET\obj\Debug\CalculatorC.NET.pdb
+G:\CalculatorC.NET\CalculatorC.NET\bin\Debug\CalculatorC.NET.exe
+G:\CalculatorC.NET\CalculatorC.NET\bin\Debug\CalculatorC.NET.pdb
+G:\CalculatorC.NET\CalculatorC.NET\obj\Debug\CalculatorC.NET.csprojResolveAssemblyReference.cache

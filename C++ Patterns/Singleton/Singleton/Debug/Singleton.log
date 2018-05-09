@@ -1,0 +1,4 @@
+﻿  main.cpp
+c:\users\09358\documents\visual studio 2015\projects\singleton\singleton\main.cpp(15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  Singleton.vcxproj -> c:\users\09358\documents\visual studio 2015\Projects\Singleton\Debug\Singleton.exe
+  Singleton.vcxproj -> c:\users\09358\documents\visual studio 2015\Projects\Singleton\Debug\Singleton.pdb (Full PDB)

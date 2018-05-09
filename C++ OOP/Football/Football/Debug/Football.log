@@ -1,0 +1,15 @@
+﻿  main.cpp
+e:\students\поток 28\ит-2835\стрижаков\football\football\player.h(26): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\corecrt_wstring.h(121): note:  см. объявление "wcscpy"
+e:\students\поток 28\ит-2835\стрижаков\football\football\club.h(18): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\corecrt_wstring.h(121): note:  см. объявление "wcscpy"
+e:\students\поток 28\ит-2835\стрижаков\football\football\main.cpp(36): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note:  см. объявление "fopen"
+e:\students\поток 28\ит-2835\стрижаков\football\football\main.cpp(37): warning C4477: "fprintf": в строке форматирования "%s" требуется аргумент типа "char *", но вариативный аргумент "1" имеет тип "wchar_t *"
+  e:\students\поток 28\ит-2835\стрижаков\football\football\main.cpp(37): note: рекомендуется использовать "%ls" в строке форматирования
+  e:\students\поток 28\ит-2835\стрижаков\football\football\main.cpp(37): note: рекомендуется использовать "%lls" в строке форматирования
+  e:\students\поток 28\ит-2835\стрижаков\football\football\main.cpp(37): note: рекомендуется использовать "%Ls" в строке форматирования
+  e:\students\поток 28\ит-2835\стрижаков\football\football\main.cpp(37): note: рекомендуется использовать "%ws" в строке форматирования
+e:\students\поток 28\ит-2835\стрижаков\football\football\main.cpp(46): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  Football.vcxproj -> E:\Students\Поток 28\ИТ-2835\Стрижаков\Football\Debug\Football.exe
+  Football.vcxproj -> E:\Students\Поток 28\ИТ-2835\Стрижаков\Football\Debug\Football.pdb (Full PDB)

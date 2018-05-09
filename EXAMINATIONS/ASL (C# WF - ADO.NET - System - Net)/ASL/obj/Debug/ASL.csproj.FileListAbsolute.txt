@@ -1,0 +1,26 @@
+C:\Users\vPC\source\repos\ASL\ASL\bin\Debug\ASL.exe.config
+C:\Users\vPC\source\repos\ASL\ASL\bin\Debug\ASL.exe
+C:\Users\vPC\source\repos\ASL\ASL\bin\Debug\ASL.pdb
+C:\Users\vPC\source\repos\ASL\ASL\obj\Debug\ASL.csprojResolveAssemblyReference.cache
+C:\Users\vPC\source\repos\ASL\ASL\obj\Debug\ASL.Form1.resources
+C:\Users\vPC\source\repos\ASL\ASL\obj\Debug\ASL.Properties.Resources.resources
+C:\Users\vPC\source\repos\ASL\ASL\obj\Debug\ASL.csproj.GenerateResource.Cache
+C:\Users\vPC\source\repos\ASL\ASL\obj\Debug\ASL.csproj.CoreCompileInputs.cache
+C:\Users\vPC\source\repos\ASL\ASL\obj\Debug\ASL.exe
+C:\Users\vPC\source\repos\ASL\ASL\obj\Debug\ASL.pdb
+D:\flesh\Works\EXAMINATIONS\(C# WF - ADO.NET - System - Net) ASL\ASL\bin\Debug\ASL.exe.config
+D:\flesh\Works\EXAMINATIONS\(C# WF - ADO.NET - System - Net) ASL\ASL\bin\Debug\ASL.exe
+D:\flesh\Works\EXAMINATIONS\(C# WF - ADO.NET - System - Net) ASL\ASL\bin\Debug\ASL.pdb
+D:\flesh\Works\EXAMINATIONS\(C# WF - ADO.NET - System - Net) ASL\ASL\obj\Debug\ASL.csprojResolveAssemblyReference.cache
+D:\flesh\Works\EXAMINATIONS\(C# WF - ADO.NET - System - Net) ASL\ASL\obj\Debug\ASL.Form1.resources
+D:\flesh\Works\EXAMINATIONS\(C# WF - ADO.NET - System - Net) ASL\ASL\obj\Debug\ASL.Properties.Resources.resources
+D:\flesh\Works\EXAMINATIONS\(C# WF - ADO.NET - System - Net) ASL\ASL\obj\Debug\ASL.csproj.GenerateResource.Cache
+D:\flesh\Works\EXAMINATIONS\(C# WF - ADO.NET - System - Net) ASL\ASL\obj\Debug\ASL.csproj.CoreCompileInputs.cache
+D:\flesh\Works\EXAMINATIONS\(C# WF - ADO.NET - System - Net) ASL\ASL\obj\Debug\ASL.exe
+D:\flesh\Works\EXAMINATIONS\(C# WF - ADO.NET - System - Net) ASL\ASL\obj\Debug\ASL.pdb
+D:\Works\EXAMINATIONS\(C# WF - ADO.NET - System - Net) ASL\ASL\obj\Debug\ASL.csprojResolveAssemblyReference.cache
+D:\Works\EXAMINATIONS\(C# WF - ADO.NET - System - Net) ASL\ASL\obj\Debug\Main.g.cs
+D:\Works\EXAMINATIONS\(C# WF - ADO.NET - System - Net) ASL\ASL\obj\Debug\ASL_MarkupCompile.cache
+D:\Works\EXAMINATIONS\(C# WF - ADO.NET - System - Net) ASL\ASL\obj\Debug\ASL_MarkupCompile.lref
+D:\Works\EXAMINATIONS\(C# WF - ADO.NET - System - Net) ASL\ASL\obj\Debug\ASL.exe
+D:\Works\EXAMINATIONS\(C# WF - ADO.NET - System - Net) ASL\ASL\obj\Debug\ASL.pdb

@@ -1,0 +1,4 @@
+﻿  main.cpp
+c:\users\vpc\documents\visual studio 2015\projects\strategy\strategy\main.cpp(34): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  Strategy.vcxproj -> C:\Users\vPC\documents\visual studio 2015\Projects\Strategy\Debug\Strategy.exe
+  Strategy.vcxproj -> C:\Users\vPC\documents\visual studio 2015\Projects\Strategy\Debug\Strategy.pdb (Full PDB)

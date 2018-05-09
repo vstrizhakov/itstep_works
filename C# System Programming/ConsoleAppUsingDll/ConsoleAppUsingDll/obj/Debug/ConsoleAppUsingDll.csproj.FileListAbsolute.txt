@@ -1,0 +1,11 @@
+D:\flesh\Works\C# System Programming\ConsoleAppUsingDll\ConsoleAppUsingDll\bin\Debug\ConsoleAppUsingDll.exe.config
+D:\flesh\Works\C# System Programming\ConsoleAppUsingDll\ConsoleAppUsingDll\bin\Debug\ConsoleAppUsingDll.exe
+D:\flesh\Works\C# System Programming\ConsoleAppUsingDll\ConsoleAppUsingDll\bin\Debug\ConsoleAppUsingDll.pdb
+D:\flesh\Works\C# System Programming\ConsoleAppUsingDll\ConsoleAppUsingDll\bin\Debug\FirstDll.dll
+D:\flesh\Works\C# System Programming\ConsoleAppUsingDll\ConsoleAppUsingDll\bin\Debug\FirstDll.pdb
+D:\flesh\Works\C# System Programming\ConsoleAppUsingDll\ConsoleAppUsingDll\obj\Debug\ConsoleAppUsingDll.csprojResolveAssemblyReference.cache
+D:\flesh\Works\C# System Programming\ConsoleAppUsingDll\ConsoleAppUsingDll\obj\Debug\ConsoleAppUsingDll.csproj.CoreCompileInputs.cache
+D:\flesh\Works\C# System Programming\ConsoleAppUsingDll\ConsoleAppUsingDll\obj\Debug\ConsoleAppUsingDll.exe
+D:\flesh\Works\C# System Programming\ConsoleAppUsingDll\ConsoleAppUsingDll\obj\Debug\ConsoleAppUsingDll.pdb
+D:\flesh\Works\C# System Programming\ConsoleAppUsingDll\ConsoleAppUsingDll\bin\Debug\WinDLL.dll
+D:\flesh\Works\C# System Programming\ConsoleAppUsingDll\ConsoleAppUsingDll\bin\Debug\WinDLL.pdb

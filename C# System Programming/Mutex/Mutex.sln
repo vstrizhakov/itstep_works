@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2009
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mutex", "Mutex\Mutex.csproj", "{38871681-0BC7-4864-A950-1C59387D9904}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{38871681-0BC7-4864-A950-1C59387D9904}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38871681-0BC7-4864-A950-1C59387D9904}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38871681-0BC7-4864-A950-1C59387D9904}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38871681-0BC7-4864-A950-1C59387D9904}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DA07C597-8F96-475D-9C75-DA23891C1B4F}
+	EndGlobalSection
+EndGlobal

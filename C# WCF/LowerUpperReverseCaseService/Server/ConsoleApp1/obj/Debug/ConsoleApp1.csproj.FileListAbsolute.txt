@@ -1,0 +1,14 @@
+D:\flesh\Works\C# WCF\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
+D:\flesh\Works\C# WCF\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+D:\flesh\Works\C# WCF\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
+D:\flesh\Works\C# WCF\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.csprojResolveAssemblyReference.cache
+D:\flesh\Works\C# WCF\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.CoreCompileInputs.cache
+D:\flesh\Works\C# WCF\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+D:\flesh\Works\C# WCF\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.pdb
+D:\flesh\Works\C# WCF\Server\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
+D:\flesh\Works\C# WCF\Server\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+D:\flesh\Works\C# WCF\Server\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
+D:\flesh\Works\C# WCF\Server\ConsoleApp1\obj\Debug\ConsoleApp1.csprojResolveAssemblyReference.cache
+D:\flesh\Works\C# WCF\Server\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.CoreCompileInputs.cache
+D:\flesh\Works\C# WCF\Server\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+D:\flesh\Works\C# WCF\Server\ConsoleApp1\obj\Debug\ConsoleApp1.pdb

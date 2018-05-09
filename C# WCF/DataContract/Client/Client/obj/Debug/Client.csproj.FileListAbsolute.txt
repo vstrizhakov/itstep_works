@@ -1,0 +1,7 @@
+D:\Works\C# WCF\DataContract\Client\Client\bin\Debug\Client.exe.config
+D:\Works\C# WCF\DataContract\Client\Client\bin\Debug\Client.exe
+D:\Works\C# WCF\DataContract\Client\Client\bin\Debug\Client.pdb
+D:\Works\C# WCF\DataContract\Client\Client\obj\Debug\Client.csprojResolveAssemblyReference.cache
+D:\Works\C# WCF\DataContract\Client\Client\obj\Debug\Client.csproj.CoreCompileInputs.cache
+D:\Works\C# WCF\DataContract\Client\Client\obj\Debug\Client.exe
+D:\Works\C# WCF\DataContract\Client\Client\obj\Debug\Client.pdb

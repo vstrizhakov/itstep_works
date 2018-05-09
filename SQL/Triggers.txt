@@ -1,0 +1,54 @@
+CREATE TRIGGER FirstTestTrigger
+ON products
+INSTEAD OF DELETE
+AS
+DECLARE @name VARCHAR(64);
+DECLARE @id int;
+SELECT @name = name, @id = id
+FROM DELETED;
+IF @name NOT LIKE '%Snickers%'
+	DELETE FROM products
+	WHERE id = @id;
+ELSE
+	PRINT '—никерсы не удал€ютс€!';
+GO
+
+CREATE TRIGGER SecondTestTrigger
+ON products
+INSTEAD OF UPDATE
+AS
+DECLARE @id INT;
+DECLARE @name VARCHAR(64);
+DECLARE @price NUMERIC(8,2);
+DECLARE @weight INT;
+
+DECLARE @oldId INT;
+DECLARE @oldNm VARCHAR(64);
+SELECT @id = id, @name = name, @price = price, @weight = weight
+FROM INSERTED;
+
+SELECT @oldId = id, @oldNm = name
+FROM DELETED;
+
+IF @oldNm = 'Snickers' AND @name != 'Snickers'
+	PRINT '—никерсы не переименовываютс€';
+ELSE
+	UPDATE Products
+	SET name = @name, price = @price, weight = @weight
+	WHERE id = @oldId;
+GO
+
+CREATE TRIGGER ThirdTestTrigger
+ON products
+AFTER DELETE
+AS
+DECLARE @name VARCHAR(64);
+DECLARE @id int;
+SELECT @name = name, @id = id
+FROM DELETED;
+
+IF @name LIKE '%Snickers%'
+BEGIN
+	PRINT '—никерсы не удал€ютс€';
+	ROLLBACK TRAN;
+END

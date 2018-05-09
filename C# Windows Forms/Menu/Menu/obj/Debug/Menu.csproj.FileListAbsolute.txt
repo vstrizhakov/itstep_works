@@ -1,0 +1,8 @@
+G:\Works\C# Windows Forms\Menu\Menu\bin\Debug\Menu.exe.config
+G:\Works\C# Windows Forms\Menu\Menu\obj\Debug\Menu.csprojResolveAssemblyReference.cache
+G:\Works\C# Windows Forms\Menu\Menu\obj\Debug\Menu.Properties.Resources.resources
+G:\Works\C# Windows Forms\Menu\Menu\obj\Debug\Menu.csproj.GenerateResource.Cache
+G:\Works\C# Windows Forms\Menu\Menu\bin\Debug\Menu.exe
+G:\Works\C# Windows Forms\Menu\Menu\bin\Debug\Menu.pdb
+G:\Works\C# Windows Forms\Menu\Menu\obj\Debug\Menu.exe
+G:\Works\C# Windows Forms\Menu\Menu\obj\Debug\Menu.pdb

@@ -1,0 +1,8 @@
+E:\Students\Поток 28\ИТ-2822\Projects\CheckBox_\CheckBox_\bin\Debug\CheckBox_.exe.config
+E:\Students\Поток 28\ИТ-2822\Projects\CheckBox_\CheckBox_\bin\Debug\CheckBox_.exe
+E:\Students\Поток 28\ИТ-2822\Projects\CheckBox_\CheckBox_\bin\Debug\CheckBox_.pdb
+E:\Students\Поток 28\ИТ-2822\Projects\CheckBox_\CheckBox_\obj\Debug\CheckBox_.Form1.resources
+E:\Students\Поток 28\ИТ-2822\Projects\CheckBox_\CheckBox_\obj\Debug\CheckBox_.Properties.Resources.resources
+E:\Students\Поток 28\ИТ-2822\Projects\CheckBox_\CheckBox_\obj\Debug\CheckBox_.csproj.GenerateResource.Cache
+E:\Students\Поток 28\ИТ-2822\Projects\CheckBox_\CheckBox_\obj\Debug\CheckBox_.exe
+E:\Students\Поток 28\ИТ-2822\Projects\CheckBox_\CheckBox_\obj\Debug\CheckBox_.pdb

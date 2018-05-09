@@ -1,0 +1,12 @@
+﻿  main.cpp
+e:\students\поток 28\ит-2835\стрижаков\classsystem\classsystem\header.h(18): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\corecrt_wstring.h(121): note:  см. объявление "wcscpy"
+e:\students\поток 28\ит-2835\стрижаков\classsystem\classsystem\header.h(72): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\corecrt_wstring.h(121): note:  см. объявление "wcscpy"
+e:\students\поток 28\ит-2835\стрижаков\classsystem\classsystem\header.h(94): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\corecrt_wstring.h(121): note:  см. объявление "wcscpy"
+e:\students\поток 28\ит-2835\стрижаков\classsystem\classsystem\header.h(100): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\corecrt_wstring.h(121): note:  см. объявление "wcscpy"
+e:\students\поток 28\ит-2835\стрижаков\classsystem\classsystem\main.cpp(8): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  ClassSystem.vcxproj -> E:\Students\Поток 28\ИТ-2835\Стрижаков\ClassSystem\Debug\ClassSystem.exe
+  ClassSystem.vcxproj -> E:\Students\Поток 28\ИТ-2835\Стрижаков\ClassSystem\Debug\ClassSystem.pdb (Full PDB)

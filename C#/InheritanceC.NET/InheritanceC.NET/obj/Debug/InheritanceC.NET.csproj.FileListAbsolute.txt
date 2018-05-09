@@ -1,0 +1,6 @@
+c:\users\09358\documents\visual studio 2015\Projects\InheritanceC.NET\InheritanceC.NET\bin\Debug\InheritanceC.NET.exe.config
+c:\users\09358\documents\visual studio 2015\Projects\InheritanceC.NET\InheritanceC.NET\bin\Debug\InheritanceC.NET.exe
+c:\users\09358\documents\visual studio 2015\Projects\InheritanceC.NET\InheritanceC.NET\bin\Debug\InheritanceC.NET.pdb
+c:\users\09358\documents\visual studio 2015\Projects\InheritanceC.NET\InheritanceC.NET\obj\Debug\InheritanceC.NET.csprojResolveAssemblyReference.cache
+c:\users\09358\documents\visual studio 2015\Projects\InheritanceC.NET\InheritanceC.NET\obj\Debug\InheritanceC.NET.exe
+c:\users\09358\documents\visual studio 2015\Projects\InheritanceC.NET\InheritanceC.NET\obj\Debug\InheritanceC.NET.pdb

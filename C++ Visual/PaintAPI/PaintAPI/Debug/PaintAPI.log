@@ -1,0 +1,7 @@
+﻿  main.cpp
+d:\files\работы\2 семестр\projects\paintapi\paintapi\main.cpp(76): warning C4018: <: несоответствие типов со знаком и без знака
+d:\files\работы\2 семестр\projects\paintapi\paintapi\main.cpp(29): warning C4101: rect: неиспользованная локальная переменная
+d:\files\работы\2 семестр\projects\paintapi\paintapi\main.cpp(28): warning C4101: text: неиспользованная локальная переменная
+d:\files\работы\2 семестр\projects\paintapi\paintapi\main.cpp(41): warning C4700: использована неинициализированная локальная переменная "hPen"
+  PaintAPI.vcxproj -> D:\Files\Работы\2 семестр\Projects\PaintAPI\Debug\PaintAPI.exe
+  PaintAPI.vcxproj -> D:\Files\Работы\2 семестр\Projects\PaintAPI\Debug\PaintAPI.pdb (Full PDB)

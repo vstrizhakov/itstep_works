@@ -1,0 +1,24 @@
+﻿  func.cpp
+e:\students\поток 28\ит-2835\стрижаков\list2\list\header.h(21): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note:  см. объявление "strcpy"
+e:\students\поток 28\ит-2835\стрижаков\list2\list\header.h(28): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note:  см. объявление "strcpy"
+e:\students\поток 28\ит-2835\стрижаков\list2\list\header.h(36): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note:  см. объявление "strcpy"
+e:\students\поток 28\ит-2835\стрижаков\list2\list\header.h(46): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note:  см. объявление "strcpy"
+  Создание кода...
+  Компиляция...
+  main.cpp
+e:\students\поток 28\ит-2835\стрижаков\list2\list\header.h(21): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note:  см. объявление "strcpy"
+e:\students\поток 28\ит-2835\стрижаков\list2\list\header.h(28): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note:  см. объявление "strcpy"
+e:\students\поток 28\ит-2835\стрижаков\list2\list\header.h(36): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note:  см. объявление "strcpy"
+e:\students\поток 28\ит-2835\стрижаков\list2\list\header.h(46): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note:  см. объявление "strcpy"
+e:\students\поток 28\ит-2835\стрижаков\list2\list\main.cpp(8): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  Создание кода...
+  List.vcxproj -> E:\Students\Поток 28\ИТ-2835\Стрижаков\List2\Debug\List.exe
+  List.vcxproj -> E:\Students\Поток 28\ИТ-2835\Стрижаков\List2\Debug\List.pdb (Full PDB)

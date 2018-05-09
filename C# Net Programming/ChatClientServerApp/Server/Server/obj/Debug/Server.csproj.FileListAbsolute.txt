@@ -1,0 +1,14 @@
+D:\flesh\Works\C# Net Programming\ChatClientServerApp\Server\Server\bin\Debug\Server.exe.config
+D:\flesh\Works\C# Net Programming\ChatClientServerApp\Server\Server\bin\Debug\Server.exe
+D:\flesh\Works\C# Net Programming\ChatClientServerApp\Server\Server\bin\Debug\Server.pdb
+D:\flesh\Works\C# Net Programming\ChatClientServerApp\Server\Server\obj\Debug\Server.csprojResolveAssemblyReference.cache
+D:\flesh\Works\C# Net Programming\ChatClientServerApp\Server\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
+D:\flesh\Works\C# Net Programming\ChatClientServerApp\Server\Server\obj\Debug\Server.exe
+D:\flesh\Works\C# Net Programming\ChatClientServerApp\Server\Server\obj\Debug\Server.pdb
+D:\Works\C# Net Programming\ChatClientServerApp\Server\Server\bin\Debug\Server.exe.config
+D:\Works\C# Net Programming\ChatClientServerApp\Server\Server\bin\Debug\Server.exe
+D:\Works\C# Net Programming\ChatClientServerApp\Server\Server\bin\Debug\Server.pdb
+D:\Works\C# Net Programming\ChatClientServerApp\Server\Server\obj\Debug\Server.csprojResolveAssemblyReference.cache
+D:\Works\C# Net Programming\ChatClientServerApp\Server\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
+D:\Works\C# Net Programming\ChatClientServerApp\Server\Server\obj\Debug\Server.exe
+D:\Works\C# Net Programming\ChatClientServerApp\Server\Server\obj\Debug\Server.pdb

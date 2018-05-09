@@ -1,0 +1,4 @@
+﻿  main.cpp
+c:\users\vpc\documents\visual studio 2015\projects\stl2\stl2\main.cpp(24): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  STL2.vcxproj -> C:\Users\vPC\documents\visual studio 2015\Projects\STL2\Debug\STL2.exe
+  STL2.vcxproj -> C:\Users\vPC\documents\visual studio 2015\Projects\STL2\Debug\STL2.pdb (Full PDB)

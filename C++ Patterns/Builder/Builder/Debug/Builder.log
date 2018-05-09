@@ -1,0 +1,5 @@
+﻿  main.cpp
+c:\users\09358\documents\visual studio 2015\projects\builder\builder\header.h(26): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\09358\documents\visual studio 2015\projects\builder\builder\main.cpp(18): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  Builder.vcxproj -> c:\users\09358\documents\visual studio 2015\Projects\Builder\Debug\Builder.exe
+  Builder.vcxproj -> c:\users\09358\documents\visual studio 2015\Projects\Builder\Debug\Builder.pdb (Full PDB)

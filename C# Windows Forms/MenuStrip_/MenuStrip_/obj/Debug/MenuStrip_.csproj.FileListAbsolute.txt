@@ -1,0 +1,9 @@
+G:\Works\C# Windows Forms\MenuStrip_\MenuStrip_\bin\Debug\MenuStrip_.exe.config
+G:\Works\C# Windows Forms\MenuStrip_\MenuStrip_\bin\Debug\MenuStrip_.exe
+G:\Works\C# Windows Forms\MenuStrip_\MenuStrip_\bin\Debug\MenuStrip_.pdb
+G:\Works\C# Windows Forms\MenuStrip_\MenuStrip_\obj\Debug\MenuStrip_.csprojResolveAssemblyReference.cache
+G:\Works\C# Windows Forms\MenuStrip_\MenuStrip_\obj\Debug\MenuStrip_.Form1.resources
+G:\Works\C# Windows Forms\MenuStrip_\MenuStrip_\obj\Debug\MenuStrip_.Properties.Resources.resources
+G:\Works\C# Windows Forms\MenuStrip_\MenuStrip_\obj\Debug\MenuStrip_.csproj.GenerateResource.Cache
+G:\Works\C# Windows Forms\MenuStrip_\MenuStrip_\obj\Debug\MenuStrip_.exe
+G:\Works\C# Windows Forms\MenuStrip_\MenuStrip_\obj\Debug\MenuStrip_.pdb

@@ -1,0 +1,90 @@
+1)
+
+SELECT *
+FROM Books
+WHERE Pages = (
+	SELECT MAX(Pages)
+	FROM Books
+	WHERE Books.id_Themes = (SELECT id FROM Themes WHERE Themes.Name = 'Программирование')
+)
+2)
+SELECT Groups.Name, Count(*)
+FROM Groups, Students, S_Cards
+WHERE Students.Id_Group = Groups.Id AND S_Cards.Id_Student = Students.Id
+GROUP BY Groups.Name
+3)
+SELECT  COUNT(*), SUM(Books.Pages)
+FROM S_Cards, Books
+WHERE Books.Id = S_Cards.Id_Book AND S_Cards.Id_Book IN (
+	SELECT Id
+	FROM Books
+	WHERE Id_Themes IN (
+		SELECT Id
+		FROM Themes
+		WHERE Name = 'Программирование' OR Name = 'Базы данных'
+	)
+) AND Id_Student IN (
+	SELECT Id
+	FROM Students
+	WHERE Id_Group IN (
+		SELECT Id
+		FROM Groups
+		WHERE Id_Faculty = (
+			SELECT Id
+			FROM Faculties
+			WHERE Name = "Программирования"
+		)
+	)
+)
+4)
+SELECT Students.FirstName, CInt((Date()-DateOut-30)/7)*0.5
+FROM S_Cards, Students
+WHERE (
+	S_Cards.DateIn-S_Cards.DateOut>30 OR
+	(	
+		S_Cards.DateIn Is Null AND
+		Date()-S_Cards.DateOut>30
+	)
+      ) AND Students.Id = S_Cards.Id_Student
+5)
+SELECT Faculties.Name, Format((Count(*) / (Select Count(*) From Books)), 'percent')
+FROM (
+	S_Cards INNER JOIN 
+	(Students INNER JOIN 
+		(Groups INNER JOIN Faculties ON Groups.Id_Faculty = Faculties.Id) ON
+		Students.Id_Group = Groups.Id) ON
+	S_Cards.Id_Student = Students.Id
+	)
+GROUP BY Faculties.Name
+6)
+/*
+SELECT Authors.Id, MAX(m)
+FROM Authors,
+(
+SELECT COUNT(*) AS m, Authors.Id AS n
+FROM Authors INNER JOIN 
+	(Books INNER JOIN
+		(S_Cards INNER JOIN 
+			(Students INNER JOIN 
+				(Groups INNER JOIN Faculties ON 
+				Groups.Id_Faculty = Faculties.Id) ON
+			Students.Id_Group = Groups.Id) ON
+		S_Cards.Id_Student = Students.Id) ON
+	Books.Id = S_Cards.Id_Book) ON
+Authors.Id = Books.Id_Author
+GROUP BY Authors.Id
+ORDER BY COUNT(*) DESC
+)
+GROUP BY Authors.Id
+*/
+7)
+-
+8)
+UPDATE S_Cards
+SET DateIn = Date()
+WHERE Date() - DateOut > 365
+9)
+SELECT Press.Name, SUM(Books.Pages)
+FROM Books, Press
+WHERE Books.Id_Press = Press.Id
+GROUP BY Press.Name

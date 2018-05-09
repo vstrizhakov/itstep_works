@@ -1,0 +1,4 @@
+﻿  main.cpp
+d:\files\работы\2 семестр\projects\menuapi\menuapi\main.cpp(25): warning C4101: hDC: неиспользованная локальная переменная
+  MenuAPI.vcxproj -> D:\Files\Работы\2 семестр\Projects\MenuAPI\Debug\MenuAPI.exe
+  MenuAPI.vcxproj -> D:\Files\Работы\2 семестр\Projects\MenuAPI\Debug\MenuAPI.pdb (Full PDB)

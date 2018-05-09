@@ -1,0 +1,6 @@
+c:\users\09358\documents\visual studio 2015\Projects\ClassWork0609\ClassWork0609\bin\Debug\ClassWork0609.exe.config
+c:\users\09358\documents\visual studio 2015\Projects\ClassWork0609\ClassWork0609\bin\Debug\ClassWork0609.exe
+c:\users\09358\documents\visual studio 2015\Projects\ClassWork0609\ClassWork0609\bin\Debug\ClassWork0609.pdb
+c:\users\09358\documents\visual studio 2015\Projects\ClassWork0609\ClassWork0609\obj\Debug\ClassWork0609.csprojResolveAssemblyReference.cache
+c:\users\09358\documents\visual studio 2015\Projects\ClassWork0609\ClassWork0609\obj\Debug\ClassWork0609.exe
+c:\users\09358\documents\visual studio 2015\Projects\ClassWork0609\ClassWork0609\obj\Debug\ClassWork0609.pdb

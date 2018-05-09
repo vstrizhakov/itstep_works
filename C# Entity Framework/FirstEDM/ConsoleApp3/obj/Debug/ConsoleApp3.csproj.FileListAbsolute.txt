@@ -1,0 +1,10 @@
+C:\Users\vPC\source\repos\ConsoleApp3\ConsoleApp3\bin\Debug\ConsoleApp3.exe.config
+C:\Users\vPC\source\repos\ConsoleApp3\ConsoleApp3\bin\Debug\ConsoleApp3.exe
+C:\Users\vPC\source\repos\ConsoleApp3\ConsoleApp3\bin\Debug\ConsoleApp3.pdb
+C:\Users\vPC\source\repos\ConsoleApp3\ConsoleApp3\bin\Debug\EntityFramework.dll
+C:\Users\vPC\source\repos\ConsoleApp3\ConsoleApp3\bin\Debug\EntityFramework.xml
+C:\Users\vPC\source\repos\ConsoleApp3\ConsoleApp3\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\vPC\source\repos\ConsoleApp3\ConsoleApp3\obj\Debug\ConsoleApp3.csprojResolveAssemblyReference.cache
+C:\Users\vPC\source\repos\ConsoleApp3\ConsoleApp3\obj\Debug\ConsoleApp3.csproj.CoreCompileInputs.cache
+C:\Users\vPC\source\repos\ConsoleApp3\ConsoleApp3\obj\Debug\ConsoleApp3.exe
+C:\Users\vPC\source\repos\ConsoleApp3\ConsoleApp3\obj\Debug\ConsoleApp3.pdb

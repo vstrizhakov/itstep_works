@@ -1,0 +1,14 @@
+D:\Works\C# WCF\DataContract\DataContract\bin\Debug\DataContract.exe.config
+D:\Works\C# WCF\DataContract\DataContract\bin\Debug\DataContract.exe
+D:\Works\C# WCF\DataContract\DataContract\bin\Debug\DataContract.pdb
+D:\Works\C# WCF\DataContract\DataContract\obj\Debug\DataContract_.csprojResolveAssemblyReference.cache
+D:\Works\C# WCF\DataContract\DataContract\obj\Debug\DataContract_.csproj.CoreCompileInputs.cache
+D:\Works\C# WCF\DataContract\DataContract\obj\Debug\DataContract.exe
+D:\Works\C# WCF\DataContract\DataContract\obj\Debug\DataContract.pdb
+D:\Works\C# WCF\DataContract\Server\DataContract\bin\Debug\DataContract.exe.config
+D:\Works\C# WCF\DataContract\Server\DataContract\bin\Debug\DataContract.exe
+D:\Works\C# WCF\DataContract\Server\DataContract\bin\Debug\DataContract.pdb
+D:\Works\C# WCF\DataContract\Server\DataContract\obj\Debug\DataContract_.csprojResolveAssemblyReference.cache
+D:\Works\C# WCF\DataContract\Server\DataContract\obj\Debug\DataContract_.csproj.CoreCompileInputs.cache
+D:\Works\C# WCF\DataContract\Server\DataContract\obj\Debug\DataContract.exe
+D:\Works\C# WCF\DataContract\Server\DataContract\obj\Debug\DataContract.pdb

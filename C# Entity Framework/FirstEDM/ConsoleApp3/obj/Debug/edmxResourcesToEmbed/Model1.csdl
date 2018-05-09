@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="sp2822Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="product_09358">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="prodname" Type="String" MaxLength="64" FixedLength="false" Unicode="false" />
+    <Property Name="price" Type="Decimal" Precision="8" Scale="2" />
+    <Property Name="prodweight" Type="Int32" />
+  </EntityType>
+  <EntityContainer Name="sp2822Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="product_09358" EntityType="Self.product_09358" />
+  </EntityContainer>
+</Schema>

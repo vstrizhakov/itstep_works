@@ -1,0 +1,14 @@
+D:\Works\C# WCF\Game\Game\obj\Debug\Game.csprojResolveAssemblyReference.cache
+D:\Works\C# WCF\Game\Game\obj\Debug\Game.csproj.CoreCompileInputs.cache
+D:\Works\C# WCF\Game\Game\bin\Debug\Game.exe.config
+D:\Works\C# WCF\Game\Game\bin\Debug\Game.exe
+D:\Works\C# WCF\Game\Game\bin\Debug\Game.pdb
+D:\Works\C# WCF\Game\Game\obj\Debug\Game.exe
+D:\Works\C# WCF\Game\Game\obj\Debug\Game.pdb
+D:\Works\C# WCF\GuessWord\Server\Game\bin\Debug\Game.exe.config
+D:\Works\C# WCF\GuessWord\Server\Game\bin\Debug\Game.exe
+D:\Works\C# WCF\GuessWord\Server\Game\obj\Debug\Game.csprojResolveAssemblyReference.cache
+D:\Works\C# WCF\GuessWord\Server\Game\obj\Debug\Game.csproj.CoreCompileInputs.cache
+D:\Works\C# WCF\GuessWord\Server\Game\obj\Debug\Game.exe
+D:\Works\C# WCF\GuessWord\Server\Game\obj\Debug\Game.pdb
+D:\Works\C# WCF\GuessWord\Server\Game\bin\Debug\Game.pdb

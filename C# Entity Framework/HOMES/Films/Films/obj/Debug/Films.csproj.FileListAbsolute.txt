@@ -1,0 +1,15 @@
+H:\Works\Entity Framework\HOMES\Films\Films\bin\Debug\Films.exe.config
+H:\Works\Entity Framework\HOMES\Films\Films\bin\Debug\Films.exe
+H:\Works\Entity Framework\HOMES\Films\Films\bin\Debug\Films.pdb
+H:\Works\Entity Framework\HOMES\Films\Films\obj\Debug\Films.csprojResolveAssemblyReference.cache
+H:\Works\Entity Framework\HOMES\Films\Films\obj\Debug\Films.Properties.Resources.resources
+H:\Works\Entity Framework\HOMES\Films\Films\obj\Debug\Films.csproj.GenerateResource.Cache
+H:\Works\Entity Framework\HOMES\Films\Films\obj\Debug\Films.csproj.CoreCompileInputs.cache
+H:\Works\Entity Framework\HOMES\Films\Films\obj\Debug\Films.exe
+H:\Works\Entity Framework\HOMES\Films\Films\obj\Debug\Films.pdb
+H:\Works\Entity Framework\HOMES\Films\Films\bin\Debug\EntityFramework.dll
+H:\Works\Entity Framework\HOMES\Films\Films\bin\Debug\EntityFramework.xml
+H:\Works\Entity Framework\HOMES\Films\Films\bin\Debug\ru\EntityFramework.resources.dll
+H:\Works\Entity Framework\HOMES\Films\Films\obj\Debug\Films.Film.resources
+H:\Works\Entity Framework\HOMES\Films\Films\obj\Debug\Films.Main.resources
+H:\Works\Entity Framework\HOMES\Films\Films\obj\Debug\Films.Genre.resources

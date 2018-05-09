@@ -1,0 +1,14 @@
+c:\users\vpc\source\repos\TcpServer\TcpServer\bin\Debug\TcpServer.exe.config
+c:\users\vpc\source\repos\TcpServer\TcpServer\bin\Debug\TcpServer.exe
+c:\users\vpc\source\repos\TcpServer\TcpServer\bin\Debug\TcpServer.pdb
+c:\users\vpc\source\repos\TcpServer\TcpServer\obj\Debug\TcpServer.csprojResolveAssemblyReference.cache
+c:\users\vpc\source\repos\TcpServer\TcpServer\obj\Debug\TcpServer.csproj.CoreCompileInputs.cache
+c:\users\vpc\source\repos\TcpServer\TcpServer\obj\Debug\TcpServer.exe
+c:\users\vpc\source\repos\TcpServer\TcpServer\obj\Debug\TcpServer.pdb
+D:\flesh\Works\C# Net Programming\TcpServer\TcpServer\bin\Debug\TcpServer.exe.config
+D:\flesh\Works\C# Net Programming\TcpServer\TcpServer\bin\Debug\TcpServer.exe
+D:\flesh\Works\C# Net Programming\TcpServer\TcpServer\bin\Debug\TcpServer.pdb
+D:\flesh\Works\C# Net Programming\TcpServer\TcpServer\obj\Debug\TcpServer.csprojResolveAssemblyReference.cache
+D:\flesh\Works\C# Net Programming\TcpServer\TcpServer\obj\Debug\TcpServer.csproj.CoreCompileInputs.cache
+D:\flesh\Works\C# Net Programming\TcpServer\TcpServer\obj\Debug\TcpServer.exe
+D:\flesh\Works\C# Net Programming\TcpServer\TcpServer\obj\Debug\TcpServer.pdb

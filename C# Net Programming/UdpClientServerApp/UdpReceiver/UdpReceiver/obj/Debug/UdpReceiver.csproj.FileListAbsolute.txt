@@ -1,0 +1,6 @@
+D:\flesh\Works\C# Net Programming\UdpReceiver\UdpReceiver\bin\Debug\UdpReceiver.exe.config
+D:\flesh\Works\C# Net Programming\UdpReceiver\UdpReceiver\bin\Debug\UdpReceiver.exe
+D:\flesh\Works\C# Net Programming\UdpReceiver\UdpReceiver\bin\Debug\UdpReceiver.pdb
+D:\flesh\Works\C# Net Programming\UdpReceiver\UdpReceiver\obj\Debug\UdpReceiver.csproj.CoreCompileInputs.cache
+D:\flesh\Works\C# Net Programming\UdpReceiver\UdpReceiver\obj\Debug\UdpReceiver.exe
+D:\flesh\Works\C# Net Programming\UdpReceiver\UdpReceiver\obj\Debug\UdpReceiver.pdb

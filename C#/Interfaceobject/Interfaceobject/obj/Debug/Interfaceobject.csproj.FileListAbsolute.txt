@@ -1,0 +1,6 @@
+c:\users\09358\documents\visual studio 2015\Projects\Interfaceobject\Interfaceobject\bin\Debug\Interfaceobject.exe.config
+c:\users\09358\documents\visual studio 2015\Projects\Interfaceobject\Interfaceobject\bin\Debug\Interfaceobject.exe
+c:\users\09358\documents\visual studio 2015\Projects\Interfaceobject\Interfaceobject\bin\Debug\Interfaceobject.pdb
+c:\users\09358\documents\visual studio 2015\Projects\Interfaceobject\Interfaceobject\obj\Debug\Interfaceobject.csprojResolveAssemblyReference.cache
+c:\users\09358\documents\visual studio 2015\Projects\Interfaceobject\Interfaceobject\obj\Debug\Interfaceobject.exe
+c:\users\09358\documents\visual studio 2015\Projects\Interfaceobject\Interfaceobject\obj\Debug\Interfaceobject.pdb

@@ -1,0 +1,5 @@
+G:\Works\C#\Serialize\Serialize\bin\Debug\Serialize.exe.config
+G:\Works\C#\Serialize\Serialize\bin\Debug\Serialize.exe
+G:\Works\C#\Serialize\Serialize\bin\Debug\Serialize.pdb
+G:\Works\C#\Serialize\Serialize\obj\Debug\Serialize.exe
+G:\Works\C#\Serialize\Serialize\obj\Debug\Serialize.pdb

@@ -1,0 +1,10 @@
+D:\flesh\Works\C# Net Programming\CalculatorServerClientApp\Client\Client\bin\Debug\Client.exe.config
+D:\flesh\Works\C# Net Programming\CalculatorServerClientApp\Client\Client\bin\Debug\Client.exe
+D:\flesh\Works\C# Net Programming\CalculatorServerClientApp\Client\Client\bin\Debug\Client.pdb
+D:\flesh\Works\C# Net Programming\CalculatorServerClientApp\Client\Client\obj\Debug\Client.csprojResolveAssemblyReference.cache
+D:\flesh\Works\C# Net Programming\CalculatorServerClientApp\Client\Client\obj\Debug\Client.Form1.resources
+D:\flesh\Works\C# Net Programming\CalculatorServerClientApp\Client\Client\obj\Debug\Client.Properties.Resources.resources
+D:\flesh\Works\C# Net Programming\CalculatorServerClientApp\Client\Client\obj\Debug\Client.csproj.GenerateResource.Cache
+D:\flesh\Works\C# Net Programming\CalculatorServerClientApp\Client\Client\obj\Debug\Client.csproj.CoreCompileInputs.cache
+D:\flesh\Works\C# Net Programming\CalculatorServerClientApp\Client\Client\obj\Debug\Client.exe
+D:\flesh\Works\C# Net Programming\CalculatorServerClientApp\Client\Client\obj\Debug\Client.pdb

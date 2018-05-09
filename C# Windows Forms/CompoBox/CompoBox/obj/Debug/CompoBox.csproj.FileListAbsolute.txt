@@ -1,0 +1,7 @@
+G:\Works\C# Windows Forms\CompoBox\CompoBox\bin\Debug\CompoBox.exe.config
+G:\Works\C# Windows Forms\CompoBox\CompoBox\bin\Debug\CompoBox.exe
+G:\Works\C# Windows Forms\CompoBox\CompoBox\bin\Debug\CompoBox.pdb
+G:\Works\C# Windows Forms\CompoBox\CompoBox\obj\Debug\CompoBox.Properties.Resources.resources
+G:\Works\C# Windows Forms\CompoBox\CompoBox\obj\Debug\CompoBox.csproj.GenerateResource.Cache
+G:\Works\C# Windows Forms\CompoBox\CompoBox\obj\Debug\CompoBox.exe
+G:\Works\C# Windows Forms\CompoBox\CompoBox\obj\Debug\CompoBox.pdb

@@ -1,0 +1,7 @@
+D:\Works\C# WCF\FileSending\Sender\Sender\bin\Debug\Sender.exe.config
+D:\Works\C# WCF\FileSending\Sender\Sender\bin\Debug\Sender.exe
+D:\Works\C# WCF\FileSending\Sender\Sender\bin\Debug\Sender.pdb
+D:\Works\C# WCF\FileSending\Sender\Sender\obj\Debug\Sender.csprojResolveAssemblyReference.cache
+D:\Works\C# WCF\FileSending\Sender\Sender\obj\Debug\Sender.csproj.CoreCompileInputs.cache
+D:\Works\C# WCF\FileSending\Sender\Sender\obj\Debug\Sender.exe
+D:\Works\C# WCF\FileSending\Sender\Sender\obj\Debug\Sender.pdb

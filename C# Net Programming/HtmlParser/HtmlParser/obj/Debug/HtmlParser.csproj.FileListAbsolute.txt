@@ -1,0 +1,10 @@
+D:\flesh\Works\C# Net Programming\HtmlParser\HtmlParser\bin\Debug\HtmlParser.exe.config
+D:\flesh\Works\C# Net Programming\HtmlParser\HtmlParser\bin\Debug\HtmlParser.exe
+D:\flesh\Works\C# Net Programming\HtmlParser\HtmlParser\bin\Debug\HtmlParser.pdb
+D:\flesh\Works\C# Net Programming\HtmlParser\HtmlParser\obj\Debug\HtmlParser.csprojResolveAssemblyReference.cache
+D:\flesh\Works\C# Net Programming\HtmlParser\HtmlParser\obj\Debug\HtmlParser.Form1.resources
+D:\flesh\Works\C# Net Programming\HtmlParser\HtmlParser\obj\Debug\HtmlParser.Properties.Resources.resources
+D:\flesh\Works\C# Net Programming\HtmlParser\HtmlParser\obj\Debug\HtmlParser.csproj.GenerateResource.Cache
+D:\flesh\Works\C# Net Programming\HtmlParser\HtmlParser\obj\Debug\HtmlParser.csproj.CoreCompileInputs.cache
+D:\flesh\Works\C# Net Programming\HtmlParser\HtmlParser\obj\Debug\HtmlParser.exe
+D:\flesh\Works\C# Net Programming\HtmlParser\HtmlParser\obj\Debug\HtmlParser.pdb

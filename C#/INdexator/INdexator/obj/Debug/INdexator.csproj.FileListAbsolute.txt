@@ -1,0 +1,6 @@
+c:\users\09358\documents\visual studio 2015\Projects\INdexator\INdexator\bin\Debug\INdexator.exe.config
+c:\users\09358\documents\visual studio 2015\Projects\INdexator\INdexator\obj\Debug\INdexator.csprojResolveAssemblyReference.cache
+c:\users\09358\documents\visual studio 2015\Projects\INdexator\INdexator\bin\Debug\INdexator.exe
+c:\users\09358\documents\visual studio 2015\Projects\INdexator\INdexator\bin\Debug\INdexator.pdb
+c:\users\09358\documents\visual studio 2015\Projects\INdexator\INdexator\obj\Debug\INdexator.exe
+c:\users\09358\documents\visual studio 2015\Projects\INdexator\INdexator\obj\Debug\INdexator.pdb

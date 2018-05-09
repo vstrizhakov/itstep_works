@@ -1,0 +1,4 @@
+﻿  Patern_3_AbstraxtFactory.cpp
+e:\students\виртуальная машина\стрижаков владимир\patern_3_abstraxtfactory\patern_3_abstraxtfactory\patern_3_abstraxtfactory.cpp(37): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  Patern_3_AbstraxtFactory.vcxproj -> E:\Students\Виртуальная машина\Стрижаков Владимир\Patern_3_AbstraxtFactory\Debug\Patern_3_AbstraxtFactory.exe
+  Patern_3_AbstraxtFactory.vcxproj -> E:\Students\Виртуальная машина\Стрижаков Владимир\Patern_3_AbstraxtFactory\Debug\Patern_3_AbstraxtFactory.pdb (Full PDB)

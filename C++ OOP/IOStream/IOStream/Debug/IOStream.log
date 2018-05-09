@@ -1,0 +1,4 @@
+﻿  main.cpp
+g:\iostream\iostream\main.cpp(47): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  IOStream.vcxproj -> G:\IOStream\Debug\IOStream.exe
+  IOStream.vcxproj -> G:\IOStream\Debug\IOStream.pdb (Full PDB)

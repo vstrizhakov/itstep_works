@@ -1,0 +1,10 @@
+D:\flesh\Works\C# System Programming\ButtonSemaphore\ButtonSemaphore\bin\Debug\ButtonSemaphore.exe.config
+D:\flesh\Works\C# System Programming\ButtonSemaphore\ButtonSemaphore\bin\Debug\ButtonSemaphore.exe
+D:\flesh\Works\C# System Programming\ButtonSemaphore\ButtonSemaphore\bin\Debug\ButtonSemaphore.pdb
+D:\flesh\Works\C# System Programming\ButtonSemaphore\ButtonSemaphore\obj\Debug\ButtonSemaphore.csprojResolveAssemblyReference.cache
+D:\flesh\Works\C# System Programming\ButtonSemaphore\ButtonSemaphore\obj\Debug\ButtonSemaphore.Form1.resources
+D:\flesh\Works\C# System Programming\ButtonSemaphore\ButtonSemaphore\obj\Debug\ButtonSemaphore.Properties.Resources.resources
+D:\flesh\Works\C# System Programming\ButtonSemaphore\ButtonSemaphore\obj\Debug\ButtonSemaphore.csproj.GenerateResource.Cache
+D:\flesh\Works\C# System Programming\ButtonSemaphore\ButtonSemaphore\obj\Debug\ButtonSemaphore.csproj.CoreCompileInputs.cache
+D:\flesh\Works\C# System Programming\ButtonSemaphore\ButtonSemaphore\obj\Debug\ButtonSemaphore.exe
+D:\flesh\Works\C# System Programming\ButtonSemaphore\ButtonSemaphore\obj\Debug\ButtonSemaphore.pdb

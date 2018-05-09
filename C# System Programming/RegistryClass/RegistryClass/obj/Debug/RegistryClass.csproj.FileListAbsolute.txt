@@ -1,0 +1,7 @@
+D:\flesh\Works\C# System Programming\RegistryClass\RegistryClass\bin\Debug\RegistryClass.exe.config
+D:\flesh\Works\C# System Programming\RegistryClass\RegistryClass\bin\Debug\RegistryClass.exe
+D:\flesh\Works\C# System Programming\RegistryClass\RegistryClass\bin\Debug\RegistryClass.pdb
+D:\flesh\Works\C# System Programming\RegistryClass\RegistryClass\obj\Debug\RegistryClass.csprojResolveAssemblyReference.cache
+D:\flesh\Works\C# System Programming\RegistryClass\RegistryClass\obj\Debug\RegistryClass.csproj.CoreCompileInputs.cache
+D:\flesh\Works\C# System Programming\RegistryClass\RegistryClass\obj\Debug\RegistryClass.exe
+D:\flesh\Works\C# System Programming\RegistryClass\RegistryClass\obj\Debug\RegistryClass.pdb

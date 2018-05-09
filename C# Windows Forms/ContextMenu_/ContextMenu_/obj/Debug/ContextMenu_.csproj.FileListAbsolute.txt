@@ -1,0 +1,9 @@
+G:\Works\C# Windows Forms\ContextMenu_\ContextMenu_\bin\Debug\ContextMenu_.exe.config
+G:\Works\C# Windows Forms\ContextMenu_\ContextMenu_\bin\Debug\ContextMenu_.exe
+G:\Works\C# Windows Forms\ContextMenu_\ContextMenu_\bin\Debug\ContextMenu_.pdb
+G:\Works\C# Windows Forms\ContextMenu_\ContextMenu_\obj\Debug\ContextMenu_.csprojResolveAssemblyReference.cache
+G:\Works\C# Windows Forms\ContextMenu_\ContextMenu_\obj\Debug\ContextMenu_.Form1.resources
+G:\Works\C# Windows Forms\ContextMenu_\ContextMenu_\obj\Debug\ContextMenu_.Properties.Resources.resources
+G:\Works\C# Windows Forms\ContextMenu_\ContextMenu_\obj\Debug\ContextMenu_.csproj.GenerateResource.Cache
+G:\Works\C# Windows Forms\ContextMenu_\ContextMenu_\obj\Debug\ContextMenu_.exe
+G:\Works\C# Windows Forms\ContextMenu_\ContextMenu_\obj\Debug\ContextMenu_.pdb

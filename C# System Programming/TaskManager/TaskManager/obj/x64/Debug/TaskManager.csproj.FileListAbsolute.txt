@@ -1,0 +1,12 @@
+D:\flesh\Works\C# System Programming\TaskManager\TaskManager\bin\x64\Debug\TaskManager.exe.config
+D:\flesh\Works\C# System Programming\TaskManager\TaskManager\bin\x64\Debug\TaskManager.exe
+D:\flesh\Works\C# System Programming\TaskManager\TaskManager\bin\x64\Debug\TaskManager.pdb
+D:\flesh\Works\C# System Programming\TaskManager\TaskManager\obj\x64\Debug\TaskManager.Form1.resources
+D:\flesh\Works\C# System Programming\TaskManager\TaskManager\obj\x64\Debug\TaskManager.ListForm.resources
+D:\flesh\Works\C# System Programming\TaskManager\TaskManager\obj\x64\Debug\TaskManager.Priority.resources
+D:\flesh\Works\C# System Programming\TaskManager\TaskManager\obj\x64\Debug\TaskManager.Properties.Resources.resources
+D:\flesh\Works\C# System Programming\TaskManager\TaskManager\obj\x64\Debug\TaskManager.csproj.GenerateResource.Cache
+D:\flesh\Works\C# System Programming\TaskManager\TaskManager\obj\x64\Debug\TaskManager.csproj.CoreCompileInputs.cache
+D:\flesh\Works\C# System Programming\TaskManager\TaskManager\obj\x64\Debug\TaskManager.exe
+D:\flesh\Works\C# System Programming\TaskManager\TaskManager\obj\x64\Debug\TaskManager.pdb
+D:\flesh\Works\C# System Programming\TaskManager\TaskManager\obj\x64\Debug\TaskManager.csprojResolveAssemblyReference.cache

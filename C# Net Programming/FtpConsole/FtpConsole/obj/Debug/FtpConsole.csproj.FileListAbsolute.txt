@@ -1,0 +1,7 @@
+D:\flesh\Works\C# Net Programming\FtpConsole\FtpConsole\bin\Debug\FtpConsole.exe.config
+D:\flesh\Works\C# Net Programming\FtpConsole\FtpConsole\bin\Debug\FtpConsole.exe
+D:\flesh\Works\C# Net Programming\FtpConsole\FtpConsole\bin\Debug\FtpConsole.pdb
+D:\flesh\Works\C# Net Programming\FtpConsole\FtpConsole\obj\Debug\FtpConsole.csprojResolveAssemblyReference.cache
+D:\flesh\Works\C# Net Programming\FtpConsole\FtpConsole\obj\Debug\FtpConsole.csproj.CoreCompileInputs.cache
+D:\flesh\Works\C# Net Programming\FtpConsole\FtpConsole\obj\Debug\FtpConsole.exe
+D:\flesh\Works\C# Net Programming\FtpConsole\FtpConsole\obj\Debug\FtpConsole.pdb

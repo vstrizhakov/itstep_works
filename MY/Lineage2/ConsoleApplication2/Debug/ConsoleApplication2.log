@@ -1,0 +1,314 @@
+﻿  Source.cpp
+d:\files\programmes\visualstudio\vc\include\magick++\drawable.h(463): warning C4251: Magick::DrawableBezier::_coordinates: class "std::vector<Magick::Coordinate,std::allocator<_Ty>>" должен иметь dll-интерфейс для использования клиентами class "Magick::DrawableBezier"
+          with
+          [
+              _Ty=Magick::Coordinate
+          ]
+  d:\files\programmes\visualstudio\vc\include\magick++\drawable.h(71): note:  см. объявление "std::vector<Magick::Coordinate,std::allocator<_Ty>>"
+          with
+          [
+              _Ty=Magick::Coordinate
+          ]
+d:\files\programmes\visualstudio\vc\include\magick++\drawable.h(572): warning C4251: Magick::DrawablePushClipPath::_id: class "std::basic_string<char,std::char_traits<char>,std::allocator<char>>" должен иметь dll-интерфейс для использования клиентами class "Magick::DrawablePushClipPath"
+  d:\files\programmes\visualstudio\vc\include\xstring(2633): note:  см. объявление "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+d:\files\programmes\visualstudio\vc\include\magick++\drawable.h(600): warning C4251: Magick::DrawableClipPath::_id: class "std::basic_string<char,std::char_traits<char>,std::allocator<char>>" должен иметь dll-интерфейс для использования клиентами class "Magick::DrawableClipPath"
+  d:\files\programmes\visualstudio\vc\include\xstring(2633): note:  см. объявление "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+d:\files\programmes\visualstudio\vc\include\magick++\drawable.h(844): warning C4251: Magick::DrawableDensity::_density: class "std::basic_string<char,std::char_traits<char>,std::allocator<char>>" должен иметь dll-интерфейс для использования клиентами class "Magick::DrawableDensity"
+  d:\files\programmes\visualstudio\vc\include\xstring(2633): note:  см. объявление "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+d:\files\programmes\visualstudio\vc\include\magick++\drawable.h(986): warning C4251: Magick::DrawableFillPatternUrl::_url: class "std::basic_string<char,std::char_traits<char>,std::allocator<char>>" должен иметь dll-интерфейс для использования клиентами class "Magick::DrawableFillPatternUrl"
+  d:\files\programmes\visualstudio\vc\include\xstring(2633): note:  см. объявление "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+d:\files\programmes\visualstudio\vc\include\magick++\drawable.h(1081): warning C4251: Magick::DrawableFont::_font: class "std::basic_string<char,std::char_traits<char>,std::allocator<char>>" должен иметь dll-интерфейс для использования клиентами class "Magick::DrawableFont"
+  d:\files\programmes\visualstudio\vc\include\xstring(2633): note:  см. объявление "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+d:\files\programmes\visualstudio\vc\include\magick++\drawable.h(1082): warning C4251: Magick::DrawableFont::_family: class "std::basic_string<char,std::char_traits<char>,std::allocator<char>>" должен иметь dll-интерфейс для использования клиентами class "Magick::DrawableFont"
+  d:\files\programmes\visualstudio\vc\include\xstring(2633): note:  см. объявление "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+d:\files\programmes\visualstudio\vc\include\magick++\drawable.h(1198): warning C4251: Magick::DrawablePath::_path: class "std::vector<Magick::VPath,std::allocator<_Ty>>" должен иметь dll-интерфейс для использования клиентами class "Magick::DrawablePath"
+          with
+          [
+              _Ty=Magick::VPath
+          ]
+  d:\files\programmes\visualstudio\vc\include\magick++\drawable.h(207): note:  см. объявление "std::vector<Magick::VPath,std::allocator<_Ty>>"
+          with
+          [
+              _Ty=Magick::VPath
+          ]
+d:\files\programmes\visualstudio\vc\include\magick++\drawable.h(1287): warning C4251: Magick::DrawablePolygon::_coordinates: class "std::vector<Magick::Coordinate,std::allocator<_Ty>>" должен иметь dll-интерфейс для использования клиентами class "Magick::DrawablePolygon"
+          with
+          [
+              _Ty=Magick::Coordinate
+          ]
+  d:\files\programmes\visualstudio\vc\include\magick++\drawable.h(71): note:  см. объявление "std::vector<Magick::Coordinate,std::allocator<_Ty>>"
+          with
+          [
+              _Ty=Magick::Coordinate
+          ]
+d:\files\programmes\visualstudio\vc\include\magick++\drawable.h(1307): warning C4251: Magick::DrawablePolyline::_coordinates: class "std::vector<Magick::Coordinate,std::allocator<_Ty>>" должен иметь dll-интерфейс для использования клиентами class "Magick::DrawablePolyline"
+          with
+          [
+              _Ty=Magick::Coordinate
+          ]
+  d:\files\programmes\visualstudio\vc\include\magick++\drawable.h(71): note:  см. объявление "std::vector<Magick::Coordinate,std::allocator<_Ty>>"
+          with
+          [
+              _Ty=Magick::Coordinate
+          ]
+d:\files\programmes\visualstudio\vc\include\magick++\drawable.h(1391): warning C4251: Magick::DrawablePushPattern::_id: class "std::basic_string<char,std::char_traits<char>,std::allocator<char>>" должен иметь dll-интерфейс для использования клиентами class "Magick::DrawablePushPattern"
+  d:\files\programmes\visualstudio\vc\include\xstring(2633): note:  см. объявление "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+d:\files\programmes\visualstudio\vc\include\magick++\drawable.h(1877): warning C4251: Magick::DrawableStrokePatternUrl::_url: class "std::basic_string<char,std::char_traits<char>,std::allocator<char>>" должен иметь dll-интерфейс для использования клиентами class "Magick::DrawableStrokePatternUrl"
+  d:\files\programmes\visualstudio\vc\include\xstring(2633): note:  см. объявление "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+d:\files\programmes\visualstudio\vc\include\magick++\drawable.h(2053): warning C4251: Magick::DrawableText::_text: class "std::basic_string<char,std::char_traits<char>,std::allocator<char>>" должен иметь dll-интерфейс для использования клиентами class "Magick::DrawableText"
+  d:\files\programmes\visualstudio\vc\include\xstring(2633): note:  см. объявление "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+d:\files\programmes\visualstudio\vc\include\magick++\drawable.h(2054): warning C4251: Magick::DrawableText::_encoding: class "std::basic_string<char,std::char_traits<char>,std::allocator<char>>" должен иметь dll-интерфейс для использования клиентами class "Magick::DrawableText"
+  d:\files\programmes\visualstudio\vc\include\xstring(2633): note:  см. объявление "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+d:\files\programmes\visualstudio\vc\include\magick++\drawable.h(2489): warning C4251: Magick::PathArcAbs::_coordinates: class "std::vector<Magick::PathArcArgs,std::allocator<_Ty>>" должен иметь dll-интерфейс для использования клиентами class "Magick::PathArcAbs"
+          with
+          [
+              _Ty=Magick::PathArcArgs
+          ]
+  d:\files\programmes\visualstudio\vc\include\magick++\drawable.h(2454): note:  см. объявление "std::vector<Magick::PathArcArgs,std::allocator<_Ty>>"
+          with
+          [
+              _Ty=Magick::PathArcArgs
+          ]
+d:\files\programmes\visualstudio\vc\include\magick++\drawable.h(2511): warning C4251: Magick::PathArcRel::_coordinates: class "std::vector<Magick::PathArcArgs,std::allocator<_Ty>>" должен иметь dll-интерфейс для использования клиентами class "Magick::PathArcRel"
+          with
+          [
+              _Ty=Magick::PathArcArgs
+          ]
+  d:\files\programmes\visualstudio\vc\include\magick++\drawable.h(2454): note:  см. объявление "std::vector<Magick::PathArcArgs,std::allocator<_Ty>>"
+          with
+          [
+              _Ty=Magick::PathArcArgs
+          ]
+d:\files\programmes\visualstudio\vc\include\magick++\drawable.h(2662): warning C4251: Magick::PathCurvetoAbs::_args: class "std::vector<Magick::PathCurvetoArgs,std::allocator<_Ty>>" должен иметь dll-интерфейс для использования клиентами class "Magick::PathCurvetoAbs"
+          with
+          [
+              _Ty=Magick::PathCurvetoArgs
+          ]
+  d:\files\programmes\visualstudio\vc\include\magick++\drawable.h(2628): note:  см. объявление "std::vector<Magick::PathCurvetoArgs,std::allocator<_Ty>>"
+          with
+          [
+              _Ty=Magick::PathCurvetoArgs
+          ]
+d:\files\programmes\visualstudio\vc\include\magick++\drawable.h(2685): warning C4251: Magick::PathCurvetoRel::_args: class "std::vector<Magick::PathCurvetoArgs,std::allocator<_Ty>>" должен иметь dll-интерфейс для использования клиентами class "Magick::PathCurvetoRel"
+          with
+          [
+              _Ty=Magick::PathCurvetoArgs
+          ]
+  d:\files\programmes\visualstudio\vc\include\magick++\drawable.h(2628): note:  см. объявление "std::vector<Magick::PathCurvetoArgs,std::allocator<_Ty>>"
+          with
+          [
+              _Ty=Magick::PathCurvetoArgs
+          ]
+d:\files\programmes\visualstudio\vc\include\magick++\drawable.h(2709): warning C4251: Magick::PathSmoothCurvetoAbs::_coordinates: class "std::vector<Magick::Coordinate,std::allocator<_Ty>>" должен иметь dll-интерфейс для использования клиентами class "Magick::PathSmoothCurvetoAbs"
+          with
+          [
+              _Ty=Magick::Coordinate
+          ]
+  d:\files\programmes\visualstudio\vc\include\magick++\drawable.h(71): note:  см. объявление "std::vector<Magick::Coordinate,std::allocator<_Ty>>"
+          with
+          [
+              _Ty=Magick::Coordinate
+          ]
+d:\files\programmes\visualstudio\vc\include\magick++\drawable.h(2734): warning C4251: Magick::PathSmoothCurvetoRel::_coordinates: class "std::vector<Magick::Coordinate,std::allocator<_Ty>>" должен иметь dll-интерфейс для использования клиентами class "Magick::PathSmoothCurvetoRel"
+          with
+          [
+              _Ty=Magick::Coordinate
+          ]
+  d:\files\programmes\visualstudio\vc\include\magick++\drawable.h(71): note:  см. объявление "std::vector<Magick::Coordinate,std::allocator<_Ty>>"
+          with
+          [
+              _Ty=Magick::Coordinate
+          ]
+d:\files\programmes\visualstudio\vc\include\magick++\drawable.h(2843): warning C4251: Magick::PathQuadraticCurvetoAbs::_args: class "std::vector<Magick::PathQuadraticCurvetoArgs,std::allocator<_Ty>>" должен иметь dll-интерфейс для использования клиентами class "Magick::PathQuadraticCurvetoAbs"
+          with
+          [
+              _Ty=Magick::PathQuadraticCurvetoArgs
+          ]
+  d:\files\programmes\visualstudio\vc\include\magick++\drawable.h(2809): note:  см. объявление "std::vector<Magick::PathQuadraticCurvetoArgs,std::allocator<_Ty>>"
+          with
+          [
+              _Ty=Magick::PathQuadraticCurvetoArgs
+          ]
+d:\files\programmes\visualstudio\vc\include\magick++\drawable.h(2867): warning C4251: Magick::PathQuadraticCurvetoRel::_args: class "std::vector<Magick::PathQuadraticCurvetoArgs,std::allocator<_Ty>>" должен иметь dll-интерфейс для использования клиентами class "Magick::PathQuadraticCurvetoRel"
+          with
+          [
+              _Ty=Magick::PathQuadraticCurvetoArgs
+          ]
+  d:\files\programmes\visualstudio\vc\include\magick++\drawable.h(2809): note:  см. объявление "std::vector<Magick::PathQuadraticCurvetoArgs,std::allocator<_Ty>>"
+          with
+          [
+              _Ty=Magick::PathQuadraticCurvetoArgs
+          ]
+d:\files\programmes\visualstudio\vc\include\magick++\drawable.h(2891): warning C4251: Magick::PathSmoothQuadraticCurvetoAbs::_coordinates: class "std::vector<Magick::Coordinate,std::allocator<_Ty>>" должен иметь dll-интерфейс для использования клиентами class "Magick::PathSmoothQuadraticCurvetoAbs"
+          with
+          [
+              _Ty=Magick::Coordinate
+          ]
+  d:\files\programmes\visualstudio\vc\include\magick++\drawable.h(71): note:  см. объявление "std::vector<Magick::Coordinate,std::allocator<_Ty>>"
+          with
+          [
+              _Ty=Magick::Coordinate
+          ]
+d:\files\programmes\visualstudio\vc\include\magick++\drawable.h(2915): warning C4251: Magick::PathSmoothQuadraticCurvetoRel::_coordinates: class "std::vector<Magick::Coordinate,std::allocator<_Ty>>" должен иметь dll-интерфейс для использования клиентами class "Magick::PathSmoothQuadraticCurvetoRel"
+          with
+          [
+              _Ty=Magick::Coordinate
+          ]
+  d:\files\programmes\visualstudio\vc\include\magick++\drawable.h(71): note:  см. объявление "std::vector<Magick::Coordinate,std::allocator<_Ty>>"
+          with
+          [
+              _Ty=Magick::Coordinate
+          ]
+d:\files\programmes\visualstudio\vc\include\magick++\drawable.h(2943): warning C4251: Magick::PathLinetoAbs::_coordinates: class "std::vector<Magick::Coordinate,std::allocator<_Ty>>" должен иметь dll-интерфейс для использования клиентами class "Magick::PathLinetoAbs"
+          with
+          [
+              _Ty=Magick::Coordinate
+          ]
+  d:\files\programmes\visualstudio\vc\include\magick++\drawable.h(71): note:  см. объявление "std::vector<Magick::Coordinate,std::allocator<_Ty>>"
+          with
+          [
+              _Ty=Magick::Coordinate
+          ]
+d:\files\programmes\visualstudio\vc\include\magick++\drawable.h(2967): warning C4251: Magick::PathLinetoRel::_coordinates: class "std::vector<Magick::Coordinate,std::allocator<_Ty>>" должен иметь dll-интерфейс для использования клиентами class "Magick::PathLinetoRel"
+          with
+          [
+              _Ty=Magick::Coordinate
+          ]
+  d:\files\programmes\visualstudio\vc\include\magick++\drawable.h(71): note:  см. объявление "std::vector<Magick::Coordinate,std::allocator<_Ty>>"
+          with
+          [
+              _Ty=Magick::Coordinate
+          ]
+d:\files\programmes\visualstudio\vc\include\magick++\drawable.h(3109): warning C4251: Magick::PathMovetoAbs::_coordinates: class "std::vector<Magick::Coordinate,std::allocator<_Ty>>" должен иметь dll-интерфейс для использования клиентами class "Magick::PathMovetoAbs"
+          with
+          [
+              _Ty=Magick::Coordinate
+          ]
+  d:\files\programmes\visualstudio\vc\include\magick++\drawable.h(71): note:  см. объявление "std::vector<Magick::Coordinate,std::allocator<_Ty>>"
+          with
+          [
+              _Ty=Magick::Coordinate
+          ]
+d:\files\programmes\visualstudio\vc\include\magick++\drawable.h(3133): warning C4251: Magick::PathMovetoRel::_coordinates: class "std::vector<Magick::Coordinate,std::allocator<_Ty>>" должен иметь dll-интерфейс для использования клиентами class "Magick::PathMovetoRel"
+          with
+          [
+              _Ty=Magick::Coordinate
+          ]
+  d:\files\programmes\visualstudio\vc\include\magick++\drawable.h(71): note:  см. объявление "std::vector<Magick::Coordinate,std::allocator<_Ty>>"
+          with
+          [
+              _Ty=Magick::Coordinate
+          ]
+d:\files\programmes\visualstudio\vc\include\magick++\exception.h(23): warning C4275: class "std::exception", не являющийся dll-интерфейсом, использован в качестве базового для dll-интерфейса class "Magick::Exception"
+  d:\files\programmes\visualstudio\vc\include\vcruntime_exception.h(43): note:  см. объявление "std::exception"
+  d:\files\programmes\visualstudio\vc\include\magick++\exception.h(22): note:  см. объявление "Magick::Exception"
+d:\files\programmes\visualstudio\vc\include\magick++\exception.h(56): warning C4251: Magick::Exception::_what: class "std::basic_string<char,std::char_traits<char>,std::allocator<char>>" должен иметь dll-интерфейс для использования клиентами class "Magick::Exception"
+  d:\files\programmes\visualstudio\vc\include\xstring(2633): note:  см. объявление "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+d:\files\programmes\visualstudio\vc\include\magick++\statistic.h(70): warning C4251: Magick::ChannelMoments::_huInvariants: class "std::vector<double,std::allocator<_Ty>>" должен иметь dll-интерфейс для использования клиентами class "Magick::ChannelMoments"
+          with
+          [
+              _Ty=double
+          ]
+  d:\files\programmes\visualstudio\vc\include\magick++\statistic.h(70): note:  см. объявление "std::vector<double,std::allocator<_Ty>>"
+          with
+          [
+              _Ty=double
+          ]
+d:\files\programmes\visualstudio\vc\include\magick++\statistic.h(125): warning C4251: Magick::ChannelPerceptualHash::_srgbHuPhash: class "std::vector<double,std::allocator<_Ty>>" должен иметь dll-интерфейс для использования клиентами class "Magick::ChannelPerceptualHash"
+          with
+          [
+              _Ty=double
+          ]
+  d:\files\programmes\visualstudio\vc\include\magick++\statistic.h(70): note:  см. объявление "std::vector<double,std::allocator<_Ty>>"
+          with
+          [
+              _Ty=double
+          ]
+d:\files\programmes\visualstudio\vc\include\magick++\statistic.h(126): warning C4251: Magick::ChannelPerceptualHash::_hclpHuPhash: class "std::vector<double,std::allocator<_Ty>>" должен иметь dll-интерфейс для использования клиентами class "Magick::ChannelPerceptualHash"
+          with
+          [
+              _Ty=double
+          ]
+  d:\files\programmes\visualstudio\vc\include\magick++\statistic.h(70): note:  см. объявление "std::vector<double,std::allocator<_Ty>>"
+          with
+          [
+              _Ty=double
+          ]
+d:\files\programmes\visualstudio\vc\include\magick++\statistic.h(240): warning C4251: Magick::ImageMoments::_channels: class "std::vector<Magick::ChannelMoments,std::allocator<_Ty>>" должен иметь dll-интерфейс для использования клиентами class "Magick::ImageMoments"
+          with
+          [
+              _Ty=Magick::ChannelMoments
+          ]
+  d:\files\programmes\visualstudio\vc\include\magick++\statistic.h(240): note:  см. объявление "std::vector<Magick::ChannelMoments,std::allocator<_Ty>>"
+          with
+          [
+              _Ty=Magick::ChannelMoments
+          ]
+d:\files\programmes\visualstudio\vc\include\magick++\statistic.h(278): warning C4251: Magick::ImagePerceptualHash::_channels: class "std::vector<Magick::ChannelPerceptualHash,std::allocator<_Ty>>" должен иметь dll-интерфейс для использования клиентами class "Magick::ImagePerceptualHash"
+          with
+          [
+              _Ty=Magick::ChannelPerceptualHash
+          ]
+  d:\files\programmes\visualstudio\vc\include\magick++\statistic.h(278): note:  см. объявление "std::vector<Magick::ChannelPerceptualHash,std::allocator<_Ty>>"
+          with
+          [
+              _Ty=Magick::ChannelPerceptualHash
+          ]
+d:\files\programmes\visualstudio\vc\include\magick++\statistic.h(303): warning C4251: Magick::ImageStatistics::_channels: class "std::vector<Magick::ChannelStatistics,std::allocator<_Ty>>" должен иметь dll-интерфейс для использования клиентами class "Magick::ImageStatistics"
+          with
+          [
+              _Ty=Magick::ChannelStatistics
+          ]
+  d:\files\programmes\visualstudio\vc\include\magick++\statistic.h(303): note:  см. объявление "std::vector<Magick::ChannelStatistics,std::allocator<_Ty>>"
+          with
+          [
+              _Ty=Magick::ChannelStatistics
+          ]
+d:\files\programmes\visualstudio\vc\include\magick++\coderinfo.h(76): warning C4251: Magick::CoderInfo::_description: class "std::basic_string<char,std::char_traits<char>,std::allocator<char>>" должен иметь dll-интерфейс для использования клиентами class "Magick::CoderInfo"
+  d:\files\programmes\visualstudio\vc\include\xstring(2633): note:  см. объявление "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+d:\files\programmes\visualstudio\vc\include\magick++\coderinfo.h(81): warning C4251: Magick::CoderInfo::_mimeType: class "std::basic_string<char,std::char_traits<char>,std::allocator<char>>" должен иметь dll-интерфейс для использования клиентами class "Magick::CoderInfo"
+  d:\files\programmes\visualstudio\vc\include\xstring(2633): note:  см. объявление "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+d:\files\programmes\visualstudio\vc\include\magick++\coderinfo.h(82): warning C4251: Magick::CoderInfo::_module: class "std::basic_string<char,std::char_traits<char>,std::allocator<char>>" должен иметь dll-интерфейс для использования клиентами class "Magick::CoderInfo"
+  d:\files\programmes\visualstudio\vc\include\xstring(2633): note:  см. объявление "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+d:\files\programmes\visualstudio\vc\include\magick++\coderinfo.h(83): warning C4251: Magick::CoderInfo::_name: class "std::basic_string<char,std::char_traits<char>,std::allocator<char>>" должен иметь dll-интерфейс для использования клиентами class "Magick::CoderInfo"
+  d:\files\programmes\visualstudio\vc\include\xstring(2633): note:  см. объявление "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+d:\files\programmes\visualstudio\vc\include\magick++\montage.h(98): warning C4251: Magick::Montage::_fileName: class "std::basic_string<char,std::char_traits<char>,std::allocator<char>>" должен иметь dll-интерфейс для использования клиентами class "Magick::Montage"
+  d:\files\programmes\visualstudio\vc\include\xstring(2633): note:  см. объявление "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+d:\files\programmes\visualstudio\vc\include\magick++\montage.h(100): warning C4251: Magick::Montage::_font: class "std::basic_string<char,std::char_traits<char>,std::allocator<char>>" должен иметь dll-интерфейс для использования клиентами class "Magick::Montage"
+  d:\files\programmes\visualstudio\vc\include\xstring(2633): note:  см. объявление "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+d:\files\programmes\visualstudio\vc\include\magick++\montage.h(103): warning C4251: Magick::Montage::_label: class "std::basic_string<char,std::char_traits<char>,std::allocator<char>>" должен иметь dll-интерфейс для использования клиентами class "Magick::Montage"
+  d:\files\programmes\visualstudio\vc\include\xstring(2633): note:  см. объявление "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+d:\files\programmes\visualstudio\vc\include\magick++\montage.h(107): warning C4251: Magick::Montage::_texture: class "std::basic_string<char,std::char_traits<char>,std::allocator<char>>" должен иметь dll-интерфейс для использования клиентами class "Magick::Montage"
+  d:\files\programmes\visualstudio\vc\include\xstring(2633): note:  см. объявление "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+d:\files\programmes\visualstudio\vc\include\magick++\montage.h(109): warning C4251: Magick::Montage::_title: class "std::basic_string<char,std::char_traits<char>,std::allocator<char>>" должен иметь dll-интерфейс для использования клиентами class "Magick::Montage"
+  d:\files\programmes\visualstudio\vc\include\xstring(2633): note:  см. объявление "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+d:\files\programmes\visualstudio\vc\include\magick++\stl.h(131): warning C4251: Magick::annotateImage::_text: class "std::basic_string<char,std::char_traits<char>,std::allocator<char>>" должен иметь dll-интерфейс для использования клиентами class "Magick::annotateImage"
+  d:\files\programmes\visualstudio\vc\include\xstring(2633): note:  см. объявление "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+d:\files\programmes\visualstudio\vc\include\magick++\stl.h(210): warning C4251: Magick::cdlImage::_cdl: class "std::basic_string<char,std::char_traits<char>,std::allocator<char>>" должен иметь dll-интерфейс для использования клиентами class "Magick::cdlImage"
+  d:\files\programmes\visualstudio\vc\include\xstring(2633): note:  см. объявление "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+d:\files\programmes\visualstudio\vc\include\magick++\stl.h(270): warning C4251: Magick::commentImage::_comment: class "std::basic_string<char,std::char_traits<char>,std::allocator<char>>" должен иметь dll-интерфейс для использования клиентами class "Magick::commentImage"
+  d:\files\programmes\visualstudio\vc\include\xstring(2633): note:  см. объявление "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+d:\files\programmes\visualstudio\vc\include\magick++\stl.h(382): warning C4251: Magick::drawImage::_drawableList: class "std::vector<Magick::Drawable,std::allocator<_Ty>>" должен иметь dll-интерфейс для использования клиентами class "Magick::drawImage"
+          with
+          [
+              _Ty=Magick::Drawable
+          ]
+  d:\files\programmes\visualstudio\vc\include\magick++\drawable.h(144): note:  см. объявление "std::vector<Magick::Drawable,std::allocator<_Ty>>"
+          with
+          [
+              _Ty=Magick::Drawable
+          ]
+d:\files\programmes\visualstudio\vc\include\magick++\stl.h(661): warning C4251: Magick::labelImage::_label: class "std::basic_string<char,std::char_traits<char>,std::allocator<char>>" должен иметь dll-интерфейс для использования клиентами class "Magick::labelImage"
+  d:\files\programmes\visualstudio\vc\include\xstring(2633): note:  см. объявление "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+d:\files\programmes\visualstudio\vc\include\magick++\stl.h(1287): warning C4251: Magick::backgroundTextureImage::_backgroundTexture: class "std::basic_string<char,std::char_traits<char>,std::allocator<char>>" должен иметь dll-интерфейс для использования клиентами class "Magick::backgroundTextureImage"
+  d:\files\programmes\visualstudio\vc\include\xstring(2633): note:  см. объявление "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+d:\files\programmes\visualstudio\vc\include\magick++\stl.h(1466): warning C4251: Magick::fileNameImage::_fileName: class "std::basic_string<char,std::char_traits<char>,std::allocator<char>>" должен иметь dll-интерфейс для использования клиентами class "Magick::fileNameImage"
+  d:\files\programmes\visualstudio\vc\include\xstring(2633): note:  см. объявление "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+d:\files\programmes\visualstudio\vc\include\magick++\stl.h(1490): warning C4251: Magick::fontImage::_font: class "std::basic_string<char,std::char_traits<char>,std::allocator<char>>" должен иметь dll-интерфейс для использования клиентами class "Magick::fontImage"
+  d:\files\programmes\visualstudio\vc\include\xstring(2633): note:  см. объявление "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+d:\files\programmes\visualstudio\vc\include\magick++\stl.h(1538): warning C4251: Magick::magickImage::_magick: class "std::basic_string<char,std::char_traits<char>,std::allocator<char>>" должен иметь dll-интерфейс для использования клиентами class "Magick::magickImage"
+  d:\files\programmes\visualstudio\vc\include\xstring(2633): note:  см. объявление "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+d:\files\programmes\visualstudio\vc\include\magick++\stl.h(1835): warning C4251: Magick::x11DisplayImage::_display: class "std::basic_string<char,std::char_traits<char>,std::allocator<char>>" должен иметь dll-интерфейс для использования клиентами class "Magick::x11DisplayImage"
+  d:\files\programmes\visualstudio\vc\include\xstring(2633): note:  см. объявление "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+Source.obj : error LNK2019: ссылка на неразрешенный внешний символ "__declspec(dllimport) void __cdecl Magick::InitializeMagick(char const *)" (__imp_?InitializeMagick@Magick@@YAXPBD@Z) в функции _main
+C:\Users\vPC\documents\visual studio 2015\Projects\ConsoleApplication2\Debug\ConsoleApplication2.exe : fatal error LNK1120: неразрешенных внешних элементов: 1

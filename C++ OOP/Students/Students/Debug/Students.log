@@ -1,0 +1,4 @@
+﻿  main.cpp
+g:\students\students\main.cpp(37): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  Students.vcxproj -> G:\Students\Debug\Students.exe
+  Students.vcxproj -> G:\Students\Debug\Students.pdb (Full PDB)

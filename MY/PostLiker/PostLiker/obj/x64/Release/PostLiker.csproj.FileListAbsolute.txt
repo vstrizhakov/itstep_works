@@ -1,0 +1,9 @@
+D:\flesh\Works\MY\PostLiker\PostLiker\bin\x64\Release\PostLiker.exe.config
+D:\flesh\Works\MY\PostLiker\PostLiker\bin\x64\Release\PostLiker.exe
+D:\flesh\Works\MY\PostLiker\PostLiker\bin\x64\Release\PostLiker.pdb
+D:\flesh\Works\MY\PostLiker\PostLiker\obj\x64\Release\PostLiker.Properties.Resources.resources
+D:\flesh\Works\MY\PostLiker\PostLiker\obj\x64\Release\PostLiker.ProxySettings.resources
+D:\flesh\Works\MY\PostLiker\PostLiker\obj\x64\Release\PostLiker.csproj.GenerateResource.Cache
+D:\flesh\Works\MY\PostLiker\PostLiker\obj\x64\Release\PostLiker.csproj.CoreCompileInputs.cache
+D:\flesh\Works\MY\PostLiker\PostLiker\obj\x64\Release\PostLiker.exe
+D:\flesh\Works\MY\PostLiker\PostLiker\obj\x64\Release\PostLiker.pdb

@@ -1,0 +1,7 @@
+D:\flesh\Works\C# System Programming\Threads\Threads\bin\Debug\Threads.exe.config
+D:\flesh\Works\C# System Programming\Threads\Threads\bin\Debug\Threads.exe
+D:\flesh\Works\C# System Programming\Threads\Threads\bin\Debug\Threads.pdb
+D:\flesh\Works\C# System Programming\Threads\Threads\obj\Debug\Threads.csprojResolveAssemblyReference.cache
+D:\flesh\Works\C# System Programming\Threads\Threads\obj\Debug\Threads.csproj.CoreCompileInputs.cache
+D:\flesh\Works\C# System Programming\Threads\Threads\obj\Debug\Threads.exe
+D:\flesh\Works\C# System Programming\Threads\Threads\obj\Debug\Threads.pdb

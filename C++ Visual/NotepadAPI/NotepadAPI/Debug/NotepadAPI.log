@@ -1,0 +1,9 @@
+﻿  main.cpp
+d:\files\работы\2 семестр\projects\notepadapi\notepadapi\main.cpp(128): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note:  см. объявление "fopen"
+d:\files\работы\2 семестр\projects\notepadapi\notepadapi\main.cpp(162): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note:  см. объявление "fopen"
+d:\files\работы\2 семестр\projects\notepadapi\notepadapi\main.cpp(81): warning C4101: hDC: неиспользованная локальная переменная
+d:\files\работы\2 семестр\projects\notepadapi\notepadapi\main.cpp(82): warning C4101: rect: неиспользованная локальная переменная
+  NotepadAPI.vcxproj -> D:\Files\Работы\2 семестр\Projects\NotepadAPI\Debug\NotepadAPI.exe
+  NotepadAPI.vcxproj -> D:\Files\Работы\2 семестр\Projects\NotepadAPI\Debug\NotepadAPI.pdb (Full PDB)

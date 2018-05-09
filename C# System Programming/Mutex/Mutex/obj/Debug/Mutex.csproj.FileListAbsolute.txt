@@ -1,0 +1,7 @@
+D:\flesh\Works\C# System Programming\Mutex\Mutex\bin\Debug\Mutex.exe.config
+D:\flesh\Works\C# System Programming\Mutex\Mutex\bin\Debug\Mutex.exe
+D:\flesh\Works\C# System Programming\Mutex\Mutex\bin\Debug\Mutex.pdb
+D:\flesh\Works\C# System Programming\Mutex\Mutex\obj\Debug\Mutex.csprojResolveAssemblyReference.cache
+D:\flesh\Works\C# System Programming\Mutex\Mutex\obj\Debug\Mutex.csproj.CoreCompileInputs.cache
+D:\flesh\Works\C# System Programming\Mutex\Mutex\obj\Debug\Mutex.exe
+D:\flesh\Works\C# System Programming\Mutex\Mutex\obj\Debug\Mutex.pdb

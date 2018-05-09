@@ -1,0 +1,24 @@
+﻿  main.cpp
+c:\users\vpc\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\main.cpp(27): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\corecrt_wstring.h(121): note:  см. объявление "wcscpy"
+c:\users\vpc\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\main.cpp(34): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\corecrt_wstring.h(121): note:  см. объявление "wcscpy"
+c:\users\vpc\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\main.cpp(42): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\corecrt_wstring.h(121): note:  см. объявление "wcscpy"
+c:\users\vpc\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\main.cpp(52): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\corecrt_wstring.h(121): note:  см. объявление "wcscpy"
+c:\users\vpc\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\main.cpp(197): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+c:\users\vpc\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\main.cpp(178): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note:  см. объявление "fopen"
+  c:\users\vpc\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\main.cpp(177): note: при компиляции функции-члена "<Нет данных>" класса <Нет данных>
+  c:\users\vpc\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\main.cpp(288): note: см. ссылку на создание экземпляров функции шаблон при компиляции "bool FQueue<char>::rff(void)"
+  c:\users\vpc\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\main.cpp(234): note: см. ссылку на создание экземпляров класса шаблон при компиляции "FQueue<char>"
+c:\users\vpc\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\main.cpp(164): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note:  см. объявление "fopen"
+  c:\users\vpc\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\main.cpp(163): note: при компиляции функции-члена "<Нет данных>" класса <Нет данных>
+  c:\users\vpc\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\main.cpp(283): note: см. ссылку на создание экземпляров функции шаблон при компиляции "bool FQueue<char>::wtf(void)"
+c:\users\vpc\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\main.cpp(105): warning C4700: использована неинициализированная локальная переменная "tmp"
+c:\users\vpc\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\main.cpp(105): warning C4700: использована неинициализированная локальная переменная "tmp"
+c:\users\vpc\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\main.cpp(105): warning C4700: использована неинициализированная локальная переменная "tmp"
+  ConsoleApplication1.vcxproj -> C:\Users\vPC\documents\visual studio 2015\Projects\ConsoleApplication1\Debug\ConsoleApplication1.exe
+  ConsoleApplication1.vcxproj -> C:\Users\vPC\documents\visual studio 2015\Projects\ConsoleApplication1\Debug\ConsoleApplication1.pdb (Full PDB)

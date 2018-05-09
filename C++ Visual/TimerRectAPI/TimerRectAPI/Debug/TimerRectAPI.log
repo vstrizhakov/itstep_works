@@ -1,0 +1,5 @@
+﻿  main.cpp
+d:\files\работы\2 семестр\projects\timerrectapi\timerrectapi\main.cpp(48): warning C4060: оператор switch не содержит метку "case" или "default"
+d:\files\работы\2 семестр\projects\timerrectapi\timerrectapi\main.cpp(28): warning C4101: rect: неиспользованная локальная переменная
+  TimerRectAPI.vcxproj -> D:\Files\Работы\2 семестр\Projects\TimerRectAPI\Debug\TimerRectAPI.exe
+  TimerRectAPI.vcxproj -> D:\Files\Работы\2 семестр\Projects\TimerRectAPI\Debug\TimerRectAPI.pdb (Full PDB)

@@ -1,0 +1,6 @@
+D:\flesh\Works\C# System Programming\WinDLL\WinDLL\bin\Debug\WinDLL.dll
+D:\flesh\Works\C# System Programming\WinDLL\WinDLL\bin\Debug\WinDLL.pdb
+D:\flesh\Works\C# System Programming\WinDLL\WinDLL\obj\Debug\WinDLL.csprojResolveAssemblyReference.cache
+D:\flesh\Works\C# System Programming\WinDLL\WinDLL\obj\Debug\WinDLL.csproj.CoreCompileInputs.cache
+D:\flesh\Works\C# System Programming\WinDLL\WinDLL\obj\Debug\WinDLL.dll
+D:\flesh\Works\C# System Programming\WinDLL\WinDLL\obj\Debug\WinDLL.pdb

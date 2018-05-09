@@ -1,0 +1,15 @@
+c:\users\09358\documents\visual studio 2015\Projects\Home1809\Home1809\bin\Debug\Home1809.exe.config
+c:\users\09358\documents\visual studio 2015\Projects\Home1809\Home1809\obj\Debug\Home1809.csprojResolveAssemblyReference.cache
+c:\users\09358\documents\visual studio 2015\Projects\Home1809\Home1809\bin\Debug\Home1809.exe
+c:\users\09358\documents\visual studio 2015\Projects\Home1809\Home1809\bin\Debug\Home1809.pdb
+c:\users\09358\documents\visual studio 2015\Projects\Home1809\Home1809\obj\Debug\Home1809.exe
+c:\users\09358\documents\visual studio 2015\Projects\Home1809\Home1809\obj\Debug\Home1809.pdb
+F:\Works\C#\HOME!!!\СДАТЬ\Fraction, Cashier, DynArray\Home1809\bin\Debug\Home1809.exe.config
+F:\Works\C#\HOME!!!\СДАТЬ\Fraction, Cashier, DynArray\Home1809\obj\Debug\Home1809.exe
+F:\Works\C#\HOME!!!\СДАТЬ\Fraction, Cashier, DynArray\Home1809\obj\Debug\Home1809.pdb
+F:\Works\C#\HOME!!!\СДАТЬ\Fraction, Cashier, DynArray\Home1809\obj\Debug\Home1809.csprojResolveAssemblyReference.cache
+F:\Works\C#\HOME!!!\СДАТЬ\Fraction, Cashier, DynArray\Home1809\bin\Debug\Home1809.exe
+F:\Works\C#\HOME!!!\СДАТЬ\Fraction, Cashier, DynArray\Home1809\bin\Debug\Home1809.pdb
+G:\Works\C#\HOME!!!\СДАТЬ\Fraction, Cashier, DynArray\Home1809\bin\Debug\Home1809.exe.config
+G:\Works\C#\HOME!!!\СДАТЬ\Fraction, Cashier, DynArray\Home1809\obj\Debug\Home1809.exe
+G:\Works\C#\HOME!!!\СДАТЬ\Fraction, Cashier, DynArray\Home1809\obj\Debug\Home1809.pdb
