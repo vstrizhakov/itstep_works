@@ -1,0 +1,23 @@
+﻿<UserControl x:Class="Hospital.Views.Patients"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Hospital.Views"
+             mc:Ignorable="d" 
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes">
+    <materialDesign:Card Padding="16" Margin="8">
+        <StackPanel>
+            <Button Command="{Binding CreatePatient}" Content="Добавить пациента" Margin="0 0 0 20"/>
+            <TextBlock Foreground="#FFF" HorizontalAlignment="Left" Text="Ваши пациенты:" Margin="0 0 0 10" FontSize="16"/>
+            <ItemsControl Grid.Row="1" Visibility="{Binding DLVisibility}" ItemsSource="{Binding Patients}">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <Button Foreground="#FFF" TextBlock.TextAlignment="Left" Style="{DynamicResource MaterialDesignFlatButton}" Command="{Binding GoToPatient}" CommandParameter="{Binding Id}" Content="{Binding Date}"/>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+            <TextBlock Foreground="#FFF" HorizontalAlignment="Center" Text="У Вас нет ни одного пациента" Visibility="{Binding TextVisibility}"/>
+        </StackPanel>
+    </materialDesign:Card>
+</UserControl>

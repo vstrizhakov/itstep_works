@@ -1,0 +1,32 @@
+﻿<UserControl x:Class="Hospital.Views.Login"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Hospital.Views"
+             mc:Ignorable="d"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes">
+    <Grid Margin="0 20 0 20">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Image Grid.Row="1" Grid.Column="1" Source="../Resources/Без имени-1.png" Width="400" Height="Auto" Margin="0 0 0 20"/>
+        <materialDesign:Card Padding="16" Width="400" Grid.Column="1" Grid.Row="2">
+            <StackPanel>
+                <TextBox Text="{Binding Username, UpdateSourceTrigger=PropertyChanged}" Margin="0 0 0 10" Style="{DynamicResource MaterialDesignFloatingHintTextBox}" materialDesign:HintAssist.Hint="Логин"/>
+                <PasswordBox Margin="0 0 0 10" Name="password" Style="{DynamicResource MaterialDesignFloatingHintPasswordBox}" materialDesign:HintAssist.Hint="Пароль"/>
+                <Button Command="{Binding Login}" CommandParameter="{Binding ElementName=password}" Content="Sign in"/>
+                <TextBlock Margin="0 10 0 10" Text="or" HorizontalAlignment="Center"/>
+                <Button Command="{Binding ToRegister}" Content="Sign up"/>
+            </StackPanel>
+        </materialDesign:Card>
+    </Grid>
+</UserControl>

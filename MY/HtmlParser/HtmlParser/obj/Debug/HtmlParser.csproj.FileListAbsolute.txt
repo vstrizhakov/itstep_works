@@ -1,0 +1,5 @@
+C:\Users\09358\Desktop\HtmlParser\HtmlParser\bin\Debug\HtmlParser.dll
+C:\Users\09358\Desktop\HtmlParser\HtmlParser\bin\Debug\HtmlParser.pdb
+C:\Users\09358\Desktop\HtmlParser\HtmlParser\obj\Debug\HtmlParser.dll
+C:\Users\09358\Desktop\HtmlParser\HtmlParser\obj\Debug\HtmlParser.pdb
+C:\Users\09358\Desktop\HtmlParser\HtmlParser\obj\Debug\HtmlParser.csprojResolveAssemblyReference.cache

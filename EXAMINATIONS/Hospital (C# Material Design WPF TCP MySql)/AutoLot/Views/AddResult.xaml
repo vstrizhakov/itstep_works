@@ -1,0 +1,25 @@
+﻿<UserControl x:Class="Hospital.Views.AddResult"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Hospital.Views"
+             mc:Ignorable="d"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes">
+    <materialDesign:Card Padding="16" Margin="8">
+        <StackPanel>
+            <Button Command="{Binding GoToResults}" Margin="0 0 0 10" Style="{DynamicResource MaterialDesignFlatButton}" Content="Вернуться к списку замеров"/>
+            <TextBox Text="{Binding Pulse, UpdateSourceTrigger=PropertyChanged}" Margin="0 0 0 10" Style="{DynamicResource MaterialDesignFloatingHintTextBox}" materialDesign:HintAssist.Hint="Пульс"/>
+            <TextBox Text="{Binding Sap, UpdateSourceTrigger=PropertyChanged}" Margin="0 0 0 10" Style="{DynamicResource MaterialDesignFloatingHintTextBox}" materialDesign:HintAssist.Hint="Sap"/>
+            <TextBox Text="{Binding Dap, UpdateSourceTrigger=PropertyChanged}" Margin="0 0 0 10" Style="{DynamicResource MaterialDesignFloatingHintTextBox}" materialDesign:HintAssist.Hint="Dap"/>
+            <TextBox Text="{Binding Hb, UpdateSourceTrigger=PropertyChanged}" Margin="0 0 0 10" Style="{DynamicResource MaterialDesignFloatingHintTextBox}" materialDesign:HintAssist.Hint="Hb"/>
+            <TextBox Text="{Binding Sao, UpdateSourceTrigger=PropertyChanged}" Margin="0 0 0 10" Style="{DynamicResource MaterialDesignFloatingHintTextBox}" materialDesign:HintAssist.Hint="SaO2ET"/>
+            <Button Command="{Binding Add}">
+                <StackPanel Orientation="Horizontal">
+                    <materialDesign:PackIcon Kind="PlusCircleOutline"/>
+                    <TextBlock Margin="6 0 0 0">Добавить замер</TextBlock>
+                </StackPanel>
+            </Button>
+        </StackPanel>
+    </materialDesign:Card>
+</UserControl>
