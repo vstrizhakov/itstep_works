@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PopStar</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		*
+		{
+			box-sizing: border-box;
+		}
+		body
+		{
+			font-family: Tahoma;
+			color: #555;
+		}
+		.header
+		{
+			border-bottom: solid 1px #ddd;
+			font-size: 34px;
+			font-weight: bold;
+			position: relative;
+			color: #555;
+			height: 100px;
+		}
+		.outer
+		{
+			font-size: 200px;
+			position: absolute;
+			top: -50px;
+		}
+		.inner
+		{
+			font-size: 120px;
+			color: #fff;
+			position: absolute;
+			top: 7px;
+			left: 24px;
+		}
+		.txt
+		{
+			position: absolute;
+			left: 110px;
+			font-size: 100px;
+		}
+		.main
+		{
+			height: 300px;
+			border-bottom: solid 1px #ddd;
+		}
+		.main div:not(.void), .footer div:not(.void)
+		{
+			display: inline-block;
+			vertical-align: top;
+			position: relative;
+		}
+		.void
+		{
+			border: solid 1px #ddd;
+			background: #eee;
+			height: 20px;
+		}
+		.left-column, .right-column
+		{
+			width: 19.5%;
+		}
+		.content
+		{
+			width: 60%;
+		}
+		.left-column ul
+		{
+			padding: 0;
+			display: block;
+			width: 100%;
+			list-style: none;
+			text-align: right;
+			position: absolute;
+			top: 60px;
+		}
+		a
+		{
+			color: #555;
+			font-weight: bold;
+			text-decoration: none;
+		}
+		.text
+		{
+			position: absolute;
+			top: 60px;
+		}
+		.items
+		{
+			position: absolute;
+			top: 34px;
+		}
+		.item h5, .item p
+		{
+			margin: 0;
+		}
+		.item
+		{
+			margin-bottom: 10px;
+		}
+	</style>
+</head>
+<body style="margin: 10px;">
+	<div class="header">
+		<span class="outer">&#9679;</span><span class="inner">&#9679;</span><span class="txt">PopStar</span>
+	</div>
+	<div class="main">
+		<div class="left-column">
+			<ul>
+				<li><a href="javascript:void(0);">О компании</a></li>
+				<li><a href="javascript:void(0);">Наши звездочки</a></li>
+				<li><a href="javascript:void(0);">Услуги</a></li>
+				<li><a href="javascript:void(0);">Контакты</a></li>
+			</ul>
+		</div>
+		<div class="content">
+			<div class="text">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde libero qui harum suscipit dicta ab numquam dolor odio facilis ut, in exercitationem nobis ducimus culpa! A nam, aliquam cupiditate nemo! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis veritatis quis, sapiente pariatur deserunt est aspernatur obcaecati libero, porro eos cumque fugit sit et in exercitationem quo accusamus, qui eum.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa magnam adipisci tempore iste placeat, pariatur consequuntur minima, dicta harum unde, odit eius error ut eligendi voluptas accusamus! Eaque, excepturi repellendus.</p>
+			</div>
+		</div>
+		<div class="right-column">
+			<div class="void"></div>
+			<b>новости</b>
+			<div class="items">
+				<div class="item">
+					<h5>27.06.2018</h5>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus delectus consequatur nemo ab ex,</p>
+				</div>
+				<div class="item">
+					<h5>28.06.2018</h5>
+					<p>non hic est odio, possimus ratione harum, aut magni fugit! Voluptates eos incidunt molestias et ducimus.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="left-column">
+			<div class="void"></div>
+		</div>
+		<div class="content"></div>
+		<div class="right-column">
+			2017 (c) PopStar
+		</div>
+	</div>
+</body>
+</html>

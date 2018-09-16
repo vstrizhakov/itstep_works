@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>DOM</title>
+		<meta charset="utf-8">
+		<script>
+			
+		</script>
+	</head>
+	<body id="page">
+		Привет
+		<h1>Заголовок</h1>
+		<p id="paragraph">Текст параграфа 1</p>
+		Bill Gates
+		<p>Текст параграфа 2</p>
+		<!-- Комментарий -->
+		<script>
+			var p = document.getElementById("page");
+			var str = "";
+			for (var i = 0; i < p.childNodes.length; i++)
+			{
+				var elem = page.childNodes[i];
+				if (elem.nodeType == 1)
+					str += page.childNodes[i].tagName + ", hasChild: " + page.childNodes[i].hasChildNodes() + "<br>";
+				else if (elem.nodeType == 3)
+					str += "Текстовый узел: " + elem.nodeValue + "<br>";
+				else if (elem.nodeType == 8)
+					str += "Комментарий: " + elem.nodeValue + "<br>";
+			}
+			document.write(str);
+		</script>
+	</body>
+</html>

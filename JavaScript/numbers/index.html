@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html style="height: 100%;">
+	<head>
+		<title>Numbers</title>
+		<meta charset="utf-8">
+		<script>
+			window.onload = function()
+			{
+				function Digit(digit, imgName)
+				{
+					this.digit = digit;
+					this.img = new Image();
+					this.img.src = imgName;
+				}
+
+				var Digits = [];
+				for (var i = 0; i < 10; i++)
+					Digits.push(new Digit(i, i + ".png"));
+
+				function DigitalNumber(number)
+				{
+					this.number = number.toString();
+
+					this.generateView = function(div)
+					{
+						for (var i = 0; i < this.number.length; i++)
+							div.childNodes[i + i + 1].src = Digits[Number(this.number[i])].img.src;
+					}
+				}
+
+				function Clock(div)
+				{
+					this.div = div;
+					this.timerId;
+					this.timerIdPoint;
+					this.timerIdCircle;
+
+					this.tick = function ()
+					{
+						var date = new Date();
+						var hours = new DigitalNumber(date.getHours());
+						if (hours.number.length == 1)
+							hours.number = "0" + hours.number; 
+						var minutes = new DigitalNumber(date.getMinutes()); 
+						if (minutes.number.length == 1)
+							minutes.number = "0" + minutes.number;
+						var seconds = new DigitalNumber(date.getSeconds()); 
+						if (seconds.number.length == 1)
+							seconds.number = "0" + seconds.number;
+						var milliseconds = new DigitalNumber(date.getMilliseconds());
+						while (milliseconds.number.length < 3)
+							milliseconds.number = "0" + milliseconds.number;
+						var hoursDiv = document.getElementById("hours");
+						var minutesDiv = document.getElementById("minutes");
+						var secondsDiv = document.getElementById("seconds");
+						var millisecondsDiv = document.getElementById("milliseconds");
+
+						hours.generateView(hoursDiv);
+						minutes.generateView(minutesDiv);
+						seconds.generateView(secondsDiv);
+						milliseconds.generateView(millisecondsDiv);
+					}
+
+					this.centerX = 0;
+					this.centerY = 0;
+					this.angle = 0;
+					this.radius = 300;
+					var _self = this;
+
+					this.mouseMove = function(evt)
+					{
+						_self.centerX = evt.pageX - _self.div.style.width / 2 - 100;
+						_self.centerY = evt.pageY - _self.div.style.height / 2 - 100;
+					}
+
+					this.moveAroundMouse = function()
+					{
+						var x = _self.centerX + _self.radius * Math.sin(_self.angle * Math.PI / 180);
+						var y = _self.centerY + _self.radius * Math.cos(_self.angle * Math.PI / 180);
+						_self.div.style.top = y + "px";
+						_self.div.style.left = x + "px";
+						_self.angle = (++_self.angle + 1) % 360;
+					}
+
+					this.start = function()
+					{
+						if (this.timerId != null)
+							return;
+						this.div.style.display = 'block';
+						this.timerId = setInterval(this.tick, 1);
+						this.timerIdPoint = setInterval(function()
+						{
+							var points = document.getElementsByClassName("point");
+							for (var i = 0; i < points.length; i++)
+								points[i].style.opacity = (points[i].style.opacity == '1') ? '0' : '1';
+						}, 500);
+						this.timerIdCircle = setInterval(this.moveAroundMouse, 10);
+					}
+
+					this.stop = function()
+					{
+						this.div.style.display = 'none';
+						clearInterval(this.timerId);
+						clearInterval(this.timerIdPoint);
+						clearInterval(this.timerIdCircle);
+					}
+				}
+
+
+				var Clock = new Clock(document.getElementById("clock"));
+				document.getElementById("start").onclick = function() { Clock.start(); };
+				document.getElementById("stop").onclick = function() { Clock.stop(); };
+
+				document.body.onmousemove = Clock.mouseMove;
+			}
+		</script>
+		<style>	
+				#clock div
+				{
+					display: inline-block;
+				}
+		</style>
+	</head>
+	<body style="height: 100%;">
+		<div id="stop" style="background: red; width: 100px; height: 100px; border-radius: 50px; color: black; font-weight: bold; display: inline-flex; justify-content: center; align-content: center; align-items: center; cursor: pointer;">STOP</div>
+		<div id="start" style="background: green; width: 100px; height: 100px; border-radius: 50px; color: black; font-weight: bold; display: inline-flex; justify-content: center; align-content: center; align-items: center; cursor: pointer;">START</div>
+		<div id="clock" style="min-width: 1000px; position: absolute; left: 0; top: 0; display: none;">
+			<div id="hours">
+				<img>
+				<img>
+			</div>
+			<img src="point.png" class="point" style="opacity: 0;" alt="">
+			<div id="minutes">
+				<img src="" alt="">
+				<img src="" alt="">
+			</div>
+			<img src="point.png" class="point" style="opacity: 0;" alt="">
+			<div id="seconds">
+				<img src="" alt="">
+				<img src="" alt="">
+			</div>
+			<img src="point.png" class="point" style="opacity: 0;" alt="">
+			<div id="milliseconds">
+				<img src="" alt="">
+				<img src="" alt="">
+				<img src="" alt="">
+			</div>
+		</div>
+	</body>
+</html>

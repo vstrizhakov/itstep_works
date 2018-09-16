@@ -107,49 +107,60 @@ void LeftClick()
 }
 
 int main(int argc, char **argv) {
-	InitializeMagick(*argv);
-	//WinExec("s.cmd", SW_SHOW);
-	ScreenCapture(27, 712, 16, 15, L"picture.png");
-	system("convert picture.bmp -resize 15x20\! rpicture.bmp");
-	system("convert templ.png templ.png rpicture.bmp +append appen.png");
-	system("tesseract appen.png o -l eng+rus");
-	Image image("box.png");
-	FILE *f = fopen("o.txt", "r");
-	int mails;
-	char txt[256];
-	fscanf(f, "%d", &mails);
-	cout << mails << endl;
-	fclose(f);
-	if (!mails) {
-		//mouse_event(MOUSEEVENTF_MOVE | MOUSEEVENTF_ABSOLUTE, 0, 0, 0, 0);
-		//mouse_event(MOUSEEVENTF_MOVE, 15, 375, 0, 0);
-		//mouse_event(MOUSEEVENTF_LEFTDOWN, 0, 0, 0, 0);
-		//mouse_event(MOUSEEVENTF_LEFTUP, 0, 0, 0, 0);
-		SetCursorPos(15,720);
-		LeftClick();
-		for (int i = 0, j = 0; !i; j++) {
-			ScreenCapture(21, 215, 12, 12, L"box_read.png");
-			Image box("box_read.png");
-			int w = box.columns(), h = box.rows(), error = 0;
-			Quantum *pixels, *pixels_box;
-			for (int i = 0; i < h; i++) {
-				for (int j = 0; j < w; j++) {
-					pixels = image.getPixels(i, j, 1, 1);
-					pixels_box = box.getPixels(i, j, 1, 1);
-					if (*pixels != *pixels_box) error++;
-				}
-			}
-			if (!error) {
-				mouse_event(MOUSEEVENTF_MOVE | MOUSEEVENTF_ABSOLUTE, 0, 0, 0, 0);
-				mouse_event(MOUSEEVENTF_MOVE, 100, 115, 0, 0);
-				mouse_event(MOUSEEVENTF_LEFTDOWN, 0, 0, 0, 0);
-				mouse_event(MOUSEEVENTF_LEFTUP, 0, 0, 0, 0);
-				mouse_event(MOUSEEVENTF_LEFTDOWN, 0, 0, 0, 0);
-				mouse_event(MOUSEEVENTF_LEFTUP, 0, 0, 0, 0);
-				i++;
-			}
-		}
-	}
+	//InitializeMagick(*argv);
+	////WinExec("s.cmd", SW_SHOW);
+	//ScreenCapture(27, 712, 16, 15, L"picture.png");
+	//system("convert picture.bmp -resize 15x20\! rpicture.bmp");
+	//system("convert templ.png templ.png rpicture.bmp +append appen.png");
+	////system("tesseract appen.png o -l eng+rus");
+	//Image image("box.png");
+	//FILE *f = fopen("o.txt", "r");
+	//int mails;
+	//char txt[256];
+	//fscanf(f, "%d", &mails);
+	//cout << mails << endl;
+	//fclose(f);
+	//if (!mails) {
+	//	//mouse_event(MOUSEEVENTF_MOVE | MOUSEEVENTF_ABSOLUTE, 0, 0, 0, 0);
+	//	//mouse_event(MOUSEEVENTF_MOVE, 15, 375, 0, 0);
+	//	//mouse_event(MOUSEEVENTF_LEFTDOWN, 0, 0, 0, 0);
+	//	//mouse_event(MOUSEEVENTF_LEFTUP, 0, 0, 0, 0);
+	//	SetCursorPos(15,720);
+	//	LeftClick();
+	//	for (int i = 0, j = 0; !i; j++) {
+	//		ScreenCapture(21, 215, 12, 12, L"box_read.png");
+	//		Image box("box_read.png");
+	//		int w = box.columns(), h = box.rows(), error = 0;
+	//		Quantum *pixels, *pixels_box;
+	//		for (int i = 0; i < h; i++) {
+	//			for (int j = 0; j < w; j++) {
+	//				pixels = image.getPixels(i, j, 1, 1);
+	//				pixels_box = box.getPixels(i, j, 1, 1);
+	//				if (*pixels != *pixels_box) error++;
+	//			}
+	//		}
+	//		if (!error) {
+	//			mouse_event(MOUSEEVENTF_MOVE | MOUSEEVENTF_ABSOLUTE, 0, 0, 0, 0);
+	//			mouse_event(MOUSEEVENTF_MOVE, 100, 115, 0, 0);
+	//			mouse_event(MOUSEEVENTF_LEFTDOWN, 0, 0, 0, 0);
+	//			mouse_event(MOUSEEVENTF_LEFTUP, 0, 0, 0, 0);
+	//			mouse_event(MOUSEEVENTF_LEFTDOWN, 0, 0, 0, 0);
+	//			mouse_event(MOUSEEVENTF_LEFTUP, 0, 0, 0, 0);
+	//			i++;
+	//		}
+	//	}
+	//}
+	/*for (int i = 0; i < 5; i++)
+	{
+		mouse_event(MOUSEEVENTF_LEFTDOWN, 0, 0, 0, 0);
+		mouse_event(MOUSEEVENTF_LEFTUP, 0, 0, 0, 0);
+		Sleep(1000);
+	}*/
+
+	HWND wnd1 = FindWindowA("l2UnrealWWindowsViewportWindow", NULL);
+	SendMessage(wnd1, WM_ACTIVATE, 0, 0);
+	SendMessage(wnd1, WM_LBUTTONUP, 0, MAKELPARAM(300, 500));
+	cout << "Clicked";
 
 	return 0;
 }

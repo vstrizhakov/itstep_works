@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Список сотрудников</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/ulg/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous" defer="defer"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous" defer="defer"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script>
+			function Employee(name, position, age, avatar, sex)
+			{
+				this.name = name;
+				this.position = position;
+				this.age = age;
+				this.avatar = avatar;
+				this.sex = sex;
+			}
+			
+			function Staff()
+			{
+				this.employees = [];
+					
+				var _self = this;
+					
+				$('#addEmployeeButton').on('click', function()
+				{
+					_self.setModalForAdd();
+				});
+				
+				$('#modal-avatar-input').on('change', function()
+				{
+					var fileReader = new FileReader();
+					fileReader.onload = function(e)
+					{
+						$('#modal-avatar-output').attr('src', e.target.result);
+					}
+					fileReader.readAsDataURL($('#modal-avatar-input')[0].files[0]);
+				});
+				
+				$('#maleLabel').on('click', function()
+				{
+					$('#male').prop('checked', true);
+				});
+				
+				$('#femaleLabel').on('click', function()
+				{
+					$('#female').prop('checked', true);
+				});
+				
+				this.addEmployee = function(employee)
+				{
+					this.employees.push(employee);
+					this.generateList();
+				}
+				
+				this.removeEmployee = function(employee)
+				{
+					var index = _self.employees.indexOf(employee);
+					_self.employees.splice(index, 1);
+					_self.generateList();
+				}
+				
+				this.editEmployee = function(employeeToEdit, newEmployee)
+				{
+					employeeToEdit.name = newEmployee.name;
+					employeeToEdit.position = newEmployee.position;
+					employeeToEdit.age = newEmployee.age;
+					employeeToEdit.avatar = newEmployee.avatar;
+					employeeToEdit.sex = newEmployee.sex;
+
+					_self.generateList();
+				}
+				
+				this.generateList = function()
+				{
+					$('#container').empty();
+					var row;
+					for (var i = 0; i < this.employees.length; i++)
+					{
+						if (i % 2 == 0)
+						{
+							row = $('<div class="row mt-4">');
+							$('#container').append(row);
+						}
+						
+						let employee = this.employees[i];
+						
+						var col = $('<div class="col col-lg-6">');
+						var card = $('<div class="card block">');
+						var cardHeader = $('<div class="card-header">');
+						var hName = $('<h4 class="mb-0">').text(employee.name);
+						var cardBody = $('<div class="card-body">');
+						var bodyRow = $('<div class="row">');
+						var avatarCol = $('<div class="col col-lg-4">');
+						let avatar = $('<img class="rounded" width="100%">').attr('alt', employee.name);					
+						var infoCol = $('<div class="col col-lg-8">');
+						var positionRow = $('<div class="row">').append('<b>Должность</b>').append(': ' + employee.position);
+						var ageRow = $('<div class="row">').append('<b>Возраст</b>').append(': ' + employee.age);
+						var sexRow = $('<div class="row">').append('<b>Пол</b>').append(': ' + employee.sex);
+						var buttonRow = $('<div class="row mt-4">');
+						var editButton = $('<button class="btn btn-success mr-2" data-target="#modal" data-toggle="modal">Редактировать</button>');
+						var deleteButton = $('<button class="btn btn-danger" data-target="#modalForDelete" data-toggle="modal">Уволить</button>');
+						
+						cardHeader.append(hName);
+						card.append(cardHeader);
+						
+						infoCol.append(positionRow);
+						infoCol.append(ageRow);
+						infoCol.append(sexRow);
+						infoCol.append(buttonRow);
+						buttonRow.append(editButton);
+						buttonRow.append(deleteButton);
+						avatarCol.append(avatar);
+						bodyRow.append(avatarCol);
+						bodyRow.append(infoCol);
+						cardBody.append(bodyRow);
+						card.append(cardBody);
+						
+						col.append(card);
+						row.append(col);
+						
+						if (employee.avatar instanceof File)
+						{
+							var fileReader = new FileReader();
+							fileReader.onload = function(e)
+							{
+								avatar.attr('src', e.target.result);
+								employee.avatar = e.target.result;
+							}
+							fileReader.readAsDataURL(employee.avatar);
+						}
+						else
+						{
+							avatar.attr('src', employee.avatar);
+						}
+						
+						deleteButton.on('click', function()
+						{
+							_self.setModalForDelete(employee);
+						});
+						
+						editButton.on('click', function()
+						{
+							_self.setModalForEdit(employee);
+						});
+					}
+				}
+				
+				this.setModalForAdd = function()
+				{
+					$('#alertWrapper').css('display', 'none');
+					$('#modal-name').val('');
+					$('#male').prop('checked', true);
+					$('#modal-avatar-output').attr('src', 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/480px-No_image_available.svg.png');
+					$('#modal-avatar-input').val('');
+					$('#modal-position').val('');
+					$('#modal-age').val('');
+					$('#modal-success').text('Добавить').off().on('click', function()
+					{
+						var newEmployee = _self.getEmployeeFromModal();
+						if (newEmployee != null)
+						{
+							_self.addEmployee(newEmployee);
+							$('#modal').modal('hide');						
+						}
+					});
+				}
+				
+				this.setModalForEdit = function(employee)
+				{
+					$('#alertWrapper').css('display', 'none');
+					$('#modal-name').val(employee.name);
+					$((employee.sex == "Мужчина") ? '#male' : '#female').prop('checked', true);
+					$('#modal-avatar-output').attr('src', employee.avatar);
+					$('#modal-avatar-input').val('');
+					$('#modal-position').val(employee.position);
+					$('#modal-age').val(employee.age);
+					$('#modal-success').text('Редактировать').off().on('click', function()
+					{
+						var newEmployee = _self.getEmployeeFromModal();
+						if (newEmployee != null)
+						{
+							_self.editEmployee(employee, newEmployee);
+							$('#modal').modal('hide');						
+						}
+					});
+				}
+				
+				this.setModalForDelete = function(employee)
+				{
+					$('#modalForDelete-title').html('Вы уверенны, что хотите уволить такого замечательного сотрудника, как 	<span class="badge badge-success">' + employee.name + '</span>?');
+					$('#modalForDelete-success').off().on('click', function()
+					{
+						_self.removeEmployee(employee);
+						$('#modalForDelete').modal('hide');
+					});					
+				}
+				
+				this.getEmployeeFromModal = function()
+				{
+					var name = $('#modal-name').val();
+					var position = $('#modal-position').val();
+					var age = $('#modal-age').val();
+					var avatar = ($('#modal-avatar-input')[0].files && $('#modal-avatar-input')[0].files[0]) ? $('#modal-avatar-input')[0].files[0] : $('#modal-avatar-output').attr('src');
+					var sex = $('input[name="sex"]:checked').val();
+					
+					if (name.trim() === ''
+						|| position.trim() === ''
+						|| age.trim() === ''
+						|| Number(age) < 16
+						|| Number(age) > 60)
+					{
+						var errorUl = $('<ul class="mb-0">');
+						if (name.trim() === '')
+						{
+							var li = $('<li>').text('Поле "ФИО" не может быть пустым!');
+							errorUl.append(li);
+						}
+						if (position.trim() === '')
+						{
+							var li = $('<li>').text('Поле "Должность" не может быть пустым!');
+							errorUl.append(li);
+						}
+						if (age.trim() === '')
+						{
+							var li = $('<li>').text('Поле "Возраст" не может быть пустым!');
+							errorUl.append(li);
+						}
+						else
+						{
+							if (Number(age) < 16)
+							{
+								var li = $('<li>').text('В Украине детский труд запрещен!');
+								errorUl.empty().append(li);
+							}
+							if (Number(age) > 60 && sex === "Мужчина")
+							{
+								var li = $('<li>').text('Да ведь этому мужчине пора на пенсию!');
+								errorUl.empty().append(li);
+							}
+							else if (Number(age) > 58 && sex === "Женщина")
+							{
+								var li = $('<li>').text('Да ведь этой женщине пора на пенсию!');
+								errorUl.empty().append(li);
+							}
+						}
+						
+						$('#alert').empty().append(errorUl);
+						$('#alertWrapper').css('display', 'block');
+						return null;
+					}
+					
+					return new Employee(name, position, age, avatar, sex);
+				}
+			}
+			
+			$(document).ready(function()
+			{
+				var staff = new Staff();
+				
+				staff.addEmployee(
+					new Employee("Стрижаков Владимир",
+											"Программист",
+											"17",
+											"https://1nvz10445pvh2n73t2xwcmah-wpengine.netdna-ssl.com/wp-content/uploads/2018/03/edmund_headshot.jpg",
+											"Мужчина"));
+				staff.addEmployee(
+					new Employee("Петр Порошенко",
+											"Политик",
+											"52",
+											"https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Official_portrait_of_Petro_Poroshenko.jpg/330px-Official_portrait_of_Petro_Poroshenko.jpg",
+											"Мужчина"));
+				staff.addEmployee(
+					new Employee("Виталий Кличко",
+											"Боксёр, Политик",
+											"42",
+											"http://k2promos.com/wp-content/uploads/2015/10/vitali-klitschko-21.jpg",
+											"Мужчина"));
+			});
+		</script>
+	</head>
+	<body>
+		<div class="container mb-4">
+			<div class="row mt-4">
+				<h1 class="text-center col-lg-12 mb-0">Список сотрудников</h1>
+			</div>
+			<div class="row mt-4">
+				<div class="col offset-4 col-lg-4">
+					<div class="btn btn-primary btn-block" id="addEmployeeButton" data-target="#modal" data-toggle="modal">Добавить сотрудника</div>
+				</div>
+			</div>
+			<div class="row mt-4" id="container"></div>
+		</div>
+		<div id="modal" class="modal" tabindex="-1" role="dialog">
+		  <div class="modal-dialog" role="document">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<input id="modal-name" placeholder="Введите ФИО" type="text" class="form-control">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				  <span aria-hidden="true">&times;</span>
+				</button>
+			  </div>
+			  <div class="modal-body">
+					<div class="row">
+						<div class="col col-lg-4">
+							<img id="modal-avatar-output" class="rounded" width="100%">
+							<input id="modal-avatar-input" type="file" style="cursor: pointer; opacity: 0.0; position: absolute; top:0; left: 0; bottom: 0; right:0; width: 100%; height:100%;" />							
+						</div>
+						<div class="col col-lg-8">
+							<div class="row" id="alertWrapper">
+								<div class="col col-lg-12">
+									<div class="alert alert-danger" id="alert">
+									</div>
+								</div>
+							</div>
+							<div class="row mt-1">
+								<div class="col col-lg-12">
+									<b>Должность</b>:
+									<input id="modal-position" placeholder="Введите должность..." type="text" class="form-control mt-1">
+								</div>
+							</div>
+							<div class="row mt-1">
+								<div class="col col-lg-12">
+									<b>Возраст</b>:
+									<input id="modal-age" placeholder="Введите возраст..." type="number" class="form-control mt-1">
+								</div>
+							</div>
+							<div class="row mt-1">
+								<div class="col col-lg-12">
+									<b>Пол</b>
+									<div class="row mt-1">
+										<div class="input-group col col-lg-6" id="maleLabel">
+										  <div class="input-group-prepend">
+											<div class="input-group-text">
+												<input id="male" name="sex" value="Мужчина" type="radio" checked="checked">
+											</div>
+										  </div>
+										  <input type="text" class="form-control" aria-label="Мужчина" disabled="disabled" value="Мужчина">
+										</div>
+										<div class="input-group col col-lg-6" id="femaleLabel">
+										  <div class="input-group-prepend">
+											<div class="input-group-text">
+												<input id="female" name="sex" value="Женщина" type="radio">
+											</div>
+										  </div>
+										  <input type="text" class="form-control" aria-label="Женщина" disabled="disabled" value="Женщина">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+			  </div>
+			  <div class="modal-footer">
+				<button id="modal-success" type="button" class="btn btn-success"></button>
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Отмена</button>
+			  </div>
+			</div>
+		  </div>
+		</div>
+		<div id="modalForDelete" class="modal" tabindex="-1" role="dialog">
+		  <div class="modal-dialog" role="document">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<h4 class="modal-title">Подтвердите действие</h4>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				  <span aria-hidden="true">&times;</span>
+				</button>
+			  </div>
+			  <div class="modal-body">
+				<p id="modalForDelete-title"></p>
+			  </div>
+			  <div class="modal-footer">
+				<button id="modalForDelete-success" type="button" class="btn btn-danger">Уволить!</button>
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Отмена</button>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	</body>
+</html>

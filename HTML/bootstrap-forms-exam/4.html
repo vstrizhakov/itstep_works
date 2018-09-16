@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bootstrap - Forms</title>
+	<meta charset="utf-8">
+	<meta hhtp-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bootstrap</title>
+	<link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+</head>
+<body>
+	<nav class="navbar bg-dark navbar-dark">
+		<div class="container">
+			<a href="index.html" class="navbar-brand">Bootstrap Forms</a>
+			<button class="navbar-toggler" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="navbar-collapse collapse" id="navbar">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item"><a href="index.html" class="nav-link">First form</a></li>
+					<li class="nav-item"><a href="2.html" class="nav-link">Second form</a></li>
+					<li class="nav-item"><a href="3.html" class="nav-link">Third form</a></li>
+					<li class="nav-item"><a href="4.html" class="nav-link active">4th form</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6 offset-3">
+				<form action="http://10.3.11.10/test.php">
+					<div class="row">
+						<div class="col-lg-6 mt-3">
+							<input type="text" name="firstname" id="firstname" placeholder="First Name" class="form-control form-control-lg">
+						</div>
+						<div class="col-lg-6 mt-3">
+							<input type="text" name="lastname" id="lastname" placeholder="Last Name" class="form-control form-control-lg">
+						</div>
+					</div>
+					<input type="text" name="displayname" id="displayname" placeholder="Display Name" class="form-control form-control-lg mt-3">
+					<input type="email" name="email" id="email" placeholder="Email" class="form-control form-control-lg mt-3">
+					<div class="row">
+						<div class="col-lg-6 mt-3">
+							<input type="password" name="password" id="password" placeholder="Password" class="form-control form-control-lg">
+						</div>
+						<div class="col-lg-6 mt-3">
+							<input type="password" name="confirmpassword" id="confirmpassword" placeholder="Confirm Password" class="form-control form-control-lg">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-2 mt-3">
+							<button class="btn btn-light" type="button">I Agree</button>
+						</div>
+						<div class="col-lg-10 mt-3">
+							<p>By clicking <a href="javascript:void(0);" class="badge badge-primary">Register</a>, you agree to the <a href="javascript: void(0);">Terms and Conditions</a> set out by this site, including our Cookie use</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-6 mt-3">
+							<button class="btn btn-primary btn-lg btn-block">Register</button>
+						</div>
+						<div class="col-lg-6 mt-3">
+							<button class="btn btn-success btn-lg btn-block" type="button">Sign In</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

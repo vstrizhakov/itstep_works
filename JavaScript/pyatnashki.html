@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Пятнашечки</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous" defer="defer"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous" defer="defer"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous" defer="defer"></script>
+		<script>
+			window.onload = function()
+			{
+			
+				function GameArea()
+				{
+					this.Size = 4;
+					this.AreaButtons = [];
+
+					var _self = this;
+
+					for (var i = 0; i < this.Size; i++)
+					{
+						var btns = [];
+						for (var j = 0; j < this.Size; j++)
+						{
+							var btn = document.createElement('button');
+							btn.classList.add('btn');
+							btn.classList.add('btn-lg');
+							btn.classList.add('btn-block');
+							btn.style.width = 60;
+							btn.style.height = 60;
+							btn.id = 'x' + j + 'y' + i; 
+							btn.onclick = function(evt) { _self.ReplaceButtons(evt) };
+							btns.push(btn);
+						}
+						this.AreaButtons.push(btns);
+					}
+
+					this.GenerateTo = function(elem)
+					{
+						var container = document.createElement('div');
+						container.className = 'container';
+
+						var parentCol = document.createElement('div');
+						parentCol.classList.add('col');
+						parentCol.classList.add('offset-4');
+						parentCol.classList.add('col-lg-4');
+						parentCol.classList.add('mt-4');
+						container.appendChild(parentCol);
+
+						var row = document.createElement('div');
+						row.classList.add('row');
+						row.classList.add('mt-3');
+						parentCol.appendChild(row);
+
+						var startText = document.createTextNode("Перемешать и начать игру");
+						var startButton = document.createElement('button');
+						startButton.classList.add('btn');
+						startButton.classList.add('btn-lg');
+						startButton.classList.add('btn-block');
+						startButton.classList.add('btn-success');
+						startButton.onclick = function(evt) { _self.MixButtons(); };
+						startButton.appendChild(startText);
+						row.appendChild(startButton);
+
+						for (var i = 0; i < 4; i++)
+						{
+							var row = document.createElement('div');
+							row.classList.add('row');
+							row.classList.add('mt-3');
+
+							for (var j = 0; j < 4; j++)
+							{
+								var col = document.createElement('div');
+								col.classList.add('col');
+								col.classList.add('col-lg-3');
+								col.classList.add('text-center');
+								row.appendChild(col);
+
+								col.appendChild(this.AreaButtons[i][j]);
+							}
+							parentCol.appendChild(row);
+						}
+
+						elem.appendChild(container);
+					}
+
+					this.ReplaceButtons = function(evt)
+					{
+						var x, y;
+						for (var i = 0; i < 4; i++)
+						{
+							for (var j = 0; j < 4; j++)
+							{
+								if (this.AreaButtons[i][j].innerHTML == '-')
+								{
+									x = j;
+									y = i;
+									break;
+								}
+							}
+							if (x != undefined && y != undefined)
+							{
+								break;
+							}
+						}
+
+						var target = evt.target;
+						var id = target.id.replace('x', '');
+						var xy = id.split('y');
+						
+						var currX = xy[0], currY = xy[1];
+						
+						if ((Math.abs(currX - x) <= 1 && (currY - y) == 0) || (Math.abs(currY - y) <= 1 && (currX - x) == 0))
+						{
+							var currButton = this.AreaButtons[currY][currX];
+							var button = this.AreaButtons[y][x];
+
+							var currCell = currButton.parentElement;
+							var cell = button.parentElement;
+
+							currCell.removeChild(currButton);
+							cell.removeChild(button);
+
+							currCell.appendChild(button);
+							cell.appendChild(currButton);
+
+							var tmpId = currButton.id;
+							currButton.id = button.id;
+							button.id = tmpId;
+
+							this.AreaButtons[currY][currX] = button;
+							this.AreaButtons[y][x] = currButton;
+
+							setTimeout(this.CheckWin, 50);
+						}
+					}
+					
+					this.CheckWin = function()
+					{
+						var win = true;
+						for (var i = 0; i < 4; i++)
+						{
+							for (var j = 0; j < 4; j++)
+							{
+								if (_self.AreaButtons[i][j].innerHTML != i * 4 + j + 1)
+								{
+									win = false;
+									break;
+								}
+								if (i == 3 && j == 2)
+								{
+									break;
+								}
+							}
+							if (!win)
+							{
+								break;
+							}
+						}
+						
+						if (win)
+						{
+							alert('Поздравляем, Вы собрали пятнашки!');
+						}
+					}
+
+					this.MixButtons = function()
+					{
+						for (var i = 0; i < 4; i++)
+						{
+							for (var j = 0; j < 4; j++)
+							{
+								this.AreaButtons[i][j].innerHTML = '-';
+								this.AreaButtons[i][j].hidden = true;
+							}
+						}
+
+						var i = 0;
+						while (i < 15)
+						{
+							var x = parseInt(Math.random() * 100) % 4;
+							var y = parseInt(Math.random() * 100) % 4;
+
+							if (this.AreaButtons[y][x].innerHTML == '-')
+							{
+								this.AreaButtons[y][x].innerHTML = i++ + 1;
+								this.AreaButtons[y][x].hidden = false;
+							}
+						}
+					}
+
+				}
+
+				var area = new GameArea();
+				area.GenerateTo(document.getElementById('pyatnashki'));
+				area.MixButtons();
+			}
+		</script>
+		<style>
+			*
+			{
+				font-family: monospace;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="pyatnashki"></div>
+	</body>
+</html>

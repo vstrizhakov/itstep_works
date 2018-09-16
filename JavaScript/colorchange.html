@@ -1,0 +1,33 @@
+<html>
+	<head>
+		<title>Color Changer</title>
+		<meta charset="utf-8">
+		<script>
+			window.onload = function()
+			{
+				alert();
+				document.getElementById('body').onclick = function(evt)
+				{
+					alert()
+					while (true)
+					{
+						for (var i = 0; i < 256; i++)
+						{
+							for (var j = 0; j < 256; j++)
+							{
+								for (var t = 0; t < 256; t++)
+								{
+									document.body.style.background = 'rgba(' + i + ', ' + j + ', ' + t + ', 1)';
+									sleep(500);
+								}
+							}
+						}
+					}
+				}
+			}
+		</script>
+	</head>
+	<body id="body">
+		
+	</body>
+</html>

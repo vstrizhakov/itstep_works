@@ -1,0 +1,32 @@
+<html>
+	<head>
+		<title>Prompt</title>
+		<meta charset="utf8">
+		<script>
+				function getData(title)
+				{
+					do
+					{
+						value = prompt(title);
+						if (value == null || value == "")
+							continue;
+						return value;
+					} while (true);
+				}
+
+				do
+				{
+					var name = getData("Введите Ваше ФИО:");
+					var sex = getData("Введите Ваш пол:");
+					var age = getData("Введите Ваш возраст:");
+					var email = getData("Введите Ваш E-mail:");
+
+					var all = [ "ФИО: " + name, "Пол: " + sex, "Возраст: " + age, "E-mail: " + email, "Все верно?" ];
+					var question = all.join("\n");
+				} while (!confirm(question));
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>

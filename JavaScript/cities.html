@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Cities</title>
+		<meta charset="utf-8">
+		<script>
+			var arrCountries = new Array (
+
+				'Дания', 'Denmark',
+				'США', 'USA',
+				'Россия', 'Russia',
+				'Германия', 'Germany',
+				'Нидерланды', 'Netherlands',
+				'Гренландия', 'Greenland',
+				'Швейцария', 'Switzerland',
+				'Нигерия', 'Nigeria',
+				'Эфиопия', 'Ethiopia',
+				'Иран', 'Iran',
+				'Кирибати', 'Kiribati',
+				'Папуа - Новая Гвинея', 'Papua New Guinea',
+				'Франция', 'France',
+				'Канада', 'Canada',
+				'Пакистан', 'Pakistan',
+				'Йемен', 'Yemen Republic',
+				'Чад', 'Chad',
+				'Великобритания', 'United Kingdom',
+				'Саудовская Аравия', 'Saudi Arabia',
+				'Австралия', 'Australia',
+				'Мексика', 'Mexico',
+				'ОАЭ', 'United Arab Emirates',
+				'Египет', 'Egypt',
+				'Колумбия', 'Colombia',
+				'Венесуэла', 'Venezuela',
+				'Гана', 'Ghana',
+				'Панама', 'Panama',
+				'Судан', 'Sudan',
+				'Оман', 'Oman',
+				'Турция', 'Turkey',
+				'Алжир', 'Algeria',
+				'Индонезия', 'Indonesia',
+				'Соломоновы острова', 'Solomon Islands',
+				'Нигер', 'Niger',
+				'Марокко', 'Morocco',
+				'Индия', 'India',
+				'Либия', 'Libyan Arab Jamahiriya',
+				'ЮАР', 'South Africa',
+				'Греция', 'Greece',
+				'Италия', 'Italy',
+				'Пуэрто Рико', 'Puerto Rico',
+				'Япония', 'Japan',
+				'Французская Полинезия', 'French Polynesia',
+				'Гондурас', 'Honduras',
+				'Намибия', 'Namibia',
+				'Маршалловы острова', 'Marshall Islands',
+				'Мавритания', 'Mauritania',
+				'Гайана', 'Guyana',
+				'Острова Кука', 'Cook Islands',
+				'Габон', 'Gabon',
+				'Китай', 'China (excl. Hong Kong SAR)',
+				'Казахстан', 'Kazakhstan',
+				'Исландия', 'Iceland',
+				'Ирак', 'Iraq',
+				'Сирия', 'Syrian Arab Republic',
+				'Бразилия', 'Brazil',
+				'Филиппины', 'Philippines',
+				'Румыния', 'Romania',
+				'Испания', 'Spain',
+				'Суринам', 'Suriname',
+				'Перу', 'Peru',
+				'Новая Зеландия', 'New Zealand',
+				'Джибути', 'Djibouti',
+				'Малайзия', 'Malaysia',
+				'Норвегия', 'Norway',
+				'Монголия', 'Mongolia',
+				'Мозамбик', 'Mozambique',
+				'Чили', 'Chile',
+				'Аргентина', 'Argentina',
+				'Сомали', 'Somalia',
+				'Швеция', 'Sweden',
+				'Мадагаскар', 'Madagascar Island',
+				'Эквадор', 'Ecuador',
+				'Кения', 'Kenya',
+				'Ангола', 'Angola',
+				'Иордания', 'Jordan',
+				'Шри-Ланка', 'Sri Lanka',
+				'Гуам', 'Guam',
+				'Узбекистан', 'Uzbekistan',
+				'Южная Корея', 'Korea (Republic of)',
+				'Андорра', 'Andorra',
+				'Багамские острова', 'Bahamas',
+				'Виргинские острова', 'Virgin Islands (British)',
+				'Вануату', 'Vanuatu',
+				'Ангилья', 'Anguilla',
+				'Коморские острова', 'Comoros',
+				'Антигуа и Барбуда', 'Antigua and Barbuda',
+				'Бельгия', 'Belgium',
+				'Самоа', 'Samoa (Independent State of)',
+				'Боливия', 'Bolivia',
+				'Буркина-Фасо', 'Burkina Faso',
+				'Уругвай', 'Uruguay',
+				'Уганда', 'Uganda',
+				'Аруба', 'Aruba',
+				'Танзания', 'Tanzania (United Republic)',
+				'Туркменистан', 'Turkmenistan',
+				'Эритрея', 'Eritrea',
+				'Парагвай', 'Paraguay',
+				'Португалия', 'Portugal',
+				'Кипр', 'Cyprus',
+				'Камерун', 'Cameroon (Republic of)',
+				'Мьянма', 'Myanmar',
+				'Непал', 'Nepal',
+				'Афганистан', 'Afghanistan',
+				'Бахрейн', 'Bahrain',
+				'Сенегал', 'Senegal',
+				'Центральноафриканская Республика', 'Central African Republic',
+				'Азербайджан', 'Azerbaijan',
+				'Венгрия', 'Hungary',
+				'Мали', 'Mali',
+				'Таиланд', 'Thailand',
+				'Бруней-Даруссалам', 'Brunei Darussalam',
+				'Конго', 'Congo (Democratic Republic of)',
+				'Босния', 'Bosnia-Herzegovina',
+				'Гамбия', 'Gambia',
+				'Вьетнам', 'Viet Nam',
+				'Ирландия', 'Ireland (Republic of)',
+				'Куба', 'Cuba',
+				'Доминиканская Республика', 'Dominican Republic',
+				'Бангладеш', 'Bangladesh',
+				'Коста-Рика', 'Costa Rica',
+				'Гваделупа', 'Guadeloupe',
+				'Экваториальная Гвинея', 'Equatorial Guinea',
+				'Камбоджа', 'Cambodia Riel',
+				'Грузия', 'Georgia',
+				'Тимор', 'Timor Leste',
+				'Израиль', 'Israel',
+				'Ливан', 'Lebanon',
+				'Новая Каледония', 'New Caledonia',
+				'Сербия', 'Serbia',
+				'Белиз', 'Belize',
+				'Либерия', 'Liberia',
+				'Молдова', 'Moldova',
+				'Украина', 'Ukraine',
+				'Бермудские острова', 'Bermuda',
+				'Конго', 'Congo Brazzaville',
+				'Польша', 'Poland',
+				'Сейшелы', 'Seychelles Islands',
+				'Кыргызстан', 'Kyrgyzstan',
+				'Гвинея', 'Guinea Bissau',
+				'Македония', 'Macedonia - FYROM',
+				'Тунис', 'Tunisia',
+				'Малави', 'Malawi',
+				'Фиджи', 'Fiji',
+				'Никарагуа', 'Nicaragua',
+				'Кабо-Верде', 'Cape Verde (Republic of)',
+				'Гвинея', 'Guinea',
+				'Хорватия', 'Croatia',
+				'Нидерландские Антильские острова', 'Netherlands Antilles',
+				'Сьерра-Леоне', 'Sierra Leone',
+				'Словакия', 'Slovakia',
+				'Австрия', 'Austria',
+				'Беларусь', 'Belarus',
+				'Барбадос', 'Barbados',
+				'Чехия', 'Czech Republic',
+				'Зимбабве', 'Zimbabwe',
+				'Бурунди', 'Burundi',
+				'Болгария', 'Bulgaria',
+				'Руанда', 'Rwanda',
+				'Сент-Винсент и Гренадины', 'St Vincent and the Grenadines',
+				'Гаити', 'Haiti',
+				'Гватемала', 'Guatemala',
+				'Гренада', 'Grenada',
+				'Французская Гвиана', 'French Guiana',
+				'Гонконг', 'Hong Kong (SAR of China)',
+				'Тайвань', 'Taiwan',
+				'Замбия', 'Zambia',
+				'остров Рождества', 'Christmas Island',
+				'Кокосовые острова', 'Cocos Island',
+				'Бенин', 'Benin',
+				'Латвия', 'Latvia',
+				'Катар', 'Qatar',
+				'Доминика', 'Dominica',
+				'Таджикистан', 'Tajikistan',
+				'Майотта', 'Mayotte',
+				'Финляндия', 'Finland',
+				'Тонга', 'Tonga',
+				'Фарерские острова', 'Faroe Islands',
+				'Американское Самоа', 'American Samoa',
+				'Мартиника', 'Martinique',
+				'Ботсвана', 'Botswana',
+				'Тувалу', 'Tuvalu',
+				'Острова Уоллис и Футуна', 'Wallis and Futuna Islands',
+				'Мальдивы', 'Maldives Islands',
+				'Палестина', 'Palestinian Occ. Territories',
+				'Сент-Люсия', 'St. Lucia',
+				'Остров Святой Елены', 'St. Helena Island',
+				'Гибралтар', 'Gibraltar',
+				'Мальта', 'Malta',
+				'Каймановы острова', 'Cayman Islands',
+				'Теркс и Кайкос', 'Turks and Caicos Islands',
+				'Армения', 'Armenia',
+				'Черногория', 'Montenegro',
+				'Острова Соединенных Штатов', 'U.S. Minor Outlying Islands',
+				'Эстония', 'Estonia',
+				'Литва', 'Lithuania',
+				'Ямайка', 'Jamaica',
+				'Палау', 'Palau Islands',
+				'Микронезия', 'Micronesia',
+				'Кувейт', 'Kuwait',
+				'Того', 'Togo',
+				'Лесото', 'Lesotho',
+				'Словения', 'Slovenia',
+				'Люксембург', 'Luxembourg',
+				'Макао', 'Macao - SAR of China',
+				'Свазиленд', 'Swaziland',
+				'Маврикий', 'Mauritius Island',
+				'Сен-Пьер и Микелон', 'St. Pierre and Miquelon',
+				'Монако', 'Monaco',
+				'Монсеррат', 'Montserrat',
+				'Фоклендские острова', 'Falkland Islands',
+				'Науру', 'Nauru',
+				'Сент-Китс', 'St Kitts',
+				'Ниуэ', 'Niue',
+				'Норфолк Айленд', 'Norfolk Island',
+				'Бутан', 'Bhutan',
+				'Тринидад и Тобаго', 'Trinidad and Tobago',
+				'Сан-Томе', 'Sao Tome and Principe Islands',
+				'Северные Марианские острова', 'Northern Mariana Islands',
+				'Реюньон', 'Reunion Island',
+				'Виргинские Острова США', 'Virgin Islands US',
+				'Сан-Марино', 'San Marino',
+				'Сальвадор', 'El Salvador',
+				'Сингапур', 'Singapore',
+				'Антарктида', 'Antartica',
+				'Албания', 'Albania',
+				'Лихтенштейн', 'Liechtenstein',
+				'Кот д\'Ивуар', 'Cote d\'Ivoire',
+				'Лаос', 'Lao (People\'s Democratic Republic)',
+				'КНДР', 'Korea (Democratic People\'s Republic Of)',
+				'Токелау', 'Tokelau',
+				'Ватикан', 'Vatican',
+				'Западная Сахара', 'Western Sahara'
+				);
+			window.onload = function()
+			{
+				/**
+				* sizeX - Ширина текстового поля 
+				* sizeY - Высота текстового поля
+				* isAlpha - true/false - тип букв - латиница/кирилица
+				* arr - ссылка на массив содержащий список
+				* formName - Имя элемента управления на форме
+				* text - значение, которое уже отображено в текстовом поле
+				*/
+				function AutoCompliter(sizeX, sizeY, arr, formnName, text, isAlpha)
+				{
+					var _self = this;
+					this.arr = arr;
+					/* Контейнер который будем добавлять на страницу */
+					this.domContainer = document.createElement('div');
+
+					/* Элемент управления "Текстовое поле" */
+					this.textBox = document.createElement('input');
+					this.textBox.style.width = sizeX + "px";
+					this.textBox.style.height = sizeY + "px";
+					this.textBox.style.marginLeft = "10px";
+
+					this.domContainer.appendChild(this.textBox);
+
+					/* Создание Div для выпадающего списка */
+					this.datDiv = document.createElement('div');
+					this.datDiv.style.width = sizeX + "px";
+					this.datDiv.style.position = 'absolute';
+					this.datDiv.style.display = 'none';
+					this.datDiv.style.border = '1px solid #808080';
+					this.datDiv.style.backgroundColor = '#FFF';
+					this.datDiv.style.fontSize = '9pt';
+					this.datDiv.style.fontWeight = 'normal';
+					this.datDiv.style.color = '#4a4a4a';
+					this.datDiv.style.padding = "0px";
+					this.datDiv.style.zIndex = 990;
+					this.domContainer.appendChild(this.datDiv);
+
+					/* Все, что относится к выпадающему списку */
+					this.curEleme = -1;
+					this.isKeyed = false;
+					this.isDowned = false;
+					this.minTextLength = 3;
+
+					/* Обработчики событий нажатия в текстовом поле */				
+					this.textBox.onkeydown = function(evt)
+					{
+						_self.isDowned = true;
+						_self.keyPress(evt);
+						return true;
+					};
+
+					this.textBox.onkeypress = function(evt)
+					{
+						if (_self.isDowned == false)
+							_self.keyPress(evt);
+						_self.isDowned = false;
+						return true;
+					}
+
+					this.textBox.onfocus = function()
+					{
+						_self.isKeyed = false;
+						_self.textChanged();
+					};
+
+					this.textBox.onblur = function()
+					{
+						_self.datDiv.style.display = 'none';
+						_self.datDiv.innerHTML = '';
+						_self.isKeyed = true;
+						return true;
+					}
+
+					/* Для Мозиллы отключение вып. списка */
+					try
+					{
+						var aa = document.createAttribute('autocomplete');
+						aa.nodeValue = 'off';
+						this.textBox.setAttributeNode(aa);
+					}
+					catch (e) { };
+				}
+
+				AutoCompliter.prototype =
+				{
+					onFocus : function()
+					{
+						this.textChanged();
+					},
+
+					getDomObject : function()
+					{
+						return this.domContainer;
+					},
+
+					/*  Перепозиционирование Div выпадающего списка */
+					replaceDiv : function()
+					{
+						var r = getAbsolutePosition(this.textBox);
+						this.datDiv.style.left = r.x + "px";
+						this.datDiv.style.top = (r.y + this.textBox.offsetHeight + 2) + "px";
+						this.datDiv.style.width = this.textBox.offsetWidth + "px";
+					},
+
+					/* Нажата клавиша в текстовом поле */
+					keyPress : function (evt)
+					{
+						this.isKeyed = false;
+
+						/* Нажата клавиша. Обработка клавиш стрелок/Enter */
+						evt = (evt) ? evt : ((window.event) ? event : null);
+						if (evt == null)
+							return true;
+
+						/* Все ннормально, можно обрабатывать */
+						switch (evt.keyCode)
+						{
+							case 40:
+								if (this.datDiv.childNodes.length > 0)
+								{
+									this.hideItemSelect();
+									this.curEleme++;
+									if (this.curEleme == this.datDiv.childNodes.length)
+										this.curEleme = 0;
+									this.showItemSelect(true);
+									this.isKeyed = true;
+									return false;
+								}
+								break;
+							case 38:
+								if (this.datDiv.childNodes.length > 0)
+								{
+									this.hideItemSelect();
+									this.curEleme--;
+									if (this.curEleme < 0)
+										this.curEleme = this.datDiv.childNodes.length - 1;
+									this.showItemSelect(true);
+									this.isKeyed = true;
+									return false;
+								}
+								break;
+							case 13:
+								if (this.curEleme != -1)
+									this.textBox.value = this.datDiv.childNodes[this.curEleme].childNodes[3].innerHTML;
+							case 27:
+								this.datDiv.style.display = 'none';
+								this.datDiv.innerHTML = '';
+								this.isKeyed = true;
+								break;
+							case 37:
+							case 39:
+							case 35:
+							case 36:
+							case 16:
+							case 17:
+							case 9:
+								break;
+							default:
+								var _self = this;
+								setTimeout(function() { _self.textChanged(); }, 100);
+								break;
+						}
+
+					},
+
+					textChanged : function()
+					{
+						if (this.isKeyed == true)
+							return;
+
+						/* Изменения текста в текстовом поле */
+						var text = this.textBox.value.toLowerCase();
+
+						this.datDiv.scrollTo = 0;
+						this.curEleme = -1;
+						this.datDiv.style.display = 'none'; // Убираем Div
+						this.datDiv.innerHTML = '';
+						if (text.length < this.minTextLength)
+							return;
+						
+						/* Заполнение списка значениями, которые удовлетворяют введенным символам */
+						this.fillSubList(text, this.datDiv);
+
+						/* Отображение div с выпадающим списком */
+						var itemsCnt = this.datDiv.childNodes.length;
+						if (itemsCnt > 0)
+						{
+							this.replaceDiv();
+							if (itemsCnt > 8)
+							{
+								this.datDiv.style.overflow = "auto";
+								this.datDiv.style.height = "160px";
+							}
+							else
+							{
+								this.datDiv.style.overflow = 'visible';
+								this.datDiv.style.height = null;
+							}
+							this.datDiv.style.display = 'block';
+						}
+					},
+
+					fillSubList: function (text, domCont) {
+		                var itemsCnt = 0; // количество добавленных элементов (для id)
+		                text = text.toLowerCase();
+
+		                for (var i = 0; i < this.arr.length; i++)
+		                {
+		                    if (this.arr[i].toLowerCase().indexOf(text) != -1)
+		                    {
+		                        var div = document.createElement("div");
+		                        div.style.padding = "2px 5px";
+		                        div.style.cursor = "pointer";
+		                        div.id = "c" + itemsCnt;
+		                        itemsCnt++;
+
+		                        var sp1 = document.createElement("span");
+		                        var sp2 = document.createElement("span");
+		                        var sp3 = document.createElement("span");
+		                        var sp4 = document.createElement("span");
+		                        div.appendChild(sp1);
+		                        div.appendChild(sp2);
+		                        div.appendChild(sp3);
+		                        div.appendChild(sp4);
+
+		                        var iBeg = this.arr[i].toLowerCase().indexOf(text);
+		                        var iEnd = iBeg + text.length;
+
+		                        sp1.appendChild(document.createTextNode(this.arr[i].substring(0, iBeg)));
+		                        sp2.appendChild(document.createTextNode(this.arr[i].substring(iBeg, iEnd)));
+		                        sp3.appendChild(document.createTextNode(this.arr[i].substring(iEnd)));
+
+		                        sp1.style.color = "#4a4a4a";
+		                        sp2.style.color = "#C50065";
+		                        sp3.style.color = "#4a4a4a";
+		                        sp4.style.display = "none";
+		                        sp4.innerHTML = this.arr[i];
+
+		                        var _self = this;
+		                        div.onmouseover = function () {
+		                            _self.mouseChangeElem(this); // В данном случае this  - это div
+		                        };
+		                        div.onmousedown = function () {
+		                            _self.mouseClickElem(this); // В данном случае this  - это div
+		                        };
+
+		                        domCont.appendChild(div);
+		                    }
+		                }
+		            },
+
+		            mouseChangeElem : function(div)
+		            {
+		            	this.hideItemSelect();
+		            	this.curEleme = parseInt(div.id.substring(1));
+		            	this.showItemSelect(false);
+		            },
+
+		            mouseClickElem : function(div)
+		            {
+		            	this.datDiv.style.display = 'none';
+		            	this.textBox.value = div.childNodes[3].innerHTML;
+		            	this.datDiv.innerHTML = '';
+		            },
+
+		            hideItemSelect : function()
+		            {
+		            	if (this.curEleme != -1)
+		            	{
+		            		var elem = this.datDiv.childNodes[this.curEleme];
+		            		elem.childNodes[0].style.color = '#4A4A4A';
+		            		elem.childNodes[1].style.color = '#C50065';
+		            		elem.childNodes[2].style.color = '#4A4A4A';
+		            		this.datDiv.childNodes[this.curEleme].style.backgroundColor = '#FFF';
+		            	}
+		            },
+
+		            showItemSelect : function(isScrollNeeded)
+		            {
+		            	var elem = this.datDiv.childNodes[this.curEleme];
+	            		elem.childNodes[0].style.color = '#FFF';
+	            		elem.childNodes[1].style.color = '#FFF';
+	            		elem.childNodes[2].style.color = '#FFF';
+	            		this.datDiv.childNodes[this.curEleme].style.backgroundColor = '#C50065';
+	            		if (isScrollNeeded)
+	            			this.scrollAction(this.datDiv, this.curEleme);
+		            },
+
+		            /* Выполняет прокрутку списка если необходимо */
+		            scrollAction : function(domCont, index)
+		            {
+		            	if (domCont == null || domCont.childNodes.length == 0)
+		            		return;
+
+		            	var contHeight = domCont.offsetHeight;
+		            	var itemHeight = domCont.childNodes[0].offsetHeight;
+		            	var itemPerPage = Math.floor(contHeight / itemHeight);
+		            	var firstVisIndex = Math.floor(domCont.scrollTop / itemHeight);
+
+		            	if (index < firstVisIndex)
+		            		domCont.scrollTo = index * itemHeight;
+		            	else if (index >= firstVisIndex + itemPerPage - 1)
+		            		domCont.scrollTo = (index - itemPerPage - 1) * itemHeight;
+		            }
+				}
+
+				function getAbsolutePosition(el)
+				{
+					var r = { x: el.offsetLeft, y: el.offsetTop };
+					if (el.offsetParent)
+					{
+						var tmp = getAbsolutePosition(el.offsetParent);
+						r.x += tmp.x;
+						r.y += tmp.y;
+					}
+					return r;
+				}
+
+				var AC = new AutoCompliter(120, 24, arrCountries, 'Countries form', "", false);
+				document.body.appendChild(AC.domContainer);
+			}
+
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html style="height: 100%;">
+	<head>
+		<title>Images Info</title>
+		<meta charset="utf-8">
+		<script>
+			window.onload = function()
+			{
+				var InfosWithImage = [
+					[ '1.png', "Apple Inc. is an American multinational technology company headquartered in Cupertino, California, that designs, develops, and sells consumer electronics, computer software, and online services. The company's hardware products include the iPhone smartphone, the iPad tablet computer, the Mac personal computer, the iPod portable media player, the Apple Watch smartwatch, the Apple TV digital media player, and the HomePod smart speaker. Apple's software includes the macOS and iOS operating systems, the iTunes media player, the Safari web browser, and the iLife and iWork creativity and productivity suites, as well as professional applications like Final Cut Pro, Logic Pro, and Xcode. Its online services include the iTunes Store, the iOS App Store and Mac App Store, Apple Music, and iCloud." ],
+					[ '2.jpg', "Samsung (Hangul: 삼성; Hanja: 三星; Korean pronunciation: [samsʌŋ]) is a South Korean multinational conglomerate headquartered in Samsung Town, Seoul.[1] It comprises numerous affiliated businesses,[1] most of them united under the Samsung brand, and is the largest South Korean chaebol (business conglomerate). Samsung was founded by Lee Byung-chul in 1938 as a trading company. Over the next three decades, the group diversified into areas including food processing, textiles, insurance, securities and retail. Samsung entered the electronics industry in the late 1960s and the construction and shipbuilding industries in the mid-1970s; these areas would drive its subsequent growth. Following Lee's death in 1987, Samsung was separated into four business groups – Samsung Group, Shinsegae Group, CJ Group and Hansol Group. Since 1990, Samsung has increasingly globalised its activities and electronics; in particular, its mobile phones and semiconductors have become its most important source of income. As of 2017, Samsung has the 6th highest global brand value.[4]" ],
+					[ '3.png', "LG Electronics Inc. (Korean: LG전자) is a South Korean multinational electronics company headquartered in Yeouido-dong, Seoul, South Korea, and is part of the LG Group, employing 82,000 people working in 119 local subsidiaries worldwide.[2] With 2014 global sales of USD 55.91 billion (KRW 59.04 trillion), LG comprises four business units: Home Entertainment, Mobile Communications, Home Appliance & Air Solution, and Vehicle Components,[3] with Starion India[4] as its main production vendor for refrigeration and washing machines in the Indian sub-continent. The CEO of LG Electronics is Koo Bon-joon, who assumed the role of vice chairman of LG Electronics on 1 October 2010. Since 2008, LG Electronics remains the world's second-largest television manufacturer." ]
+				];
+				
+				var objects = [];
+				var cnt = 0;
+				
+				for (var i = 0; i < InfosWithImage.length; i++)
+				{
+					var img = new Image();
+					objects.push(img);
+					img.onload = function()
+					{
+						cnt++;
+						if (cnt == InfosWithImage.length)
+						{
+							for (var j = 0; j < InfosWithImage.length; j++)
+							{
+								var _self = objects[j];
+								var div = document.createElement('div');
+								div.className = 'image';
+								div.appendChild(_self);
+								div.id = 'img' + j;
+								div.onclick = function(evt)
+								{
+									var target = evt.target;
+									while (target != this)
+										target = target.parentNode;
+									var id = target.id.substr(3, target.id.length - 3);
+									document.getElementById('image-info').innerHTML = InfosWithImage[id][1];
+								}
+								document.getElementById('images').appendChild(div);
+							}
+						}
+					};
+					img.src = InfosWithImage[i][0];
+				}
+			}
+		</script>
+		<style>
+			.container
+			{
+				width: 100%;
+				height: 100%;
+			}
+			
+			#images
+			{
+				width: 70%;
+				height: 100%;
+				float:left;
+				display: inline-flex;
+				box-sizing: border-box;
+			}
+			
+			.image
+			{
+				cursor: pointer;
+				display: flex;
+				width: 33.33%;
+				height: 300px;
+				align-items: center;
+				justify-content: center;
+				border-radius: 5px;
+				border: solid 1px #ccc;
+				margin: 5px;
+				box-sizing: border-box;
+			}
+			
+			.image:hover
+			{
+				box-shadow: 10px 10px 28px -15px rgba(0,0,0,0.75);
+			}
+			
+			#image-info
+			{
+				display: inline-flex;
+				float:left;
+				box-sizing: border-box;
+				width: 30%;
+				height: 100%;
+				border-radius: 5px;
+				border: solid 1px #ccc;
+				padding: 10px;
+				text-align: justify;
+				color: #555;
+				font-family: monospace;
+			}
+		</style>
+	</head>
+	<body style="height: 100%;">
+		<div class="container">
+			<div id="images">
+			</div>
+			<div id="image-info">
+				Click on the image to get an information about it.
+			</div>
+		</div>
+	</body>
+</html>

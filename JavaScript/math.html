@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Math + Date</title>
+		<meta charset="utf-8">
+		<script>
+			// alert(Math.random());
+			// var a = Math.floor(Math.random() * 100);
+			// alert (a);
+
+			// var D = new Date();
+			// alert(D.toLocaleString())
+
+			//new Date(year, month, date[, hour[, min[, sec[, msec]]]])
+
+			/* Методы класса Date
+				set + get Date()
+				set + get Day()
+				set + get Month()
+				set + get FullYear()
+				set + get Hours()
+				set + get Minutes()
+				set + get Seconds()
+				set + get Millisteconds9)
+				set + get Time()
+			*/
+
+			// var date1 = new Date(2018, 7, 10);
+			// var date2 = new Date(2018, 6, 10);
+			// var delta = date1 - date2;
+			// alert(delta / 24 / 60  / 60 / 1000);	
+
+			// Задержки и интервалы
+			// var timerId = setTimeout(function() { alert("seryi dodik"); }, 50);
+			// clearTimeout(timerId);	
+			// timerId = setInterval(function() { alert("seryi dodik"); }, 50);	
+		</script>
+	</head>
+	<body onload="start()">
+		<div id="content" onclick="stop()" style="background-color: yellow;">0</div>
+		<script>
+			var timerId;
+			function start()
+			{
+				timerId = setInterval(abc, 1000);
+			}
+			function abc()
+			{
+				var elem = document.getElementById("content");
+				elem.innerHTML = parseInt(elem.innerHTML) + 1;
+			}
+			function stop()
+			{
+				clearTimeout(timerId);
+			}
+		</script>
+		<div id="abc" style="width: 30px; height: 30px; border: 1px solid red; background-color: yellow; position: absolute; top: 20px; left: 0;"></div>
+		<script>
+			var angle = 0;
+			var div = document.getElementById("abc");
+			var centerX = 250;
+			var centerY = 250;
+			var radius = 200;
+
+			function moveDiv()
+			{
+				var x = centerX + radius * Math.sin(angle * Math.PI / 180);
+				var y = centerY + radius * Math.cos(angle * Math.PI / 180);
+				div.style.left = x + "px";
+				div.style.top = y + "px";
+				angle += 5;
+				if (angle > 360)
+					angle -= 360;
+			}
+			setInterval(moveDiv, 100);
+		</script>
+	</body>
+</html>

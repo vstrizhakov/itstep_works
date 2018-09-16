@@ -1,0 +1,97 @@
+<html>
+	<head>
+		<title>IE</title>
+		<meta charset="utf8">
+		
+	</head>
+	<body>
+		<div id="one" style="border: solid 1px green; background-color: red; width: 120px; height: 40px"></div>
+		<div id="two" style="border: solid 1px green; background-color: red; width: 120px; height: 40px"></div>
+
+		<script>
+			function EventHandler(evt)
+			{
+				evt = (evt) ? evt : ((window.event) ? event : null);
+				if (evt == null)
+					return;
+				var str = "";
+
+				if (evt.target != null)
+				{
+					str = "<h1>Это IE</h1>";
+				}
+				else if (evt.scrElement)
+				{
+					str = "<h1>Это не IE</h1>";
+				}
+
+				for (var key in evt)
+					str += key + ": " + evt[key] + "<br>";
+
+				document.getElementById("root").innerHTML = str;
+			}
+
+			try
+			{
+				var divOne = document.getElementById("one");
+				divOne.onclick = EventHandler;
+
+				var divTwo = document.getElementById("two");
+				divTwo.onclick = EventHandler;
+			}
+			catch (e)
+			{
+				alert (e.message);
+			}
+
+			// Свойства объекта event
+			/*
+				type
+				returnValue
+				cancelBubble
+				srcElement
+				toElement
+				fromElement
+
+				button
+				wheelData
+				offsetX, offsetY
+				x,y
+				clientX, clitnY
+				screenX, screenY
+
+				keyCode
+				altKey
+				altLeft
+				ctrlKey
+				ctrlLeft
+				shiftKey
+				shiftLeft
+				repeat
+
+				onchange
+				onclick
+				onmouseover
+				onmouseout
+				onmousedown
+				onmouseup
+				onkeydown
+				onkeyup
+				onkeypress
+				onload
+			*/
+
+			// Свойства объекта event для нормальных браузеров
+			/*
+				modifiers - ALT_MASK, CONTORL_MASK, SHIFT_MASK
+
+				pageX, pageY, screenX, screenY
+
+				target
+				type
+				which - 1 left, 2 - middle, 3 - right
+			*/
+		</script>
+		<div id="root"></div>
+	</body>
+</html>

@@ -1,0 +1,7 @@
+﻿  main.cpp
+d:\works\my\project1\project1\header.h(13): warning C4101: hBrush: неиспользованная локальная переменная
+d:\works\my\project1\project1\header.h(14): warning C4101: hBrushOld: неиспользованная локальная переменная
+d:\works\my\project1\project1\header.h(9): warning C4101: rect: неиспользованная локальная переменная
+d:\works\my\project1\project1\header.h(10): warning C4101: nUserReply: неиспользованная локальная переменная
+d:\works\my\project1\project1\header.h(12): warning C4101: hPenOld: неиспользованная локальная переменная
+  Project1.vcxproj -> D:\Works\MY\Project1\Debug\Project1.exe

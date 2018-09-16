@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>EURO</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<div id="forKoala"></div>
+		<script>
+			var imgDisplayNames = new Array();
+			var imgHoverNames = new Array();
+			var imgCount = 11;
+			for (var i = 0 ; i < imgCount; i++)
+				imgDisplayNames[i] = (i + 1) + ".jpg";
+			for (var i = 0 ; i < imgCount; i++)
+				imgHoverNames[i] = (i + 1) + "h.jpg";
+			var imgs = imgDisplayNames.concat(imgHoverNames);
+
+			function Bill(displayImage, hoverImage, div)
+			{
+				this.div = div;
+				this.displayImage = this.div.appendChild(displayImage);
+				this.hoverImage = this.div.appendChild(hoverImage);
+
+				this.div.style.display = 'inline-block';
+				this.displayImage.style.display = 'block';
+				this.hoverImage.style.display = 'none';
+
+				var _self = this;
+				this.ShowDisplayImage = function(evt)
+				{
+					_self.displayImage.style.display = 'block';
+					_self.hoverImage.style.display = 'none';
+				};
+				this.ShowHoverImage = function(evt)
+				{
+					_self.displayImage.style.display = 'none';
+					_self.hoverImage.style.display = 'block';
+				};
+
+				this.div.onmouseenter = this.ShowHoverImage;
+				this.div.onmouseleave = this.ShowDisplayImage;
+			}
+
+			var loadedImages = new Array();
+
+			var count = 0;
+			for (var i = 0; i < imgs.length; i++)
+			{
+				var img = new Image();
+				loadedImages.push(img);
+				img.onload = function(evt)
+				{
+					count++;
+					if (count == imgs.length)
+					{
+						for (var j = 0; j < loadedImages.length / 2; j++)
+						{
+							var div = document.createElement('div');
+							var bill = new Bill(loadedImages[j], loadedImages[loadedImages.length / 2 + j], div)
+							document.getElementById("forKoala").appendChild(div);
+						}
+					}
+				}
+				img.src = imgs[i];
+			}
+		</script>
+	</body>
+</html>

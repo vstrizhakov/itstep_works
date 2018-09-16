@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>EURO</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<div id="forKoala"></div>
+		<script>
+			var imgNames = new Array();
+			var imgHoverNames = new Array();
+			for (var i = 0 ; i < 11; i++)
+				imgNames[i] = (i + 1) + ".jpg";
+			for (var i = 0 ; i < 11; i++)
+				imgHoverNames[i] = (i + 1) + "h.jpg";
+
+			var count = 0;
+			var images = new Array();
+			var imagesHover = new Array();
+
+			for (var i = 0 ; i < imgHoverNames.length; i++)
+			{
+				var img = new Image();
+				imagesHover.push(img);
+				img.src = imgHoverNames[i];
+			}
+
+			for (var i = 0; i < imgNames.length; i++)
+			{
+				var img = new Image();
+				img.onload = function(evt)
+				{
+					count++;
+					images.push(this);
+					if (count == imgNames.length)
+					{
+						var div = document.getElementById("forKoala");
+						for (var j = 0; j < images.length; j++)
+						{
+							var imgDiv = document.createElement('div');
+							imgDiv.style.display = 'inline-block';
+							imgDiv.appendChild(images[j]);
+							var hoverImg = imgDiv.appendChild(imagesHover[j]);
+							hoverImg.style.display = 'none';
+							imgDiv.onmouseenter = function(evt, image)
+							{
+								this.firstChild.style.display = 'none';
+								this.lastChild.style.display = 'block';
+							}
+							imgDiv.onmouseleave = function(evt, image)
+							{
+								this.firstChild.style.display = 'block';
+								this.lastChild.style.display = 'none';
+							}
+							div.appendChild(imgDiv);
+						}
+					}
+				}
+				img.src = imgNames[i];
+			}
+		</script>
+	</body>
+</html>

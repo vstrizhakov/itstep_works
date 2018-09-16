@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="bootstrap.css">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <title>Calendar</title>
+    <script>
+    	window.onload = function()
+    	{
+    		const monthNames = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь",
+								  "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"
+								];
+
+			var calendars = [];
+
+    		function Month(date, onclick, onmouseenter, onmouseleave)
+    		{
+    			this.table = document.createElement('table');
+
+    			this.table.className = 'table';
+    			this.table.style.margin = 0;
+    			this.table.style.border = 'solid 1px #eee';
+
+    			var thead = this.table.createTHead();
+    			var row = thead.insertRow(0);
+
+    			var cell = document.createElement('th');
+    			cell.innerHTML = '';
+    			row.appendChild(cell);
+    			cell = document.createElement('th');
+    			cell.innerHTML = 'ПН';
+    			row.appendChild(cell);
+    			cell = document.createElement('th');
+    			cell.innerHTML = 'ВТ';
+    			row.appendChild(cell);
+    			cell = document.createElement('th');
+    			cell.innerHTML = 'СР';
+    			row.appendChild(cell);
+    			cell = document.createElement('th');
+    			cell.innerHTML = 'ЧТ';
+    			row.appendChild(cell);
+    			cell = document.createElement('th');
+    			cell.innerHTML = 'ПТ';
+    			row.appendChild(cell);
+    			cell = document.createElement('th');
+    			cell.innerHTML = 'СБ';
+    			row.appendChild(cell);
+    			cell = document.createElement('th');
+    			cell.innerHTML = 'ВС';
+    			row.appendChild(cell);
+
+    			var currentMonth = date;
+    			currentMonth = new Date(currentMonth.getFullYear(), currentMonth.getMonth(), 1);
+    			var firstDayNumber = currentMonth.getDay();
+    			var currentDay = currentMonth.getDate() + 1;
+
+    			var caption = this.table.createCaption();
+    			caption.innerHTML = monthNames[currentMonth.getMonth()];
+    			caption.className = 'text-center';
+
+    			currentMonth = new Date(currentMonth.getFullYear(), currentMonth.getMonth() + 1, 0);
+    			var currentMonthDays = currentMonth.getDate();
+
+    			var prevMonth = new Date(currentMonth.getFullYear(), currentMonth.getMonth(), 0);
+    			var prevMonthDays = prevMonth.getDate();
+
+    			var tbody = this.table.createTBody();
+
+    			for (var i = -firstDayNumber + 1, j = 0; i <= 42 - firstDayNumber; i++, j++)
+    			{
+    				if (j % 7 == 0)
+    				{
+    					row = tbody.insertRow(j / 7);
+    					cell = document.createElement('th');
+    					cell.innerHTML = j / 7 + 1;
+    					cell.style.borderRight = 'solid 1px #eee'
+    					row.appendChild(cell);
+    				}
+
+    				var cell = row.insertCell(j % 7 + 1);
+    				if (i < 0)
+    				{
+    					cell.innerHTML = prevMonthDays + i + 1;
+    					cell.classList.add('text-secondary');
+    				}
+    				else if (i >= currentMonthDays)
+    				{
+    					cell.innerHTML = i % currentMonthDays + 1;
+    					cell.classList.add('text-secondary');
+    				}
+    				else
+    				{
+    					cell.innerHTML = i + 1;
+    					cell.onclick = onclick;
+	    				cell.onmouseenter = onmouseenter;
+	    				cell.onmouseleave = onmouseleave;
+    				}
+
+    				if (i == currentDay)
+    				{
+    					cell.classList.add('bg-info');
+    					cell.classList.add('text-white');
+    				}
+
+    				cell.classList.add('text-center');
+    				cell.style.cursor = 'pointer';
+    			}
+    		}
+
+    		function Calendar(inputDiv, button, rows, cols, date = new Date())
+    		{
+    			if ((rows % 2 != 0 && cols % 2 != 0) || cols * rows > 12)
+    			{
+    				throw 'Кол-во выводимых месяцев в календаре должно быть чётным и не превышать 12!';
+    			}
+    			var _self = this;
+
+    			calendars.push(this);
+
+    			this.inputDiv = inputDiv;
+    			this.cols = cols;
+    			this.rows = rows;
+    			this.isShown = false;
+
+    			this.div = document.createElement('div');
+    			this.div.style.display = 'none';
+    			this.div.style.position = 'absolute';
+    			this.div.style.zIndex = 9999;
+    			this.div.style.overflow = 'hidden';
+    			this.div.style.borderRadius = '10px';
+    			this.div.style.border = 'solid 1px #eee';
+    			this.div.style.padding = '10px';
+    			this.div.style.boxShadow = '10px 10px 36px -22px rgba(0,0,0,0.37)';
+    			
+    			this.div.style.top = '100px';
+    			this.div.style.left = '100px';
+
+    			document.body.appendChild(this.div);
+
+    			this.rowYear = document.createElement('div');
+    			this.rowYear.className = 'row';
+
+    			var colLeft = document.createElement('div');
+    			colLeft.classList.add('col');
+    			colLeft.classList.add('col-lg-2');
+
+    			var prevBtn = document.createElement('button');
+    			prevBtn.classList.add('btn');
+    			prevBtn.classList.add('btn-block');
+    			prevBtn.classList.add('btn-info');
+    			prevBtn.innerHTML = 'Назад';
+    			var prevTimer;
+    			prevBtn.onclick = function() { _self.prev(); };
+    			prevBtn.onmousedown = function() { prevTimer = setInterval(function() { _self.prev(); }, 200); };
+    			prevBtn.onmouseup = function() { clearInterval(prevTimer); };
+    			colLeft.appendChild(prevBtn);
+
+    			var colCenter = document.createElement('div');
+    			colCenter.classList.add('col');
+    			colCenter.classList.add('col-lg-8');
+
+    			this.yearCaption = document.createElement('h3');
+    			this.yearCaption .className = 'text-center';
+    			colCenter.appendChild(this.yearCaption);
+
+    			var colRight = document.createElement('div');
+    			colRight.classList.add('col');
+    			colRight.classList.add('col-lg-2');
+
+    			var nextBtn = document.createElement('button');
+    			nextBtn.classList.add('btn-block');
+    			nextBtn.classList.add('btn');
+    			nextBtn.classList.add('btn-info');
+    			nextBtn.innerHTML = 'Далее';
+    			var nextTimer;
+    			nextBtn.onclick = function() { _self.next(); };
+    			nextBtn.onmousedown = function() { nextTimer = setInterval(function() { _self.next(); }, 200); };
+    			nextBtn.onmouseup = function() { clearInterval(nextTimer); };
+    			colRight.appendChild(nextBtn);
+
+    			this.rowYear.appendChild(colLeft);
+    			this.rowYear.appendChild(colCenter);
+    			this.rowYear.appendChild(colRight);
+
+    			this.rowMonths = document.createElement('div');
+    			this.rowMonths.className = 'row';
+    			this.rowMonths.classList.add('mt-2');
+
+    			this.div.appendChild(this.rowYear);
+    			this.div.appendChild(this.rowMonths);
+
+				this.generateMonths = function()
+				{
+	    			var currentYear = this.currentDate.getFullYear();
+	    			var currentMonth = this.currentDate.getMonth();
+
+    				this.yearCaption.innerHTML = currentYear;
+
+					for (var i = 0; i < rows * cols; i++)
+					{
+						var month = new Month(new Date(currentYear, currentMonth + 1 + i), this.selectDate, this.onmouseenter, this.onmouseleave);
+
+						var col = document.createElement('div');
+						col.classList.add('col');
+						col.classList.add('col-lg-6');
+						col.appendChild(month.table);
+
+		    			this.rowMonths.appendChild(col);
+					}
+				}
+
+				this.onmouseleave = function(evt)
+				{
+					if (!evt.target.classList.contains('bg-info'))
+					{
+						evt.target.classList.remove('bg-success');
+						evt.target.classList.remove('text-white');
+					}
+				}
+
+				this.onmouseenter = function(evt)
+				{
+					if (!evt.target.classList.contains('bg-info'))
+					{
+						evt.target.classList.add('bg-success');
+						evt.target.classList.add('text-white');
+					}
+				}
+
+    			this.show = function(evt)
+    			{
+    				for (var i = 0; i < calendars.length; i++)
+    				{
+    					calendars[i].hide();
+    				}
+
+    				this.div.style.display = 'block';
+    				this.div.style.left = (evt.pageX + this.div.offsetWidth > window.innerWidth) ? (evt.pageX - this.div.offsetWidth) + 'px' : evt.pageX + 'px';
+    				this.div.style.top = (evt.pageY + 40) + 'px';
+
+    				this.isShown = true;
+    			}
+
+    			this.hide = function()
+    			{
+    				this.div.style.display = 'none';
+    				this.isShown = false;
+    			}
+
+				this.selectDate = function(evt)
+				{
+					_self.hide();
+					var table = evt.target.parentElement.parentElement.parentElement;
+					var caption = table.getElementsByTagName('caption')[0];
+					_self.inputDiv.value = evt.target.innerHTML + ' ' + caption.innerHTML + ' ' + _self.rowYear.childNodes[1].firstChild.innerHTML;
+				}
+
+				this.currentDate = new Date();
+    			this.generateMonths();
+
+    			this.clear = function()
+    			{
+    				var elem = this.rowMonths.firstChild;
+					while (elem) {
+					    this.rowMonths.removeChild(elem);
+					    elem = this.rowMonths.firstChild;
+					}
+    			}
+
+    			this.next = function()
+    			{
+    				this.clear();
+					this.currentDate = new Date(this.currentDate.getFullYear(), this.currentDate.getMonth() + rows*cols);
+    				this.generateMonths();
+    			}
+
+    			this.prev = function()
+    			{
+					this.clear();
+					this.currentDate = new Date(this.currentDate.getFullYear(), this.currentDate.getMonth() - rows*cols);
+    				this.generateMonths();
+    			}
+
+    			button.onclick = function(evt)
+    			{
+    				if (_self.isShown === true)
+    				{
+    					_self.hide();
+    				}
+    				else
+    				{
+	    				_self.show(evt); 					
+    				}
+    			};
+    		}
+
+    		var calendar = new Calendar(document.getElementById('dateInput'),
+    									document.getElementById('showCalendarButton'),
+    									1, 2);
+
+    		var calendar = new Calendar(document.getElementById('dateInput1'),
+    									document.getElementById('showCalendarButton1'),
+    									1, 2);
+    	}
+    </script>
+  </head>
+  <body>
+  	<div class="container">
+  			<form action="" class="mt-4">
+  				<div class="input-group mb-3">
+				  <input id="dateInput" type="text" class="form-control" placeholder="Выберите дату..." disabled="disabled" aria-label="Выберите дату..." aria-describedby="showCalendarButton">
+				  <div class="input-group-append">
+				    <button class="btn btn-outline-secondary" type="button" id="showCalendarButton"><span class="fa fa-calendar"></span></button>
+				  </div>
+				</div>
+				<div class="input-group mb-3">
+				  <input id="dateInput1" type="text" class="form-control" placeholder="Выберите дату..." disabled="disabled" aria-label="Выберите дату..." aria-describedby="showCalendarButton">
+				  <div class="input-group-append">
+				    <button class="btn btn-outline-secondary" type="button" id="showCalendarButton1"><span class="fa fa-calendar"></span></button>
+				  </div>
+				</div>
+		  	</form>
+  	</div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="bootstrap.min.js"></script>
+  </body>
+</html>
