@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Crocodile</string>
+    <string name="enter_account">Войти</string>
+    <string name="register_account">Зарегистрироваться</string>
+    <string name="nickname">Никнейм</string>
+    <string name="password">Пароль</string>
+    <string name="cancel">Отменить</string>
+    <string name="searchGame">Поиск игры</string>
+    <string name="searchingGame">Поиск игры...</string>
+</resources>

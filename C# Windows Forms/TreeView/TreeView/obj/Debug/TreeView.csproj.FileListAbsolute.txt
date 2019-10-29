@@ -1,9 +1,0 @@
-G:\Works\C# Windows Forms\TreeView\TreeView\bin\Debug\TreeView.exe.config
-G:\Works\C# Windows Forms\TreeView\TreeView\obj\Debug\TreeView.csprojResolveAssemblyReference.cache
-G:\Works\C# Windows Forms\TreeView\TreeView\obj\Debug\TreeView.Form1.resources
-G:\Works\C# Windows Forms\TreeView\TreeView\obj\Debug\TreeView.Properties.Resources.resources
-G:\Works\C# Windows Forms\TreeView\TreeView\obj\Debug\TreeView.csproj.GenerateResource.Cache
-G:\Works\C# Windows Forms\TreeView\TreeView\bin\Debug\TreeView.exe
-G:\Works\C# Windows Forms\TreeView\TreeView\bin\Debug\TreeView.pdb
-G:\Works\C# Windows Forms\TreeView\TreeView\obj\Debug\TreeView.exe
-G:\Works\C# Windows Forms\TreeView\TreeView\obj\Debug\TreeView.pdb

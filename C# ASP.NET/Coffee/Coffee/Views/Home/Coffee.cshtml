@@ -1,0 +1,15 @@
+﻿@{
+	ViewBag.Title = ViewBag.Coffee.Name;
+}
+@using (Html.BeginForm("Coffee", "Home", FormMethod.Post))
+{
+	@Html.Hidden("id", (int)ViewBag.Coffee.Id)
+	foreach (Coffee.Models.Additive additive in ViewBag.Additives)
+	{
+		<div class="custom-control custom-checkbox my-1">
+			@Html.CheckBox("additive_" + additive.Id.ToString(), false, new { @class = "custom-control-input", id = "additive_" + additive.Id.ToString() })
+			<label class="custom-control-label" for="additive_@additive.Id.ToString()">@additive.Name</label>
+		</div>
+	}
+	<button type="submit" class="btn btn-primary my-2">Добавить в корзину</button>
+}

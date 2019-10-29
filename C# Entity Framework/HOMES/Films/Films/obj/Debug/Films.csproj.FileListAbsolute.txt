@@ -13,3 +13,18 @@ H:\Works\Entity Framework\HOMES\Films\Films\bin\Debug\ru\EntityFramework.resourc
 H:\Works\Entity Framework\HOMES\Films\Films\obj\Debug\Films.Film.resources
 H:\Works\Entity Framework\HOMES\Films\Films\obj\Debug\Films.Main.resources
 H:\Works\Entity Framework\HOMES\Films\Films\obj\Debug\Films.Genre.resources
+D:\Works\C# Entity Framework\HOMES\Films\Films\bin\Debug\Films.exe.config
+D:\Works\C# Entity Framework\HOMES\Films\Films\bin\Debug\Films.exe
+D:\Works\C# Entity Framework\HOMES\Films\Films\bin\Debug\Films.pdb
+D:\Works\C# Entity Framework\HOMES\Films\Films\bin\Debug\EntityFramework.dll
+D:\Works\C# Entity Framework\HOMES\Films\Films\bin\Debug\EntityFramework.xml
+D:\Works\C# Entity Framework\HOMES\Films\Films\bin\Debug\ru\EntityFramework.resources.dll
+D:\Works\C# Entity Framework\HOMES\Films\Films\obj\Debug\Films.csprojAssemblyReference.cache
+D:\Works\C# Entity Framework\HOMES\Films\Films\obj\Debug\Films.Film.resources
+D:\Works\C# Entity Framework\HOMES\Films\Films\obj\Debug\Films.Main.resources
+D:\Works\C# Entity Framework\HOMES\Films\Films\obj\Debug\Films.Genre.resources
+D:\Works\C# Entity Framework\HOMES\Films\Films\obj\Debug\Films.Properties.Resources.resources
+D:\Works\C# Entity Framework\HOMES\Films\Films\obj\Debug\Films.csproj.GenerateResource.cache
+D:\Works\C# Entity Framework\HOMES\Films\Films\obj\Debug\Films.csproj.CopyComplete
+D:\Works\C# Entity Framework\HOMES\Films\Films\obj\Debug\Films.exe
+D:\Works\C# Entity Framework\HOMES\Films\Films\obj\Debug\Films.pdb

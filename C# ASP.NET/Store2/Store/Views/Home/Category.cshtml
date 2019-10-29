@@ -1,0 +1,21 @@
+﻿@{
+    ViewBag.Title = ViewBag.CategoryName;
+}
+<div class="row">
+    @if (ViewBag.ProductsCount > 0)
+    {
+        foreach (var product in ViewBag.Products)
+        {
+            <div class="col-md-6 mb-4">
+                <img src="~/Home/GetFile?name=@product.PhotoPath" alt="@product.Name" width="100%" />
+                <h4>@product.Name</h4>
+                <p class="text-truncate">@product.Description</p>
+                <a class="btn btn-primary" href="~/Home/Product/?id=@product.Id">Подробнее</a>
+            </div>
+        }
+    }
+    else
+    {
+        <h2>Не найдено товаров в данной категории</h2>
+    }
+</div>

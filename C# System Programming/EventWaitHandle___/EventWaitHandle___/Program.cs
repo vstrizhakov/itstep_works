@@ -28,9 +28,9 @@ namespace EventWaitHandle___
 
 			while (true)
 			{
-				Console.ReadKey(false);
+				Console.ReadKey(true);
 				e.Set(); // Переводим объект в состояние "свободен"
-				Console.ReadKey(false);
+				Console.ReadKey(true);
 				e.Reset(); // Переводим объект в состояние "занят"
 			}
 		}

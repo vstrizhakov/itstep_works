@@ -1,0 +1,22 @@
+﻿@{
+	ViewBag.Title = "Заказ #" + ViewBag.Order.Id + " (" + ViewBag.Order.GetTotalPrice() + " грн)";
+}
+<div class="row">
+	@foreach (var unit in ViewBag.Order.Units)
+	{
+		<div class="row border border-light rounded py-2 my-2">
+			<div class="col col-md-2 d-flex align-items-center">
+				<img src="/Home/GetFile?name=@unit.Product.PhotoPath" alt="@unit.Product.Name" width="100%" />
+			</div>
+			<div class="col col-md-6 d-flex align-items-center">
+				<a href="~/Home/Product?id=@unit.Product.Id">@unit.Product.Name</a>
+			</div>
+			<div class="col col-md-2 d-flex align-items-center">
+				<h6>x @unit.Count шт.</h6>
+			</div>
+			<div class="col col-md-2 d-flex align-items-center">
+				<h6>@unit.Product.Price грн</h6>
+			</div>
+		</div>
+	}
+</div>

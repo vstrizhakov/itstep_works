@@ -1,8 +1,0 @@
-G:\Works\C# Windows Forms\ListBox_\ListBox_\bin\Debug\ListBox_.exe.config
-G:\Works\C# Windows Forms\ListBox_\ListBox_\bin\Debug\ListBox_.exe
-G:\Works\C# Windows Forms\ListBox_\ListBox_\bin\Debug\ListBox_.pdb
-G:\Works\C# Windows Forms\ListBox_\ListBox_\obj\Debug\ListBox_.csprojResolveAssemblyReference.cache
-G:\Works\C# Windows Forms\ListBox_\ListBox_\obj\Debug\ListBox_.Properties.Resources.resources
-G:\Works\C# Windows Forms\ListBox_\ListBox_\obj\Debug\ListBox_.csproj.GenerateResource.Cache
-G:\Works\C# Windows Forms\ListBox_\ListBox_\obj\Debug\ListBox_.exe
-G:\Works\C# Windows Forms\ListBox_\ListBox_\obj\Debug\ListBox_.pdb

@@ -1,6 +1,0 @@
-G:\Works\C# Windows Forms\FormByClasss\FormByClasss\bin\Debug\FormByClasss.exe.config
-G:\Works\C# Windows Forms\FormByClasss\FormByClasss\obj\Debug\FormByClasss.csprojResolveAssemblyReference.cache
-G:\Works\C# Windows Forms\FormByClasss\FormByClasss\bin\Debug\FormByClasss.exe
-G:\Works\C# Windows Forms\FormByClasss\FormByClasss\bin\Debug\FormByClasss.pdb
-G:\Works\C# Windows Forms\FormByClasss\FormByClasss\obj\Debug\FormByClasss.exe
-G:\Works\C# Windows Forms\FormByClasss\FormByClasss\obj\Debug\FormByClasss.pdb

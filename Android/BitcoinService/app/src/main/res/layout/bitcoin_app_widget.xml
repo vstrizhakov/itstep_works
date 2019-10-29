@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:layout_gravity="center_horizontal"
+    android:padding="4dp"
+    android:background="#00000000">
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_launcher_background"
+            android:contentDescription="Bitcoin"
+            android:id="@+id/tvBitcoinIcon"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1">
+        <TextView
+            android:text="Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="28sp"
+            android:fontFamily="sans-serif-thin"
+            android:textColor="#FFF"
+            android:id="@+id/tvBitcoinRate"/>
+        <TextView
+            android:text="Subtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="sans-serif-thin"
+            android:textColor="#FFF"
+            android:id="@+id/tvBitcoinUpdatedTime"/>
+    </LinearLayout>
+
+</LinearLayout>

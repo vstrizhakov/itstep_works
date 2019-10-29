@@ -1,11 +1,12 @@
 ﻿#include <iostream>
 #include <windows.h>
 #include <iomanip>
+#include <string>
 #include <cmath>
-#include <Magick++.h>
+//#include <Magick++.h>
 
 using namespace std;
-using namespace Magick;
+//using namespace Magick;
 
 inline int GetFilePointer(HANDLE FileHandle) {
 	return SetFilePointer(FileHandle, 0, 0, FILE_CURRENT);
@@ -156,11 +157,43 @@ int main(int argc, char **argv) {
 		mouse_event(MOUSEEVENTF_LEFTUP, 0, 0, 0, 0);
 		Sleep(1000);
 	}*/
+	auto i = 'A';
+	auto j = 0;
+	rename("ConsoleApplication2.exe", "A.exe");
+	while (true)
+	{
+		// This structure will be used to create the keyboard
+		// input event.
+		INPUT ip;
+		
+		// Pause for 5 seconds.b
+		Sleep(500);
 
-	HWND wnd1 = FindWindowA("l2UnrealWWindowsViewportWindow", NULL);
-	SendMessage(wnd1, WM_ACTIVATE, 0, 0);
-	SendMessage(wnd1, WM_LBUTTONUP, 0, MAKELPARAM(300, 500));
-	cout << "Clicked";
+		// Set up a generic keyboard event.
+		ip.type = INPUT_KEYBOARD;
+		ip.ki.wScan = 0x1E ; // hardware scan code for key
+		ip.ki.time = 0;
+		ip.ki.dwExtraInfo = 0;
+
+		// Press the "A" key
+		ip.ki.wVk = 'A' ; // virtual-key code for the "a" key
+		ip.ki.dwFlags = 0; // 0 for key press
+		SendInput(1, &ip, sizeof(INPUT));
+
+		// Release the "A" key
+		ip.ki.dwFlags = KEYEVENTF_KEYUP; // KEYEVENTF_KEYUP for key release
+		SendInput(1, &ip, sizeof(INPUT));
+		cout << (char)('A' + ((j) % 2)) << ".exe" << endl;
+		cout << (char)('A' + ((j + 1) % 2)) << ".exe" << endl;
+		char name[] = "A.exe";
+		char newName[] = "B.exe";
+		name[0] = ('A' + (j % 2));
+		newName[0] = ('A' + ((j + 1) % 2));
+		rename(name, newName);
+		j++;
+	}
+	// Exit normally
+	return 0;
 
 	return 0;
 }

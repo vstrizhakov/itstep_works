@@ -1,7 +1,0 @@
-D:\flesh\Works\C# System Programming\ThreadStartParameters\ThreadStartParameters\bin\Debug\ThreadStartParameters.exe.config
-D:\flesh\Works\C# System Programming\ThreadStartParameters\ThreadStartParameters\bin\Debug\ThreadStartParameters.exe
-D:\flesh\Works\C# System Programming\ThreadStartParameters\ThreadStartParameters\bin\Debug\ThreadStartParameters.pdb
-D:\flesh\Works\C# System Programming\ThreadStartParameters\ThreadStartParameters\obj\Debug\ThreadStartParameters.csprojResolveAssemblyReference.cache
-D:\flesh\Works\C# System Programming\ThreadStartParameters\ThreadStartParameters\obj\Debug\ThreadStartParameters.csproj.CoreCompileInputs.cache
-D:\flesh\Works\C# System Programming\ThreadStartParameters\ThreadStartParameters\obj\Debug\ThreadStartParameters.exe
-D:\flesh\Works\C# System Programming\ThreadStartParameters\ThreadStartParameters\obj\Debug\ThreadStartParameters.pdb

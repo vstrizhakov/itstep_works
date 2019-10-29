@@ -1,9 +1,0 @@
-G:\Works\C# Windows Forms\Control\Control\bin\Debug\Control.exe.config
-G:\Works\C# Windows Forms\Control\Control\bin\Debug\Control.exe
-G:\Works\C# Windows Forms\Control\Control\bin\Debug\Control.pdb
-G:\Works\C# Windows Forms\Control\Control\obj\Debug\Control.csprojResolveAssemblyReference.cache
-G:\Works\C# Windows Forms\Control\Control\obj\Debug\Control.Form1.resources
-G:\Works\C# Windows Forms\Control\Control\obj\Debug\Control.Properties.Resources.resources
-G:\Works\C# Windows Forms\Control\Control\obj\Debug\Control.csproj.GenerateResource.Cache
-G:\Works\C# Windows Forms\Control\Control\obj\Debug\Control.exe
-G:\Works\C# Windows Forms\Control\Control\obj\Debug\Control.pdb

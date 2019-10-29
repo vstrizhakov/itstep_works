@@ -1,0 +1,61 @@
+CREATE TABLE Cinemas 
+(
+	id int not null primary key identity(1,1),
+	name varchar(32),
+	rows int,
+	rowplaces int
+)
+INSERT INTO Cinemas(name, rows, rowplaces) VALUES('Киев', 10, 8);
+INSERT INTO Cinemas(name, rows, rowplaces) VALUES('Флоренция', 9, 8);
+INSERT INTO Cinemas(name, rows, rowplaces) VALUES('Кинотеатр Старт', 12, 10);
+INSERT INTO Cinemas(name, rows, rowplaces) VALUES('Кинотеатр Лейпциг', 10, 8);
+INSERT INTO Cinemas(name, rows, rowplaces) VALUES('Супутник', 15, 10);
+CREATE TABLE Genres
+
+(
+	id int not null primary key identity(1,1),
+	name varchar(32),
+	CONSTRAINT GenresConst unique(name)
+)
+INSERT INTO Genres(name) VALUES('боевик');
+INSERT INTO Genres(name) VALUES('вестерн');
+INSERT INTO Genres(name) VALUES('детектив');
+INSERT INTO Genres(name) VALUES('Драма');
+INSERT INTO Genres(name) VALUES('Исторический');
+INSERT INTO Genres(name) VALUES('Комедия');
+INSERT INTO Genres(name) VALUES('Мелодрама');
+INSERT INTO Genres(name) VALUES('Приключения');
+INSERT INTO Genres(name) VALUES('Триллер');
+INSERT INTO Genres(name) VALUES('Ужасы');
+INSERT INTO Genres(name) VALUES('Фантастика');
+
+CREATE TABLE Films
+(
+	id int not null primary key identity(1,1),
+	name varchar(32),
+	id_genre int foreign key references Genres(id),
+	lasting int
+)
+CREATE TABLE Sessions
+(
+	id int not null primary key identity(1,1),
+	id_film int foreign key references Films(id),
+	id_cinema int foreign key references Cinemas(id),
+	date date,
+	start_time time
+)
+CREATE TABLE SoldTickets
+(
+	id int not null primary key identity(1,1),
+	id_session int foreign key references Sessions(id),
+	row int,
+	rowplace int
+)
+CREATE TABLE Admins
+(
+	id int not null primary key identity(1,1),
+	login varchar(32),
+	password varchar(32)
+)
+INSERT INTO Admins(login, password) VALUES('admin1','1104292094');
+INSERT INTO Admins(login, password) VALUES('admin2','-320629314');

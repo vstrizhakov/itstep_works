@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fafad1"
+        android:padding="4dp"
+        android:stretchColumns="*">
+        <TableRow>
+            <TextView
+                android:text="Фамилия:"
+                android:layout_gravity="center_vertical|right"
+                android:textSize="16sp"/>
+            <TextView
+                android:id="@+id/tvLastName"
+                android:layout_gravity="center_vertical|right"
+                android:textSize="16sp"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="Имя:"
+                android:layout_gravity="center_vertical|right"
+                android:textSize="16sp"/>
+            <TextView
+                android:id="@+id/tvFirstName"
+                android:layout_gravity="center_vertical|right"
+                android:textSize="16sp"/>
+        </TableRow>
+        <TableRow>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="Рост:"
+                android:layout_gravity="center_vertical|right"
+                android:textSize="16sp"/>
+            <TextView
+                android:id="@+id/tvHeight"
+                android:layout_gravity="center_vertical|right"
+                android:textSize="16sp"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="Вес:"
+                android:layout_gravity="center_vertical|right"
+                android:textSize="16sp"/>
+            <TextView
+                android:id="@+id/tvWeight"
+                android:layout_gravity="center_vertical|right"
+                android:textSize="16sp"/>
+        </TableRow>
+        <TableRow>
+            <Button
+                android:layout_span="2"
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:textAllCaps="false"
+                android:id="@+id/btnOne"
+                android:onClick="btnClick"
+                android:text="Ввести Фамилию и Имя"/>
+            <Button
+                android:layout_span="2"
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:textAllCaps="false"
+                android:id="@+id/btnTwo"
+                android:onClick="btnClickTwo"
+                android:text="Ввести рост и вес"/>
+        </TableRow>
+    </TableLayout>
+
+
+</LinearLayout>

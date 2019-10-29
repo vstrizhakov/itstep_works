@@ -1,7 +1,0 @@
-D:\flesh\Works\C# System Programming\ThreadsArraySynchronization\ThreadsArraySynchronization\bin\Debug\ThreadsArraySynchronization.exe.config
-D:\flesh\Works\C# System Programming\ThreadsArraySynchronization\ThreadsArraySynchronization\bin\Debug\ThreadsArraySynchronization.exe
-D:\flesh\Works\C# System Programming\ThreadsArraySynchronization\ThreadsArraySynchronization\bin\Debug\ThreadsArraySynchronization.pdb
-D:\flesh\Works\C# System Programming\ThreadsArraySynchronization\ThreadsArraySynchronization\obj\Debug\ThreadsArraySynchronization.csprojResolveAssemblyReference.cache
-D:\flesh\Works\C# System Programming\ThreadsArraySynchronization\ThreadsArraySynchronization\obj\Debug\ThreadsArraySynchronization.csproj.CoreCompileInputs.cache
-D:\flesh\Works\C# System Programming\ThreadsArraySynchronization\ThreadsArraySynchronization\obj\Debug\ThreadsArraySynchronization.exe
-D:\flesh\Works\C# System Programming\ThreadsArraySynchronization\ThreadsArraySynchronization\obj\Debug\ThreadsArraySynchronization.pdb

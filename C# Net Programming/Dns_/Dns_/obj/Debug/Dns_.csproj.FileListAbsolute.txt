@@ -1,7 +1,0 @@
-D:\flesh\Works\C# Net Programming\Dns_\Dns_\bin\Debug\Dns_.exe.config
-D:\flesh\Works\C# Net Programming\Dns_\Dns_\bin\Debug\Dns_.exe
-D:\flesh\Works\C# Net Programming\Dns_\Dns_\bin\Debug\Dns_.pdb
-D:\flesh\Works\C# Net Programming\Dns_\Dns_\obj\Debug\Dns_.csprojResolveAssemblyReference.cache
-D:\flesh\Works\C# Net Programming\Dns_\Dns_\obj\Debug\Dns_.csproj.CoreCompileInputs.cache
-D:\flesh\Works\C# Net Programming\Dns_\Dns_\obj\Debug\Dns_.exe
-D:\flesh\Works\C# Net Programming\Dns_\Dns_\obj\Debug\Dns_.pdb

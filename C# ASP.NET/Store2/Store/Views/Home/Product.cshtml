@@ -1,0 +1,42 @@
+﻿@{
+    ViewBag.Title = ViewBag.Product.Name;
+}
+<div class="card">
+    <div class="card-header">
+        <h4 class="mb-0">@ViewBag.Product.Name</h4>
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col col-md-7">
+                <img src="~/Home/GetFile?name=@ViewBag.Product.PhotoPath" alt="@ViewBag.Product.Name" width="100%" class="mb-2" />
+                <p>@ViewBag.Product.Description</p>
+            </div>
+            <div class="col col-md-5">
+                @using (Html.BeginForm("AddToCart", "Home", FormMethod.Post))
+                {
+                    <input type="hidden" name="id" value="@ViewBag.Product.Id"/>
+                    <div class="row">
+                        <div class="col col-md-5">
+                            <input type="number" name="count" class="form-control" min="1" max="@ViewBag.Product.Quantity"/>
+                        </div>
+                        <div class="col col-md-7">
+                            <input type="submit" class="btn btn-primary btn-block" value="Добавить в корзину" />
+                        </div>
+                    </div>
+                }
+                <p>
+                    <b>Количество: </b>@ViewBag.Product.Quantity
+                </p>
+                <p>
+                    <b>Категория: </b><a href="~/Home/Category?id=@ViewBag.Product.Category.Id">@ViewBag.Product.Category.Name</a>
+                </p>
+                <p>
+                    <b>Вес: </b>@ViewBag.Product.Weight <b>кг</b>
+                </p>
+                <p>
+                    <b>Цена: </b>@ViewBag.Product.Price <b>грн</b>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

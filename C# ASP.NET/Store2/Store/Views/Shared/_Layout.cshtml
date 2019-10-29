@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Gagurt</title>
+    @Styles.Render("~/Content/css")
+</head>
+<body>
+    <div class="navbar navbar-fixed-top navbar-background">
+        <div class="container">
+            <div>
+                @Html.ActionLink("Gagurt - Интернет Магазин", "Index", "Home", new { area = "" }, new { @class = "navbar-brand text-white" })
+            </div>
+            @Html.ActionLink("Моя Корзина", "Cart", "Home", new { area = "" }, new { @class = "text-white" })
+        </div>
+    </div>
+    <div class="container body-content">
+        <div class="row my-4">
+            <div class="col col-md-3">
+                <ul class="list-group">
+                    @foreach (var category in ViewBag.Categories)
+                    {
+                        <li class="list-group-item d-flex justify-content-between align-items-center category-link">
+                            @if (category.Id == ViewBag.ActiveCategoryId)
+                            {
+                                <a href="~/Home/Category?id=@category.Id" style="font-weight: bold;">@category.Name</a>
+                            }
+                            else
+                            {
+                                <a href="~/Home/Category?id=@category.Id">@category.Name</a>
+                            }
+                        </li>
+                        foreach (var subcategory in category.ChildCategories)
+                        {
+                            <li class="list-group-item d-flex justify-content-between align-items-center category-link">
+                                @if (subcategory.Id == ViewBag.ActiveCategoryId)
+                                {
+                                    <a href="~/Home/Category?id=@subcategory.Id" style="font-weight: bold;">-> @subcategory.Name</a>
+                                }
+                                else
+                                {
+                                    <a href="~/Home/Category?id=@subcategory.Id">-> @subcategory.Name</a>
+                                }
+                            </li>
+                        }
+                    }
+                </ul>
+            </div>
+            <div class="col col-md-9">
+                @RenderBody()
+            </div>
+        </div>
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - Gagurt - Online Store</p>
+        </footer>
+    </div>
+</body>
+</html>

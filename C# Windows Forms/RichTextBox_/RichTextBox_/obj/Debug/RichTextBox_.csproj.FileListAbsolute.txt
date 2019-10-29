@@ -1,9 +1,0 @@
-G:\Works\C# Windows Forms\RichTextBox_\RichTextBox_\bin\Debug\RichTextBox_.exe.config
-G:\Works\C# Windows Forms\RichTextBox_\RichTextBox_\bin\Debug\RichTextBox_.exe
-G:\Works\C# Windows Forms\RichTextBox_\RichTextBox_\bin\Debug\RichTextBox_.pdb
-G:\Works\C# Windows Forms\RichTextBox_\RichTextBox_\obj\Debug\RichTextBox_.csprojResolveAssemblyReference.cache
-G:\Works\C# Windows Forms\RichTextBox_\RichTextBox_\obj\Debug\RichTextBox_.Form1.resources
-G:\Works\C# Windows Forms\RichTextBox_\RichTextBox_\obj\Debug\RichTextBox_.Properties.Resources.resources
-G:\Works\C# Windows Forms\RichTextBox_\RichTextBox_\obj\Debug\RichTextBox_.csproj.GenerateResource.Cache
-G:\Works\C# Windows Forms\RichTextBox_\RichTextBox_\obj\Debug\RichTextBox_.exe
-G:\Works\C# Windows Forms\RichTextBox_\RichTextBox_\obj\Debug\RichTextBox_.pdb

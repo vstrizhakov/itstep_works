@@ -1,0 +1,35 @@
+﻿@{
+	Layout = null;
+	ViewBag.Title = "Home Page";
+}
+@model IEnumerable<SeveralDbQuery.Models.City>
+<h2>Список городов</h2>
+<p>
+	@Html.ActionLink("Список стран", "CountriesList")
+	@Html.ActionLink("Добавить город", "CreateCity")
+</p>
+<table>
+	<thead>
+		<tr>
+			<th>#</th>
+			<th>Название</th>
+			<th>Страна</th>
+			<th></th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var product in Model)
+		{
+
+			<tr>
+				<td>@product.Id</td>
+				<td>@product.Name</td>
+				<td>@product.Country.Name</td>
+				<td>
+					@Html.ActionLink("Редактировать", "EditCity")
+					@Html.ActionLink("Удалить", "DeleteCity")
+				</td>
+			</tr>
+		}
+	</tbody>
+</table>

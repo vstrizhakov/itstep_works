@@ -1,0 +1,15 @@
+﻿@{
+	ViewBag.Title = "Все заказы";
+}
+@foreach (Coffee.Models.Order order in ViewBag.Orders)
+{
+	<h3>
+		# @order.Coffee.Name @if (order.Additives.Count > 0)
+		{<span>с добавками:</span>}
+	</h3>
+	foreach (Coffee.Models.OrderAdditivePair additive in order.Additives)
+	{
+		<h5>&nbsp;&nbsp;&nbsp;&nbsp;@additive.Additive.Name</h5>
+	}
+}
+@Html.ActionLink("Заказать кофе", "Index", "Home", new { area = "" })

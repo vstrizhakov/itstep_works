@@ -13,7 +13,7 @@ namespace Directories_Files
 
 		static String[] GetFiles(String dir)
 		{
-			return Directory.GetFiles(dir, "*.txt");
+			return Directory.GetFiles(dir, "*.java");
 		}
 
 		static List<String> GetAllFilesFromDir(String path)

@@ -1,9 +1,0 @@
-G:\Works\C# Windows Forms\LayoutManager\LayoutManager\bin\Debug\LayoutManager.exe.config
-G:\Works\C# Windows Forms\LayoutManager\LayoutManager\bin\Debug\LayoutManager.exe
-G:\Works\C# Windows Forms\LayoutManager\LayoutManager\bin\Debug\LayoutManager.pdb
-G:\Works\C# Windows Forms\LayoutManager\LayoutManager\obj\Debug\LayoutManager.csprojResolveAssemblyReference.cache
-G:\Works\C# Windows Forms\LayoutManager\LayoutManager\obj\Debug\LayoutManager.Form1.resources
-G:\Works\C# Windows Forms\LayoutManager\LayoutManager\obj\Debug\LayoutManager.Properties.Resources.resources
-G:\Works\C# Windows Forms\LayoutManager\LayoutManager\obj\Debug\LayoutManager.csproj.GenerateResource.Cache
-G:\Works\C# Windows Forms\LayoutManager\LayoutManager\obj\Debug\LayoutManager.exe
-G:\Works\C# Windows Forms\LayoutManager\LayoutManager\obj\Debug\LayoutManager.pdb

@@ -1,0 +1,22 @@
+﻿@{
+	Layout = null;
+	ViewBag.Title = "Home Page";
+}
+
+@using (@Html.BeginForm("Index", "Home", FormMethod.Post))
+{
+	@Html.Label("Color")
+	@Html.RadioButton("color", "red")<br />
+	@Html.Label("Red")
+	@Html.RadioButton("color", "green")<br />
+	@Html.Label("Green")
+	@Html.RadioButton("color", "blu")<br />
+	@Html.Label("Blue")
+	@Html.CheckBox("isPhp", "Php")<br />
+	@Html.Label("Php")
+	@Html.CheckBox("isJs", "Js")<br />
+	@Html.Label("Js")
+	@Html.DropDownList("month", (List<SelectListItem>)ViewBag.Monthes)<br />
+	@Html.DropDownList("theme", (List<SelectListItem>)ViewBag.Themes)<br />
+	<input type="submit" />
+}

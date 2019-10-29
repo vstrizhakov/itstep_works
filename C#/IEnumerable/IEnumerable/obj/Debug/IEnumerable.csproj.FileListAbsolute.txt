@@ -1,5 +1,0 @@
-c:\users\09358\documents\visual studio 2015\Projects\IEnumerable\IEnumerable\bin\Debug\IEnumerable.exe.config
-c:\users\09358\documents\visual studio 2015\Projects\IEnumerable\IEnumerable\bin\Debug\IEnumerable.exe
-c:\users\09358\documents\visual studio 2015\Projects\IEnumerable\IEnumerable\bin\Debug\IEnumerable.pdb
-c:\users\09358\documents\visual studio 2015\Projects\IEnumerable\IEnumerable\obj\Debug\IEnumerable.exe
-c:\users\09358\documents\visual studio 2015\Projects\IEnumerable\IEnumerable\obj\Debug\IEnumerable.pdb

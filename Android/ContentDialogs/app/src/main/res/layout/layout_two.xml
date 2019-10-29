@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="4dp"
+    android:stretchColumns="*">
+
+    <TableRow>
+        <TextView
+            android:text="Рост: "
+            android:layout_gravity="center"
+            android:textSize="8pt"/>
+        <EditText
+            android:id="@+id/edtHeight"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:text="Вес: "
+            android:layout_gravity="center"
+            android:textSize="8pt"/>
+        <EditText
+            android:id="@+id/edtWeight"/>
+    </TableRow>
+</TableLayout>

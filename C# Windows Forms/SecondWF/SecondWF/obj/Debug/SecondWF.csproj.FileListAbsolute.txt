@@ -1,9 +1,0 @@
-E:\Students\Поток 28\ИТ-2822\Projects\SecondWF\SecondWF\bin\Debug\SecondWF.exe.config
-E:\Students\Поток 28\ИТ-2822\Projects\SecondWF\SecondWF\bin\Debug\SecondWF.exe
-E:\Students\Поток 28\ИТ-2822\Projects\SecondWF\SecondWF\bin\Debug\SecondWF.pdb
-E:\Students\Поток 28\ИТ-2822\Projects\SecondWF\SecondWF\obj\Debug\SecondWF.csprojResolveAssemblyReference.cache
-E:\Students\Поток 28\ИТ-2822\Projects\SecondWF\SecondWF\obj\Debug\SecondWF.Form1.resources
-E:\Students\Поток 28\ИТ-2822\Projects\SecondWF\SecondWF\obj\Debug\SecondWF.Properties.Resources.resources
-E:\Students\Поток 28\ИТ-2822\Projects\SecondWF\SecondWF\obj\Debug\SecondWF.csproj.GenerateResource.Cache
-E:\Students\Поток 28\ИТ-2822\Projects\SecondWF\SecondWF\obj\Debug\SecondWF.exe
-E:\Students\Поток 28\ИТ-2822\Projects\SecondWF\SecondWF\obj\Debug\SecondWF.pdb

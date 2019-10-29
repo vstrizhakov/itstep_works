@@ -1,0 +1,12 @@
+﻿@{
+	ViewBag.Title = "Редактировать жанр";
+}
+
+<form method="POST" action="">
+	<input type="hidden" name="Id" value="@ViewBag.Genre.Id" />
+	<div class="form-group">
+		<label for="name">Название жанра</label>
+		<input name="Name" type="text" placeholder="Введите название жанра" class="form-control" id="name" value="@ViewBag.Genre.Name">
+	</div>
+	<button class="btn btn-primary btn-block" type="submit" name="sumbit">Редактировать</button>
+</form>

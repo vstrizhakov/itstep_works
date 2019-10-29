@@ -1,0 +1,19 @@
+﻿@model TemplateHelpers.Models.Person
+@{
+	ViewBag.Title = "Home Page";
+	Layout = null;
+}
+@using (Html.BeginForm("Index", "Home", FormMethod.Post))
+{
+    @Html.LabelFor(Model => Model.LastName, "Фамилия")
+    @Html.TextBoxFor(Model => Model.LastName)<br />
+    @Html.LabelFor(Model => Model.FirstName, "Имя")
+    @Html.TextBoxFor(Model => Model.FirstName)<br />
+    @Html.LabelFor(Model => Model.Age, "Возраст")
+    @Html.TextBoxFor(Model => Model.Age)<br />
+    @Html.LabelFor(Model => Model.Gender, "Пол")
+    @Html.RadioButtonFor(Model => Model.Gender, true)<br />
+    @Html.RadioButtonFor(Model => Model.Gender, false)<br />
+    @Html.CheckBoxFor(Model => Model.IsProgrammer, true)<br />
+}
+

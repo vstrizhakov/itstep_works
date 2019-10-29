@@ -1,6 +1,0 @@
-c:\users\09358\documents\visual studio 2015\Projects\ArrayInterface\ArrayInterface\bin\Debug\ArrayInterface.exe.config
-c:\users\09358\documents\visual studio 2015\Projects\ArrayInterface\ArrayInterface\bin\Debug\ArrayInterface.exe
-c:\users\09358\documents\visual studio 2015\Projects\ArrayInterface\ArrayInterface\bin\Debug\ArrayInterface.pdb
-c:\users\09358\documents\visual studio 2015\Projects\ArrayInterface\ArrayInterface\obj\Debug\ArrayInterface.exe
-c:\users\09358\documents\visual studio 2015\Projects\ArrayInterface\ArrayInterface\obj\Debug\ArrayInterface.pdb
-c:\users\09358\documents\visual studio 2015\Projects\ArrayInterface\ArrayInterface\obj\Debug\ArrayInterface.csprojResolveAssemblyReference.cache

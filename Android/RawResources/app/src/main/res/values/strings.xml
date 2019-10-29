@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">RawResources</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_options">Options</string>
+    <string name="action_alpha">Alpha</string>
+    <string name="action_background">Background</string>
+    <string name="action_position">Position</string>
+    <string name="action_rotation">Rotation</string>
+    <string name="action_complex"><![CDATA[Complex: Rotation & Position]]></string>
+    <string name="action_frame">Frame</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+</resources>

@@ -1,4 +1,3 @@
-D:/загрузки\WinSetupFromUSB-1-8\files\grub4dos\docs\ChangeLog_GRUB4DOS.txt
-D:/загрузки\WinSetupFromUSB-1-8\files\grub4dos\docs\README_GRUB4DOS_CN.txt
-D:/загрузки\WinSetupFromUSB-1-8\files\tools\RMPrepUSB\HashMyFiles\readme.txt
-D:/загрузки\WinSetupFromUSB-1-8\files\tools\RMPrepUSB\QEMU\usage.txt
+D:/Works/Android\ApplicationMenu\app\src\main\java\com\vstrizhakov\applicationmenu\MainActivity.java
+D:/Works/Android\CWRadio\app\src\main\java\com\example\cwradio\MainActivity.java
+D:/Works/Android\Threads\app\src\main\java\com\vstrizhakov\threads\MainActivity.java

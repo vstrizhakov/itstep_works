@@ -1,0 +1,24 @@
+﻿@helper ShowProducts(IEnumerable<HTMLHelpers.Models.Product> products)
+{
+	<table>
+		<thead>
+			<tr>
+				<th>Id</th>
+				<th>Name</th>
+				<th>Price</th>
+				<th>Weight</th>
+			</tr>
+		</thead>
+		<tbody>
+			@foreach (var product in products)
+			{
+				<tr>
+					<td>@product.Id</td>
+					<td>@product.Name</td>
+					<td>@product.Price</td>
+					<td>@product.Weight</td>
+				</tr>
+			}
+		</tbody>
+	</table>
+}

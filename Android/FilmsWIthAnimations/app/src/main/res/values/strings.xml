@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Films With Animations</string>
+    <string name="title">Films</string>
+    <string name="subtitle">With some animations</string>
+    <string name="add_film">Add Film</string>
+    <string name="remove_film">Remove film</string>
+    <string name="edit_film">Edit film</string>
+    <string name="film_genre">Genre</string>
+    <string name="film_name">Name</string>
+    <string name="film_year">Publishment year</string>
+    <string name="apply">Apply</string>
+    <string name="cancel">Cancel</string>
+</resources>

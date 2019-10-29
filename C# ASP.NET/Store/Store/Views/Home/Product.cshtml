@@ -1,0 +1,39 @@
+﻿@{
+    ViewBag.Title = ViewBag.Product.Name;
+}
+<div class="row p-3">
+	<div class="col col-md-7">
+		<p>@ViewBag.Product.Description</p>
+	</div>
+	<div class="col col-md-5">
+		<img src="~/Home/GetFile?name=@ViewBag.Product.PhotoPath" alt="@ViewBag.Product.Name" width="100%" class="mb-3" />
+		@using (Html.BeginForm("AddToCart", "Home", FormMethod.Post, new { @class = "mb-3"}))
+		{
+			<input type="hidden" name="id" value="@ViewBag.Product.Id" />
+			<div class="row">
+				<div class="col col-md-3">
+					<input type="number" name="count" class="form-control" min="1" max="@ViewBag.Product.Quantity" value="1" />
+				</div>
+				<div class="col col-md-9">
+					<input type="submit" class="btn btn-primary btn-block" value="Добавить в корзину" />
+				</div>
+			</div>
+		}
+		@if (ViewBag.Message != String.Empty)
+		{
+			<p class="text-center text-info">@ViewBag.Message</p>
+		}
+		<p>
+			<b>Количество: </b>@ViewBag.Product.Quantity
+		</p>
+		<p>
+			<b>Категория: </b><a href="~/Home/Category?id=@ViewBag.Product.Category.Id">@ViewBag.Product.Category.Name</a>
+		</p>
+		<p>
+			<b>Вес: </b>@ViewBag.Product.Weight <b>кг</b>
+		</p>
+		<p>
+			<b>Цена: </b>@ViewBag.Product.Price <b>грн</b>
+		</p>
+	</div>
+</div>

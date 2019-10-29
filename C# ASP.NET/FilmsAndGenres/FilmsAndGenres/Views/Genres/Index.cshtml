@@ -1,0 +1,36 @@
+﻿@{
+	ViewBag.Title = "Жанры";
+}
+
+<div class="row">
+	<a href="/Genres/Add" class="col col-lg-12 my-4">
+		<button class="btn btn-primary btn-block">Добавить</button>
+	</a>
+	<table class="table">
+		<thead>
+			<tr>
+				<th>Название</th>
+				<th></th>
+				<th></th>
+			</tr>
+		</thead>
+		<tbody>
+			@foreach (var genre in ViewBag.Genres)
+			{
+				<tr>
+					<td>@genre.Name</td>
+					<td>
+						<a href="/Genres/Edit?id=@genre.Id">
+							<button class="btn btn-success btn-block">Редактировать</button>
+						</a>
+					</td>
+					<td>
+						<a href="/Genres/Delete?id=@genre.Id">
+							<button class="btn btn-danger btn-block">Удалить</button>
+						</a>
+					</td>
+				</tr>
+			}
+		</tbody>
+	</table>
+</div>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimary"
+        android:id="@+id/toolbar"
+        app:subtitleTextColor="#FFFFFF"
+        app:titleTextColor="#FFFFFF"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/background_addpanel"
+        android:id="@+id/flAddPanel"
+        android:padding="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+            >
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+
+                >
+                <TableRow android:layout_marginBottom="5dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Название: "
+                        android:textSize="25sp"
+                        android:gravity="right"
+                        android:textColor="#FFFFFF"
+                        />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="25sp"
+                        android:textColor="#FFFFFF"
+                        android:id="@+id/edName"
+                        android:gravity="center_horizontal"
+                        />
+                </TableRow>
+                <TableRow android:layout_marginBottom="5dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Жанр: "
+                        android:textSize="25sp"
+                        android:gravity="right"
+                        android:textColor="#FFFFFF"
+                        />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="25sp"
+                        android:textColor="#FFFFFF"
+                        android:id="@+id/edGenre"
+                        android:gravity="center_horizontal"
+                        />
+                </TableRow>
+                <TableRow android:layout_marginBottom="5dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Год: "
+                        android:textSize="25sp"
+                        android:gravity="right"
+                        android:textColor="#FFFFFF"
+                        />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="25sp"
+                        android:textColor="#FFFFFF"
+                        android:inputType="number"
+                        android:id="@+id/edYear"
+                        android:gravity="center_horizontal"
+                        />
+                </TableRow>
+            </TableLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Apply"
+                    android:textColor="@color/color_text_btn"
+                    style="@style/style_button"
+                    android:onClick="onClick"
+                    android:id="@+id/dtn_add"/>
+                <Space
+                    android:layout_width="15dp"
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cancel"
+                    android:id="@+id/dtn_cancel"
+                    android:onClick="onClick"
+                    android:textColor="@color/color_text_btn"
+                    style="@style/style_button"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background_addpanel"
+            android:id="@+id/frame_visibility">
+
+        </FrameLayout>
+    </FrameLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lvMovies">
+
+    </ListView>
+
+</LinearLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:paddingLeft="40dp"
+        android:orientation="vertical"
+        android:id="@+id/llItemHolder">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10dp"
+            android:layout_gravity="left"
+            android:layout_margin="2dp"
+            android:id="@+id/tvTitle"
+            android:textColor="#7B1FA2"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10dp"
+                android:layout_gravity="left"
+                android:layout_margin="2dp"
+                android:id="@+id/tvYear"
+                android:layout_weight="1"
+                android:textColor="#616161"/>
+
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="0dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10dp"
+                android:layout_gravity="left"
+                android:layout_margin="2dp"
+                android:id="@+id/tvGenre"
+                android:layout_weight="1"
+                android:textColor="#BDBDBD"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_gravity="right"
+        android:id="@+id/llButtonHolder">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="#98ff00"
+            android:textColor="#fff"
+            android:text="@string/edit"
+            android:textSize="0dp"
+            android:layout_margin="1dp"
+            android:onClick="textClick"
+            android:id="@+id/tvEdit"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="#FF9800"
+            android:textColor="#fff"
+            android:text="@string/delete"
+            android:textSize="0dp"
+            android:layout_margin="1dp"
+            android:onClick="textClick"
+            android:id="@+id/tvDelete"/>
+    </LinearLayout>
+</FrameLayout>

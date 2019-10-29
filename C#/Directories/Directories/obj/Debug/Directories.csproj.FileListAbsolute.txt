@@ -1,6 +1,0 @@
-G:\Works\C#\HOME!!!\СДАТЬ\Directories\Directories\bin\Debug\Directories.exe.config
-G:\Works\C#\HOME!!!\СДАТЬ\Directories\Directories\bin\Debug\Directories.exe
-G:\Works\C#\HOME!!!\СДАТЬ\Directories\Directories\bin\Debug\Directories.pdb
-G:\Works\C#\HOME!!!\СДАТЬ\Directories\Directories\obj\Debug\Directories.exe
-G:\Works\C#\HOME!!!\СДАТЬ\Directories\Directories\obj\Debug\Directories.pdb
-G:\Works\C#\HOME!!!\СДАТЬ\Directories\Directories\obj\Debug\Directories.csprojResolveAssemblyReference.cache

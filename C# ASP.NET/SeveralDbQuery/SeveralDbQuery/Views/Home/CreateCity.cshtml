@@ -1,0 +1,14 @@
+﻿@{
+	ViewBag.Title = "Добавить город";
+	Layout = null;
+}
+<h2>Добавить город</h2>
+@using (Html.BeginForm())
+{
+	<span>Название:<br /></span>
+	@Html.TextBox("Name")<br />
+	<span>Страна:<br /></span>
+	@Html.DropDownList("CountryId", (SelectList)ViewBag.Countries)<br />
+	<input type="submit" value="Добавить" />
+}
+@Html.ActionLink("Список городов", "Index")

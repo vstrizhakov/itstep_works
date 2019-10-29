@@ -1,9 +1,0 @@
-G:\Works\C# Windows Forms\StandardDialogWindows\StandardDialogWindows\bin\Debug\StandardDialogWindows.exe.config
-G:\Works\C# Windows Forms\StandardDialogWindows\StandardDialogWindows\bin\Debug\StandardDialogWindows.exe
-G:\Works\C# Windows Forms\StandardDialogWindows\StandardDialogWindows\bin\Debug\StandardDialogWindows.pdb
-G:\Works\C# Windows Forms\StandardDialogWindows\StandardDialogWindows\obj\Debug\StandardDialogWindows.csprojResolveAssemblyReference.cache
-G:\Works\C# Windows Forms\StandardDialogWindows\StandardDialogWindows\obj\Debug\StandardDialogWindows.Form1.resources
-G:\Works\C# Windows Forms\StandardDialogWindows\StandardDialogWindows\obj\Debug\StandardDialogWindows.Properties.Resources.resources
-G:\Works\C# Windows Forms\StandardDialogWindows\StandardDialogWindows\obj\Debug\StandardDialogWindows.csproj.GenerateResource.Cache
-G:\Works\C# Windows Forms\StandardDialogWindows\StandardDialogWindows\obj\Debug\StandardDialogWindows.exe
-G:\Works\C# Windows Forms\StandardDialogWindows\StandardDialogWindows\obj\Debug\StandardDialogWindows.pdb

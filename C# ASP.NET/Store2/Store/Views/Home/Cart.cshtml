@@ -1,0 +1,18 @@
+﻿@{
+    ViewBag.Title = "Корзина";
+}
+@foreach (var orderUnit in ViewBag.OrderUnits)
+{
+    <div class="row border rounded py-2">
+        <div class="col col-md-2">
+            <img src="/Home/GetFile?name=@orderUnit.Product.PhotoPath" alt="@orderUnit.Product.Name" width="100%" class="rounded" />
+        </div>
+        <div class="col col-md-8">
+            <span>@orderUnit.Product.Name</span>
+        </div>
+        <div class="col col-md-2 text-right align-middle">
+            <span>x @orderUnit.Count</span>
+        </div>
+    </div>
+}
+<button>Оформить заказ!</button>

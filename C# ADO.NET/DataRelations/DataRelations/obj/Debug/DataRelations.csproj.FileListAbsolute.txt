@@ -1,7 +1,0 @@
-c:\users\vpc\source\repos\DataRelations\DataRelations\bin\Debug\DataRelations.exe.config
-c:\users\vpc\source\repos\DataRelations\DataRelations\bin\Debug\DataRelations.exe
-c:\users\vpc\source\repos\DataRelations\DataRelations\bin\Debug\DataRelations.pdb
-c:\users\vpc\source\repos\DataRelations\DataRelations\obj\Debug\DataRelations.csprojResolveAssemblyReference.cache
-c:\users\vpc\source\repos\DataRelations\DataRelations\obj\Debug\DataRelations.csproj.CoreCompileInputs.cache
-c:\users\vpc\source\repos\DataRelations\DataRelations\obj\Debug\DataRelations.exe
-c:\users\vpc\source\repos\DataRelations\DataRelations\obj\Debug\DataRelations.pdb

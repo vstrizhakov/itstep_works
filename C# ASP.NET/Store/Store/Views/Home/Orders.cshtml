@@ -1,0 +1,29 @@
+﻿@{
+	ViewBag.Title = "Мои Заказы";
+}
+@if (ViewBag.OrdersCount > 0)
+{
+	foreach (var order in ViewBag.Orders)
+	{
+		<div class="row border border-light rounded py-2 my-2">
+			<div class="col col-md-6 d-flex align-items-center">
+				<span class="text-center">@order.CreatedAt</span>
+			</div>
+			<div class="col col-md-4 d-flex align-items-center">
+				<a href="~/Home/Order?id=@order.Id">#@order.Id</a>
+			</div>
+			<div class="col col-md-2 d-flex align-items-center">
+				<h6>@order.GetTotalPrice() грн</h6>
+			</div>
+		</div>
+	}
+}
+else
+{
+	<div class="row">
+		<h2>Пока Вы не сделали ни одного заказа :(</h2>
+	</div>
+	<div class="row">
+		Переходите по&nbsp;<a href="~/Home/Index">ссылке</a>, чтобы быстрее сделать заказ!
+	</div>
+}

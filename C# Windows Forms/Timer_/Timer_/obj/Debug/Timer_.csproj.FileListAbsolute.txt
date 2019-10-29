@@ -1,9 +1,0 @@
-G:\Works\C# Windows Forms\Timer_\Timer_\bin\Debug\Timer_.exe.config
-G:\Works\C# Windows Forms\Timer_\Timer_\bin\Debug\Timer_.exe
-G:\Works\C# Windows Forms\Timer_\Timer_\bin\Debug\Timer_.pdb
-G:\Works\C# Windows Forms\Timer_\Timer_\obj\Debug\Timer_.csprojResolveAssemblyReference.cache
-G:\Works\C# Windows Forms\Timer_\Timer_\obj\Debug\Timer_.Form1.resources
-G:\Works\C# Windows Forms\Timer_\Timer_\obj\Debug\Timer_.Properties.Resources.resources
-G:\Works\C# Windows Forms\Timer_\Timer_\obj\Debug\Timer_.csproj.GenerateResource.Cache
-G:\Works\C# Windows Forms\Timer_\Timer_\obj\Debug\Timer_.exe
-G:\Works\C# Windows Forms\Timer_\Timer_\obj\Debug\Timer_.pdb

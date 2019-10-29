@@ -1,0 +1,46 @@
+﻿@{ 
+	Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width"/>
+	<title>Добавление продукта</title>
+</head>
+<body>
+	<h3>Добавление продукта</h3>
+	<form method="POST" action="">
+		<input type="hidden" name="Id" value=""/>
+		<table>
+			<tr>
+				<td>Название продукта</td>
+				<td><input type="text" name="Name" /></td>
+			</tr>
+			<tr>
+				<td>Стоимость продукта</td>
+				<td><input type="text" name="Price" /></td>
+			</tr>
+			<tr>
+				<td>Вес продукта</td>
+				<td><input type="text" name="Weight" /></td>
+			</tr>
+			<tr>
+				<td>Категория продукта</td>
+				<td>
+					<select name="CategoryId">
+						@foreach (var category in ViewBag.Categories)
+						{
+							<option value="@category.Id">@category.Name</option>
+						}
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center">
+					<input type="submit"/>
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

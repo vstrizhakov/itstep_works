@@ -1,6 +1,0 @@
-c:\users\09358\documents\visual studio 2015\Projects\IDictionary\IDictionary\bin\Debug\IDictionary.exe.config
-c:\users\09358\documents\visual studio 2015\Projects\IDictionary\IDictionary\obj\Debug\IDictionary.csprojResolveAssemblyReference.cache
-c:\users\09358\documents\visual studio 2015\Projects\IDictionary\IDictionary\bin\Debug\IDictionary.exe
-c:\users\09358\documents\visual studio 2015\Projects\IDictionary\IDictionary\bin\Debug\IDictionary.pdb
-c:\users\09358\documents\visual studio 2015\Projects\IDictionary\IDictionary\obj\Debug\IDictionary.exe
-c:\users\09358\documents\visual studio 2015\Projects\IDictionary\IDictionary\obj\Debug\IDictionary.pdb

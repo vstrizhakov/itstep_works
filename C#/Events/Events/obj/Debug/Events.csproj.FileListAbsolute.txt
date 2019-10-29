@@ -1,6 +1,0 @@
-G:\Works\C#\Events\Events\bin\Debug\Events.exe.config
-G:\Works\C#\Events\Events\bin\Debug\Events.exe
-G:\Works\C#\Events\Events\bin\Debug\Events.pdb
-G:\Works\C#\Events\Events\obj\Debug\Events.exe
-G:\Works\C#\Events\Events\obj\Debug\Events.pdb
-G:\Works\C#\Events\Events\obj\Debug\Events.csprojResolveAssemblyReference.cache

@@ -1,7 +1,0 @@
-C:\Users\vPC\source\repos\UniversalConnectionToDB\UniversalConnectionToDB\bin\Debug\UniversalConnectionToDB.exe.config
-C:\Users\vPC\source\repos\UniversalConnectionToDB\UniversalConnectionToDB\bin\Debug\UniversalConnectionToDB.exe
-C:\Users\vPC\source\repos\UniversalConnectionToDB\UniversalConnectionToDB\bin\Debug\UniversalConnectionToDB.pdb
-C:\Users\vPC\source\repos\UniversalConnectionToDB\UniversalConnectionToDB\obj\Debug\UniversalConnectionToDB.csprojResolveAssemblyReference.cache
-C:\Users\vPC\source\repos\UniversalConnectionToDB\UniversalConnectionToDB\obj\Debug\UniversalConnectionToDB.csproj.CoreCompileInputs.cache
-C:\Users\vPC\source\repos\UniversalConnectionToDB\UniversalConnectionToDB\obj\Debug\UniversalConnectionToDB.exe
-C:\Users\vPC\source\repos\UniversalConnectionToDB\UniversalConnectionToDB\obj\Debug\UniversalConnectionToDB.pdb

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="4dp"
+    android:stretchColumns="*">
+
+    <TableRow>
+        <TextView
+            android:text="Фамилия: "
+            android:layout_gravity="center"
+            android:textSize="8pt"/>
+        <EditText
+            android:id="@+id/edtLastName"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:text="Имя: "
+            android:layout_gravity="center"
+            android:textSize="8pt"/>
+        <EditText
+            android:id="@+id/edtFirstName"/>
+    </TableRow>
+    <TableRow>
+        <Button
+            android:text="Применить"
+            android:id="@+id/btnApply"/>
+        <Button
+            android:text="Отменить"
+            android:id="@+id/btnCancel"/>
+    </TableRow>
+</TableLayout>

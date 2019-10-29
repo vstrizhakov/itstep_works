@@ -1,0 +1,8 @@
+DROP TABLE Goals;
+DROP TABLE Players;
+DROP TABLE Games;
+DROP TABLE Tours;
+DROP TABLE Roles;
+DROP TABLE Teams;
+DROP TABLE Stadiums;
+DROP TABLE Coachs;

@@ -1,0 +1,11 @@
+﻿@{ 
+    Layout = null;
+}
+@using TemplateHelpers.Models
+<div>
+    <span>Фамилия @(ViewBag.Person as Person).LastName</span>
+    <span>Возраст @(ViewBag.Person as Person).Age</span>
+    <span>Пол @(ViewBag.Person as Person).Gender</span>
+    <span>Программист @(ViewBag.Person as Person).IsProgrammer</span>
+    <span>Пароль @(ViewBag.Person as Person).Password</span>
+</div>

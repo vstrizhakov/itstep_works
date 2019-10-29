@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Конвертер валют</string>
+    <string name="result">Результат:</string>
+    <string name="enter_sum">Введите сумму:</string>
+    <string name="buy">Покупка</string>
+    <string name="sell">Продажа</string>
+    <string name="nbu">НБУ</string>
+    <string name="enter_currency">Выберите валюту:</string>
+    <string name="convert_in">Конвертировать в:</string>
+    <string name="convert">Конвертировать</string>
+</resources>

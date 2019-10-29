@@ -1,9 +1,0 @@
-H:\Works\C# Windows Forms\GDI2\GDI2\bin\Debug\GDI2.exe.config
-H:\Works\C# Windows Forms\GDI2\GDI2\bin\Debug\GDI2.exe
-H:\Works\C# Windows Forms\GDI2\GDI2\bin\Debug\GDI2.pdb
-H:\Works\C# Windows Forms\GDI2\GDI2\obj\Debug\GDI2.csprojResolveAssemblyReference.cache
-H:\Works\C# Windows Forms\GDI2\GDI2\obj\Debug\GDI2.Properties.Resources.resources
-H:\Works\C# Windows Forms\GDI2\GDI2\obj\Debug\GDI2.csproj.GenerateResource.Cache
-H:\Works\C# Windows Forms\GDI2\GDI2\obj\Debug\GDI2.csproj.CoreCompileInputs.cache
-H:\Works\C# Windows Forms\GDI2\GDI2\obj\Debug\GDI2.exe
-H:\Works\C# Windows Forms\GDI2\GDI2\obj\Debug\GDI2.pdb

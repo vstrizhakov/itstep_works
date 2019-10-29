@@ -1,7 +1,0 @@
-D:\flesh\Works\C# System Programming\ThreadsFunctions\ThreadsFunctions\bin\Debug\ThreadsFunctions.exe.config
-D:\flesh\Works\C# System Programming\ThreadsFunctions\ThreadsFunctions\bin\Debug\ThreadsFunctions.exe
-D:\flesh\Works\C# System Programming\ThreadsFunctions\ThreadsFunctions\bin\Debug\ThreadsFunctions.pdb
-D:\flesh\Works\C# System Programming\ThreadsFunctions\ThreadsFunctions\obj\Debug\ThreadsFunctions.csproj.CoreCompileInputs.cache
-D:\flesh\Works\C# System Programming\ThreadsFunctions\ThreadsFunctions\obj\Debug\ThreadsFunctions.exe
-D:\flesh\Works\C# System Programming\ThreadsFunctions\ThreadsFunctions\obj\Debug\ThreadsFunctions.pdb
-D:\flesh\Works\C# System Programming\ThreadsFunctions\ThreadsFunctions\obj\Debug\ThreadsFunctions.csprojResolveAssemblyReference.cache

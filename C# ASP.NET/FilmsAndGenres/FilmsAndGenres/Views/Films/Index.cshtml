@@ -1,0 +1,40 @@
+﻿@{
+	ViewBag.Title = "Фильмы";
+}
+
+<div class="row">
+	<a href="/Films/Add" class="col col-lg-12 my-4">
+		<button class="btn btn-primary btn-block">Добавить</button>
+	</a>
+	<table class="table">
+		<thead>
+			<tr>
+				<th>Название</th>
+				<th>Год выпуска</th>
+				<th>Жанр</th>
+				<th></th>
+				<th></th>
+			</tr>
+		</thead>
+		<tbody>
+			@foreach (var film in ViewBag.Films)
+			{
+				<tr>
+					<td><a href="/Films/Film/?id=@film.Id">@film.Name</a></td>
+					<td>@film.Year</td>
+					<td>@film.Genre</td>
+					<td>
+						<a href="/Films/Edit?id=@film.Id">
+							<button class="btn btn-success btn-block">Редактировать</button>
+						</a>
+					</td>
+					<td>
+						<a href="/Films/Delete?id=@film.Id">
+							<button class="btn btn-danger btn-block">Удалить</button>
+						</a>
+					</td>
+				</tr>
+			}
+		</tbody>
+	</table>
+</div>

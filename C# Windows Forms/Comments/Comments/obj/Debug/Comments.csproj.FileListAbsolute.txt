@@ -1,9 +1,0 @@
-G:\Works\C# Windows Forms\Comments\Comments\bin\Debug\Comments.exe.config
-G:\Works\C# Windows Forms\Comments\Comments\bin\Debug\Comments.exe
-G:\Works\C# Windows Forms\Comments\Comments\bin\Debug\Comments.pdb
-G:\Works\C# Windows Forms\Comments\Comments\obj\Debug\Comments.csprojResolveAssemblyReference.cache
-G:\Works\C# Windows Forms\Comments\Comments\obj\Debug\Comments.Form1.resources
-G:\Works\C# Windows Forms\Comments\Comments\obj\Debug\Comments.Properties.Resources.resources
-G:\Works\C# Windows Forms\Comments\Comments\obj\Debug\Comments.csproj.GenerateResource.Cache
-G:\Works\C# Windows Forms\Comments\Comments\obj\Debug\Comments.exe
-G:\Works\C# Windows Forms\Comments\Comments\obj\Debug\Comments.pdb

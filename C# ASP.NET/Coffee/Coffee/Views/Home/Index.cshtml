@@ -1,0 +1,29 @@
+﻿@{
+	ViewBag.Title = "Выберите кофе для заказа";
+}
+
+@foreach (var coffee in ViewBag.Coffees)
+{
+	<div class="d-block">
+		<h4><a href="~/Home/Coffee?id=@coffee.Id">@coffee.Name</a></h4>
+	</div>
+}
+
+@*@using (Ajax.BeginForm("GetAdditives", "Home", new AjaxOptions { UpdateTargetId = "additives" }, new { id = "ajaxForm" }))
+{
+	@Html.DropDownList("coffee", (IEnumerable<SelectListItem>)ViewBag.Coffees, new { @class = "custom-select", id = "coffeeList" })
+}
+@using (Html.BeginForm("", "Home", FormMethod.Post, new { @class = "" }))
+{
+	<div id="additives"></div>
+	<button type="submit" class="btn btn-primary my-2">Добавить в корзину</button>
+}
+<script>
+	$(document).ready()
+	{
+		$("#ajaxForm").submit();
+		$("#coffeeList").on('change', function () {
+			$("#ajaxForm").submit();
+		});
+	}
+</script>*@

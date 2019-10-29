@@ -1,0 +1,51 @@
+﻿@{
+	Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width" />
+	<title>Список продуктов</title>
+	<link href="~/Content/Site.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+	<h2>Список категорий</h2>
+	<table>
+		<tr>
+			<th>#</th>
+			<th>Название</th>
+		</tr>
+		@foreach (var category in ViewBag.Categories)
+		{
+			<tr>
+				<td>@category.Id</td>
+				<td>@category.Name</td>
+			</tr>
+		}
+	</table>
+	<table>
+		<tr>
+			<th>#</th>
+			<th>Название</th>
+			<th>Цена</th>
+			<th>Вес</th>
+			<th>Категория</th>
+			<th>Информация</th>
+		</tr>
+
+		@foreach (var product in ViewBag.Products)
+		{
+		<tr>
+			<td>@product.Id</td>
+			<td>@product.Name</td>
+			<td>@product.Price</td>
+			<td>@product.Weight</td>
+			<td>@product.CategoryId</td>
+			<td><a href="/Home/Info/@product.Id">Инфо</a></td>
+			<td><a href="/Home/Remove/@product.Id">Удалить</a></td>
+		</tr>
+		}
+	</table>
+	<a href="/Home/AddForm">Добавить продукт</a>
+</body>
+</html>

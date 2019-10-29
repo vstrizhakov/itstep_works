@@ -1,6 +1,0 @@
-c:\users\09358\documents\visual studio 2015\Projects\StaticMethods\StaticMethods\bin\Debug\StaticMethods.exe.config
-c:\users\09358\documents\visual studio 2015\Projects\StaticMethods\StaticMethods\bin\Debug\StaticMethods.exe
-c:\users\09358\documents\visual studio 2015\Projects\StaticMethods\StaticMethods\bin\Debug\StaticMethods.pdb
-c:\users\09358\documents\visual studio 2015\Projects\StaticMethods\StaticMethods\obj\Debug\StaticMethods.csprojResolveAssemblyReference.cache
-c:\users\09358\documents\visual studio 2015\Projects\StaticMethods\StaticMethods\obj\Debug\StaticMethods.exe
-c:\users\09358\documents\visual studio 2015\Projects\StaticMethods\StaticMethods\obj\Debug\StaticMethods.pdb

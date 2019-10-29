@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:ordering="together">
+
+    <!--Ширина панели операций-->
+    <animator android:valueType="intType"
+        android:duration="300"
+        android:valueFrom="150dp"
+        android:valueTo="0"/>
+
+    <!--Размер шрифта на кнопках-->
+    <animator android:valueType="floatType"
+        android:duration="300"
+        android:valueFrom="18"
+        android:valueTo="0"/>
+
+    <!--Позиция x для панели элементов-->
+    <animator android:valueType="intType"
+        android:duration="300"
+        android:valueFrom="-150dp"
+        android:valueTo="0"/>
+
+</set>

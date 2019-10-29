@@ -1,7 +1,7 @@
-D:\flesh\Works\C# System Programming\ThreadSynchronization\ThreadSynchronization\bin\Debug\ThreadSynchronization.exe.config
-D:\flesh\Works\C# System Programming\ThreadSynchronization\ThreadSynchronization\bin\Debug\ThreadSynchronization.exe
-D:\flesh\Works\C# System Programming\ThreadSynchronization\ThreadSynchronization\bin\Debug\ThreadSynchronization.pdb
-D:\flesh\Works\C# System Programming\ThreadSynchronization\ThreadSynchronization\obj\Debug\ThreadSynchronization.csprojResolveAssemblyReference.cache
-D:\flesh\Works\C# System Programming\ThreadSynchronization\ThreadSynchronization\obj\Debug\ThreadSynchronization.csproj.CoreCompileInputs.cache
-D:\flesh\Works\C# System Programming\ThreadSynchronization\ThreadSynchronization\obj\Debug\ThreadSynchronization.exe
-D:\flesh\Works\C# System Programming\ThreadSynchronization\ThreadSynchronization\obj\Debug\ThreadSynchronization.pdb
+D:\Works\C# System Programming\ThreadSynchronization\ThreadSynchronization\bin\Debug\ThreadSynchronization.exe.config
+D:\Works\C# System Programming\ThreadSynchronization\ThreadSynchronization\bin\Debug\ThreadSynchronization.exe
+D:\Works\C# System Programming\ThreadSynchronization\ThreadSynchronization\bin\Debug\ThreadSynchronization.pdb
+D:\Works\C# System Programming\ThreadSynchronization\ThreadSynchronization\obj\Debug\ThreadSynchronization.csprojAssemblyReference.cache
+D:\Works\C# System Programming\ThreadSynchronization\ThreadSynchronization\obj\Debug\ThreadSynchronization.csproj.CoreCompileInputs.cache
+D:\Works\C# System Programming\ThreadSynchronization\ThreadSynchronization\obj\Debug\ThreadSynchronization.exe
+D:\Works\C# System Programming\ThreadSynchronization\ThreadSynchronization\obj\Debug\ThreadSynchronization.pdb

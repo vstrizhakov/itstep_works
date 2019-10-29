@@ -1,0 +1,33 @@
+﻿@{
+	ViewBag.Title = "Моя Корзина";
+}
+@if (ViewBag.OrderUnits.Count > 0)
+{
+	foreach (var orderUnit in ViewBag.OrderUnits)
+	{
+		<div class="row border border-light rounded py-2 my-2">
+			<div class="col col-md-2 d-flex align-items-center">
+				<img src="/Home/GetFile?name=@orderUnit.Product.PhotoPath" alt="@orderUnit.Product.Name" width="100%" />
+			</div>
+			<div class="col col-md-4 d-flex align-items-center">
+				<a href="~/Home/Product?id=@orderUnit.Product.Id">@orderUnit.Product.Name</a>
+			</div>
+			<div class="col col-md-2 d-flex align-items-center">
+				<h6>x @orderUnit.Count шт.</h6>
+			</div>
+			<div class="col col-md-2 d-flex align-items-center">
+				<h6>@orderUnit.Product.Price грн</h6>
+			</div>
+			<div class="col col-md-2 d-flex align-items-center">
+				<a href="~/Home/RemoveFromCart?ProductId=@orderUnit.Product.Id" class="btn btn-outline-danger">Удалить</a>
+			</div>
+		</div>
+	}
+	<a href="~/Home/OrderCart" class="btn btn-outline-primary">Оформить заказ!</a>
+}
+else
+{
+	<div class="row text-center">
+		<h2>Ваша корзина пуста!</h2>
+	</div>
+}

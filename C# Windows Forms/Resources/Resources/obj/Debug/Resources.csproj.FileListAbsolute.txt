@@ -1,8 +1,0 @@
-G:\Works\C# Windows Forms\Resources\Resources\bin\Debug\Resources.exe.config
-G:\Works\C# Windows Forms\Resources\Resources\bin\Debug\Resources.exe
-G:\Works\C# Windows Forms\Resources\Resources\bin\Debug\Resources.pdb
-G:\Works\C# Windows Forms\Resources\Resources\obj\Debug\Resources.Form1.resources
-G:\Works\C# Windows Forms\Resources\Resources\obj\Debug\Resources.Properties.Resources.resources
-G:\Works\C# Windows Forms\Resources\Resources\obj\Debug\Resources.csproj.GenerateResource.Cache
-G:\Works\C# Windows Forms\Resources\Resources\obj\Debug\Resources.exe
-G:\Works\C# Windows Forms\Resources\Resources\obj\Debug\Resources.pdb

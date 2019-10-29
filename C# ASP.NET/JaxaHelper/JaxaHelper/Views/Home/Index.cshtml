@@ -1,0 +1,21 @@
+﻿@{
+	ViewBag.Title = "Home Page";
+	Layout = null;
+}
+@model IEnumerable<JaxaHelper.Models.SrcBook>
+@Scripts.Render("~/scripts/jquery-3.3.1.min.js")
+@Scripts.Render("~/scripts/jquery.unobtrusive-ajax.min.js")
+@foreach (var book in Model)
+{
+	<h2>@book.name</h2>
+}
+
+@using (Ajax.BeginForm("Calculate", new AjaxOptions() { UpdateTargetId = "result" }))
+{
+	<span>Первое число:</span><br />
+	<input type="text" name="one" /><br />
+	<span>Второе число:</span><br />
+	<input type="text" name="two" /><br />
+	<input type="submit" />
+}
+<div id="result"></div>

@@ -1,5 +1,0 @@
-G:\Works\C# Windows Forms\ConsoleToForm\ConsoleToForm\bin\Debug\ConsoleToForm.exe.config
-G:\Works\C# Windows Forms\ConsoleToForm\ConsoleToForm\bin\Debug\ConsoleToForm.exe
-G:\Works\C# Windows Forms\ConsoleToForm\ConsoleToForm\bin\Debug\ConsoleToForm.pdb
-G:\Works\C# Windows Forms\ConsoleToForm\ConsoleToForm\obj\Debug\ConsoleToForm.exe
-G:\Works\C# Windows Forms\ConsoleToForm\ConsoleToForm\obj\Debug\ConsoleToForm.pdb

@@ -1,7 +1,0 @@
-D:\flesh\Works\C# System Programming\ConsoleTaskManages\ConsoleTaskManages\obj\Debug\ConsoleTaskManages.csprojResolveAssemblyReference.cache
-D:\flesh\Works\C# System Programming\ConsoleTaskManages\ConsoleTaskManages\obj\Debug\ConsoleTaskManages.csproj.CoreCompileInputs.cache
-D:\flesh\Works\C# System Programming\ConsoleTaskManages\ConsoleTaskManages\bin\Debug\ConsoleTaskManages.exe.config
-D:\flesh\Works\C# System Programming\ConsoleTaskManages\ConsoleTaskManages\bin\Debug\ConsoleTaskManages.exe
-D:\flesh\Works\C# System Programming\ConsoleTaskManages\ConsoleTaskManages\bin\Debug\ConsoleTaskManages.pdb
-D:\flesh\Works\C# System Programming\ConsoleTaskManages\ConsoleTaskManages\obj\Debug\ConsoleTaskManages.exe
-D:\flesh\Works\C# System Programming\ConsoleTaskManages\ConsoleTaskManages\obj\Debug\ConsoleTaskManages.pdb

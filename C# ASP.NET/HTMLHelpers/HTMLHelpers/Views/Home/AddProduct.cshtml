@@ -1,0 +1,15 @@
+﻿@{ 
+	Layout = null;
+}
+<!DOCTYPE>
+<html>
+<body>
+	@using (Html.BeginForm("AddProduct", "Home", FormMethod.Post))
+	{
+		@Html.Hidden("Id")
+		@Html.TextBox("Name", "", new { Placeholder = "Name" })
+		@Html.TextBox("Price", "", new { Placeholder = "Price" })
+		@Html.TextBox("Weight", "", new { Placeholder = "Weight" })
+	}
+</body>
+</html>

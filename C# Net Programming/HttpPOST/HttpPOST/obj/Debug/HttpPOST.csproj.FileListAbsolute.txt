@@ -1,7 +1,0 @@
-D:\flesh\Works\C# Net Programming\HttpPOST\HttpPOST\obj\Debug\HttpPOST.csprojResolveAssemblyReference.cache
-D:\flesh\Works\C# Net Programming\HttpPOST\HttpPOST\obj\Debug\HttpPOST.csproj.CoreCompileInputs.cache
-D:\flesh\Works\C# Net Programming\HttpPOST\HttpPOST\bin\Debug\HttpPOST.exe.config
-D:\flesh\Works\C# Net Programming\HttpPOST\HttpPOST\bin\Debug\HttpPOST.exe
-D:\flesh\Works\C# Net Programming\HttpPOST\HttpPOST\bin\Debug\HttpPOST.pdb
-D:\flesh\Works\C# Net Programming\HttpPOST\HttpPOST\obj\Debug\HttpPOST.exe
-D:\flesh\Works\C# Net Programming\HttpPOST\HttpPOST\obj\Debug\HttpPOST.pdb

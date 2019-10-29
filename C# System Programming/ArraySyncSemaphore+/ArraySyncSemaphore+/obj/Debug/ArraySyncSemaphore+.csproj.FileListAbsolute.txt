@@ -1,7 +1,0 @@
-D:\flesh\Works\C# System Programming\ArraySyncSemaphore+\ArraySyncSemaphore+\bin\Debug\ArraySyncSemaphore+.exe.config
-D:\flesh\Works\C# System Programming\ArraySyncSemaphore+\ArraySyncSemaphore+\bin\Debug\ArraySyncSemaphore+.exe
-D:\flesh\Works\C# System Programming\ArraySyncSemaphore+\ArraySyncSemaphore+\bin\Debug\ArraySyncSemaphore+.pdb
-D:\flesh\Works\C# System Programming\ArraySyncSemaphore+\ArraySyncSemaphore+\obj\Debug\ArraySyncSemaphore+.csprojResolveAssemblyReference.cache
-D:\flesh\Works\C# System Programming\ArraySyncSemaphore+\ArraySyncSemaphore+\obj\Debug\ArraySyncSemaphore+.csproj.CoreCompileInputs.cache
-D:\flesh\Works\C# System Programming\ArraySyncSemaphore+\ArraySyncSemaphore+\obj\Debug\ArraySyncSemaphore+.exe
-D:\flesh\Works\C# System Programming\ArraySyncSemaphore+\ArraySyncSemaphore+\obj\Debug\ArraySyncSemaphore+.pdb

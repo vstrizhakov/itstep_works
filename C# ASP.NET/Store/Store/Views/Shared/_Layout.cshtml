@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>@ViewBag.Title - Gagurt</title>
+	@Styles.Render("~/Content/css")
+</head>
+<body>
+	<div class="navbar navbar-fixed-top navbar-background">
+		<div class="container">
+			<div>
+				@Html.ActionLink("Gagurt - Интернет Магазин", "Index", "Home", new { area = "" }, new { @class = "navbar-brand text-white mx-2" })
+			</div>
+			@if (ViewBag.IsUserAdmin)
+			{
+				<div>
+					@Html.ActionLink("Категории", "Categories", "Admin", new { area = "" }, new { @class = "text-white mx-2" })
+					@Html.ActionLink("Товары", "Products", "Admin", new { area = "" }, new { @class = "text-white mx-2" })
+					@Html.ActionLink("Заказы", "Orders", "Admin", new { area = "" }, new { @class = "text-white mx-2" })
+					@Html.ActionLink("Пользователи", "Users", "Admin", new { area = "" }, new { @class = "text-white mx-2" })
+				</div>
+			}
+				<div>
+					@if (ViewBag.IsUserLoggedIn)
+					{
+						@Html.ActionLink("Мои Заказы", "Orders", "Home", new { area = "" }, new { @class = "text-white mx-2" })
+					}
+					@Html.ActionLink("Моя Корзина", "Cart", "Home", new { area = "" }, new { @class = "text-white mx-2" })
+					@if (!ViewBag.IsUserLoggedIn)
+					{
+						@Html.ActionLink("Зарегистрироваться", "Register", "Home", new { area = "" }, new { @class = "text-white mx-2" })
+						@Html.ActionLink("Войти", "Auth", "Home", new { area = "" }, new { @class = "text-white mx-2" })
+					}
+					else
+					{
+						@Html.ActionLink("Выйти", "Logout", "Home", new { area = "" }, new { @class = "text-white mx-2" })
+					}
+				</div>
+		</div>
+	</div>
+	<div class="container body-content">
+		<div class="row my-4">
+			@if (ViewBag.LoadCategories)
+			{
+				<div class="col col-md-3">
+					<ul class="list-group">
+						@foreach (var category in ViewBag.Categories)
+						{
+							<li class="list-group-item d-flex justify-content-between align-items-center category-link">
+								@if (category.Id == ViewBag.ActiveCategoryId)
+								{
+									<a href="~/Home/Category?id=@category.Id" style="font-weight: bold;">@category.Name</a>
+								}
+								else
+								{
+									<a href="~/Home/Category?id=@category.Id">@category.Name</a>
+								}
+							</li>
+							foreach (var subcategory in category.ChildCategories)
+							{
+								<li class="list-group-item d-flex justify-content-between align-items-center category-link">
+									@if (subcategory.Id == ViewBag.ActiveCategoryId)
+									{
+										<a href="~/Home/Category?id=@subcategory.Id" style="font-weight: bold;"> -> @subcategory.Name</a>
+									}
+									else
+									{
+										<a href="~/Home/Category?id=@subcategory.Id"> -> @subcategory.Name</a>
+									}
+								</li>
+							}
+						}
+					</ul>
+				</div>
+				<div class="col col-md-9">
+					<h3>@ViewBag.Title</h3>
+					<hr />
+					@RenderBody()
+				</div>
+			}
+			else
+			{
+				<h3>@ViewBag.Title</h3>
+				<hr />
+				@RenderBody()
+			}
+		</div>
+		<hr />
+		<footer>
+			<p>&copy; @DateTime.Now.Year - Gagurt - Интернет Магазин</p>
+		</footer>
+	</div>
+</body>
+</html>

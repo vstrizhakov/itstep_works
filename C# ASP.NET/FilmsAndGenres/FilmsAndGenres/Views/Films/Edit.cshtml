@@ -1,0 +1,25 @@
+﻿@{
+	ViewBag.Title = "Редактировать фильм";
+}
+
+<form method="POST" action="">
+	<input type="hidden" name="Id" value="@ViewBag.Film.Id" />
+	<div class="form-group">
+		<label for="name">Название фильма</label>
+		<input name="Name" type="text" placeholder="Введите название фильма" class="form-control" id="name" value="@ViewBag.Film.Name">
+	</div>
+	<div class="form-group">
+		<label for="year">Год выпуска</label>
+		<input name="Year" type="text" placeholder="Введите год выпуска" class="form-control" id="year" value="@ViewBag.Film.Year">
+	</div>
+	<div class="form-group">
+		<label for="genre">Жанр фильма</label>
+		<select name="Genre">
+			@foreach (var genre in ViewBag.Genres)
+			{
+				<option value="@genre.Name">@genre.Name</option>
+			}
+		</select>
+	</div>
+	<button class="btn btn-primary btn-block" type="submit" name="sumbit">Редактировать</button>
+</form>

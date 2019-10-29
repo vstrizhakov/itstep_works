@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>@ViewBag.Title</title>
+	<link href="~/Content/bootstrap.min.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<div class="container">
+			<a class="navbar-brand" href="#">
+				@Html.ActionLink("Фильмы и Жанры", "Films", "Home", new { area = "" }, new { @class = "navbar-brand" })
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="navbar-collapse collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+						@Html.ActionLink("Фильмы", "Index", "Films", new { area = "" }, new { @class = "nav-link" })
+					</li>
+					<li class="nav-item">
+						@Html.ActionLink("Жанры", "Index", "Genres", new { area = "" }, new { @class = "nav-link" })
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="container">
+		<h2 class="my-4">@ViewBag.Title</h2>
+		@RenderBody()
+		<hr />
+		@if (ViewBag.ViewedFilms.Count > 0)
+		{
+			<h2>Ранее Вы смотрели:</h2>
+			foreach (var film in ViewBag.ViewedFilms)
+			{
+				<a href="/Films/Film/?id=@film.Id">@film.Name (@film.Year)</a><br />
+			}
+		}
+		<footer>
+			<p>&copy; @DateTime.Now.Year - Фильмы и Жанры</p>
+		</footer>
+	</div>
+</body>
+</html>

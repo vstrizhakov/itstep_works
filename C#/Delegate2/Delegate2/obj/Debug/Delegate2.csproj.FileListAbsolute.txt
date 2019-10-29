@@ -1,6 +1,0 @@
-G:\Works\C#\Delegate2\Delegate2\bin\Debug\Delegate2.exe.config
-G:\Works\C#\Delegate2\Delegate2\bin\Debug\Delegate2.exe
-G:\Works\C#\Delegate2\Delegate2\bin\Debug\Delegate2.pdb
-G:\Works\C#\Delegate2\Delegate2\obj\Debug\Delegate2.exe
-G:\Works\C#\Delegate2\Delegate2\obj\Debug\Delegate2.pdb
-G:\Works\C#\Delegate2\Delegate2\obj\Debug\Delegate2.csprojResolveAssemblyReference.cache

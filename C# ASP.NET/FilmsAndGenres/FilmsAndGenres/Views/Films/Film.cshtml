@@ -1,0 +1,12 @@
+﻿@model FilmsAndGenres.Models.FilmForShow
+@{
+	ViewBag.Title = Model.Name;
+}
+
+Название:<br />
+<h4>@Model.Name</h4><br />
+Год выпуска:<br />
+<h4>@Model.Year</h4><br />
+Жанр:<br />
+<h4>@Model.Genre</h4><br />
+@Html.ActionLink("Назад", "Index", "Films")

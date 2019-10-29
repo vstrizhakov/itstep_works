@@ -1,0 +1,18 @@
+﻿
+<table class="table">
+	<thead>
+		<tr>
+			<th>Русское название</th>
+			<th>Английское название</th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var city in ViewBag.Cities)
+		{
+			<tr>
+				<td>@Html.Raw(city.RuName)</td>
+				<td>@Html.Raw(city.EnName)</td>
+			</tr>
+		}
+	</tbody>
+</table>

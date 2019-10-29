@@ -1,9 +1,0 @@
-G:\Works\C# Windows Forms\ToolBar\ToolBar\bin\Debug\ToolBar.exe.config
-G:\Works\C# Windows Forms\ToolBar\ToolBar\bin\Debug\ToolBar.exe
-G:\Works\C# Windows Forms\ToolBar\ToolBar\bin\Debug\ToolBar.pdb
-G:\Works\C# Windows Forms\ToolBar\ToolBar\obj\Debug\ToolBar.csprojResolveAssemblyReference.cache
-G:\Works\C# Windows Forms\ToolBar\ToolBar\obj\Debug\ToolBar.Form1.resources
-G:\Works\C# Windows Forms\ToolBar\ToolBar\obj\Debug\ToolBar.Properties.Resources.resources
-G:\Works\C# Windows Forms\ToolBar\ToolBar\obj\Debug\ToolBar.csproj.GenerateResource.Cache
-G:\Works\C# Windows Forms\ToolBar\ToolBar\obj\Debug\ToolBar.exe
-G:\Works\C# Windows Forms\ToolBar\ToolBar\obj\Debug\ToolBar.pdb
