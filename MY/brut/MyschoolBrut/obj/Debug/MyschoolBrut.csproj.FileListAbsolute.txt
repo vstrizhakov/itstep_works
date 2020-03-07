@@ -1,7 +1,0 @@
-D:\Works\MY\brut\MyschoolBrut\bin\Debug\MyschoolBrut.exe.config
-D:\Works\MY\brut\MyschoolBrut\bin\Debug\MyschoolBrut.exe
-D:\Works\MY\brut\MyschoolBrut\bin\Debug\MyschoolBrut.pdb
-D:\Works\MY\brut\MyschoolBrut\obj\Debug\MyschoolBrut.csprojResolveAssemblyReference.cache
-D:\Works\MY\brut\MyschoolBrut\obj\Debug\MyschoolBrut.csproj.CoreCompileInputs.cache
-D:\Works\MY\brut\MyschoolBrut\obj\Debug\MyschoolBrut.exe
-D:\Works\MY\brut\MyschoolBrut\obj\Debug\MyschoolBrut.pdb

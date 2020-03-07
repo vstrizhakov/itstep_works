@@ -1,2 +1,0 @@
-﻿Source.obj : error LNK2001: неразрешенный внешний символ ""void __cdecl Magick::InitializeMagick(char const *)" (?InitializeMagick@Magick@@YAXPBD@Z)"
-C:\Users\vPC\documents\visual studio 2015\Projects\ConsoleApplication2\Release\ConsoleApplication2.exe : fatal error LNK1120: неразрешенных внешних элементов: 1
