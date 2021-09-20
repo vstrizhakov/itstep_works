@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="2.0.0" method="upgrade">
+    <name> COM_CTOVAR</name> 
+    <creationDate>October, 2018</creationDate>
+    <author>ADMIN</author>
+    <authorEmail>borovets1991@gmail.com</authorEmail>
+    <authorUrl></authorUrl>
+    <copyright>Copyright (c) 2018 - Admin. All rights reserved.</copyright>
+    <license></license>
+    <version>2.0.0</version>
+    <description>COM_CTOVAR_DESCRIPTION</description>
+
+
+    <install>
+        <sql>
+            <file charset="utf-8" driver="mysql">install.mysql.sql</file>
+        </sql>
+    </install>
+
+    <uninstall>
+        <sql>
+            <file charset="utf-8" driver="mysql">uninstall.mysql.sql</file>
+        </sql>
+    </uninstall>
+
+    <files folder="site">
+        <folder>assets</folder>
+        <folder>controllers</folder>
+        <folder>helpers</folder>
+        <folder>languages</folder>
+        <folder>models</folder>
+        <folder>tables</folder>
+        <folder>views</folder>
+        <filename>index.html</filename>
+        <filename>ctovar.php</filename>
+        <filename>router.php</filename>
+    </files>
+
+<!-- 
+    <languages folder="site">
+        <language tag="en-GB">languages/en_GB/en-GB.com_cotovar.ini</language>
+        <language tag="en-GB">languages/ru_RU/ru-RU.com_cotovar.ini</language>
+    </languages>
+-->
+
+<administration>
+    <menu link="option=com_ctovar">COM_CTOVAR_MENUITEM</menu>
+    <submenu>
+        <menu controller="tovar" alt="CTovar/Tovar">COM_CTOVAR_SUBMENUITEM_TOVAR</menu>
+        <menu controller="Categories" alt="CTovar/Categories">COM_CTOVAR_SUBMENUITEM_CATEGORIES</menu>
+    </submenu>
+    <files folder="admin">
+        <folder>controllers</folder>
+        <folder>helpers</folder>
+        <folder>languages</folder>
+        <folder>models</folder>
+        <folder>views</folder>
+        <filename>ctovar.php</filename>
+        <filename>index.html</filename>
+        <filename>install.mysql.sql</filename>
+        <filename>uninstall.mysql.sql</filename>
+    </files>
+
+    <file folder="admin">
+        <language tag="en-GB">languages/en-GB/en-GB.com_ctovar.ini</language>
+        <language tag="en-GB">languages/en-GB/en-GB.com_ctovar.sys.ini</language>
+        <language tag="ru-RU">languages/ru-RU/ru-RU.com_ctovar.ini</language>
+        <language tag="ru-RU">languages/ru-RU/ru-RU.com_ctovar.sys.ini</language>
+    </file>
+
+</administration>
+
+<scriptfile>install.package.php</scriptfile>
+
+</extension>

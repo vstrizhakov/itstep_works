@@ -1,0 +1,15 @@
+<html>
+	<head>
+		<title>AJAX</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<iframe name="result" src="blank.php" frameborder="0" width="1000" height="300"></iframe>
+		<form action="loadfile.php" method="POST" target="result">
+			Имя файла: <input type="text" name="filename"><br>
+			<input type="submit" value="Посмотреть">
+		</form>
+
+		<div id="content"></div>
+	</body>
+</html>
