@@ -1,7 +1,0 @@
-D:\Works\C# System Programming\EventWaitHandle___\EventWaitHandle___\bin\Debug\EventWaitHandle___.exe.config
-D:\Works\C# System Programming\EventWaitHandle___\EventWaitHandle___\bin\Debug\EventWaitHandle___.exe
-D:\Works\C# System Programming\EventWaitHandle___\EventWaitHandle___\bin\Debug\EventWaitHandle___.pdb
-D:\Works\C# System Programming\EventWaitHandle___\EventWaitHandle___\obj\Debug\EventWaitHandle___.csprojAssemblyReference.cache
-D:\Works\C# System Programming\EventWaitHandle___\EventWaitHandle___\obj\Debug\EventWaitHandle___.csproj.CoreCompileInputs.cache
-D:\Works\C# System Programming\EventWaitHandle___\EventWaitHandle___\obj\Debug\EventWaitHandle___.exe
-D:\Works\C# System Programming\EventWaitHandle___\EventWaitHandle___\obj\Debug\EventWaitHandle___.pdb

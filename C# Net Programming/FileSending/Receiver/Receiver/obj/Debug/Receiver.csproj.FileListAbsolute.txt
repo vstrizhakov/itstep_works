@@ -1,7 +1,0 @@
-D:\Works\C# WCF\FileSending\Receiver\Receiver\bin\Debug\Receiver.exe.config
-D:\Works\C# WCF\FileSending\Receiver\Receiver\bin\Debug\Receiver.exe
-D:\Works\C# WCF\FileSending\Receiver\Receiver\bin\Debug\Receiver.pdb
-D:\Works\C# WCF\FileSending\Receiver\Receiver\obj\Debug\Receiver.csproj.CoreCompileInputs.cache
-D:\Works\C# WCF\FileSending\Receiver\Receiver\obj\Debug\Receiver.exe
-D:\Works\C# WCF\FileSending\Receiver\Receiver\obj\Debug\Receiver.pdb
-D:\Works\C# WCF\FileSending\Receiver\Receiver\obj\Debug\Receiver.csprojResolveAssemblyReference.cache

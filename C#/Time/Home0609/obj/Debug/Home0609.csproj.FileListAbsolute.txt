@@ -1,8 +1,0 @@
-c:\users\vpc\documents\visual studio 2015\Projects\Home0609\Home0609\bin\Debug\Home0609.exe.config
-c:\users\vpc\documents\visual studio 2015\Projects\Home0609\Home0609\bin\Debug\Home0609.exe
-c:\users\vpc\documents\visual studio 2015\Projects\Home0609\Home0609\bin\Debug\Home0609.pdb
-c:\users\vpc\documents\visual studio 2015\Projects\Home0609\Home0609\obj\Debug\Home0609.exe
-c:\users\vpc\documents\visual studio 2015\Projects\Home0609\Home0609\obj\Debug\Home0609.pdb
-G:\Home0609\Home0609\bin\Debug\Home0609.exe.config
-G:\Home0609\Home0609\obj\Debug\Home0609.exe
-G:\Home0609\Home0609\obj\Debug\Home0609.pdb

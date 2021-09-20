@@ -1,7 +1,0 @@
-D:\flesh\Works\C# Net Programming\CalculatorServerClientApp\Server\Server\bin\Debug\Server.exe.config
-D:\flesh\Works\C# Net Programming\CalculatorServerClientApp\Server\Server\bin\Debug\Server.exe
-D:\flesh\Works\C# Net Programming\CalculatorServerClientApp\Server\Server\bin\Debug\Server.pdb
-D:\flesh\Works\C# Net Programming\CalculatorServerClientApp\Server\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
-D:\flesh\Works\C# Net Programming\CalculatorServerClientApp\Server\Server\obj\Debug\Server.exe
-D:\flesh\Works\C# Net Programming\CalculatorServerClientApp\Server\Server\obj\Debug\Server.pdb
-D:\flesh\Works\C# Net Programming\CalculatorServerClientApp\Server\Server\obj\Debug\Server.csprojResolveAssemblyReference.cache

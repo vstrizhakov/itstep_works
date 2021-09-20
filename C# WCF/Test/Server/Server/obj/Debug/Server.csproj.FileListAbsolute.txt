@@ -1,7 +1,0 @@
-D:\Works\C# WCF\Test\Server\Server\bin\Debug\Server.exe.config
-D:\Works\C# WCF\Test\Server\Server\bin\Debug\Server.exe
-D:\Works\C# WCF\Test\Server\Server\bin\Debug\Server.pdb
-D:\Works\C# WCF\Test\Server\Server\obj\Debug\Server.csprojResolveAssemblyReference.cache
-D:\Works\C# WCF\Test\Server\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
-D:\Works\C# WCF\Test\Server\Server\obj\Debug\Server.exe
-D:\Works\C# WCF\Test\Server\Server\obj\Debug\Server.pdb

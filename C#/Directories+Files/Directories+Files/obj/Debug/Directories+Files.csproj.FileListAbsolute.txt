@@ -1,7 +1,0 @@
-D:\Works\C#\Directories+Files\Directories+Files\bin\Debug\Directories+Files.exe.config
-D:\Works\C#\Directories+Files\Directories+Files\bin\Debug\Directories+Files.exe
-D:\Works\C#\Directories+Files\Directories+Files\bin\Debug\Directories+Files.pdb
-D:\Works\C#\Directories+Files\Directories+Files\obj\Debug\Directories+Files.csprojAssemblyReference.cache
-D:\Works\C#\Directories+Files\Directories+Files\obj\Debug\Directories+Files.csproj.CoreCompileInputs.cache
-D:\Works\C#\Directories+Files\Directories+Files\obj\Debug\Directories+Files.exe
-D:\Works\C#\Directories+Files\Directories+Files\obj\Debug\Directories+Files.pdb

@@ -1,7 +1,0 @@
-D:\flesh\Works\C# WCF\ConnectionWithConfig\ConnectionWithConfig\bin\Debug\ConnectionWithConfig.exe.config
-D:\flesh\Works\C# WCF\ConnectionWithConfig\ConnectionWithConfig\bin\Debug\ConnectionWithConfig.exe
-D:\flesh\Works\C# WCF\ConnectionWithConfig\ConnectionWithConfig\bin\Debug\ConnectionWithConfig.pdb
-D:\flesh\Works\C# WCF\ConnectionWithConfig\ConnectionWithConfig\obj\Debug\ConnectionWithConfig.csprojResolveAssemblyReference.cache
-D:\flesh\Works\C# WCF\ConnectionWithConfig\ConnectionWithConfig\obj\Debug\ConnectionWithConfig.csproj.CoreCompileInputs.cache
-D:\flesh\Works\C# WCF\ConnectionWithConfig\ConnectionWithConfig\obj\Debug\ConnectionWithConfig.exe
-D:\flesh\Works\C# WCF\ConnectionWithConfig\ConnectionWithConfig\obj\Debug\ConnectionWithConfig.pdb
